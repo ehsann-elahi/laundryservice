@@ -1,7 +1,7 @@
 @use "sass:math";
 :root {
-    --theme-color: #2B2F7B;
-    --theme-color2: #f7941f;
+    --theme-color: #0890F1;
+    --theme-color2: #FFD06D;
     --title-color: #00151d;
     --body-color: #788094;
     --smoke-color: #f5f7fa;
@@ -1421,6 +1421,12 @@ textarea.is-invalid {
 .th-btn.style3:hover {
     background-color: var(--theme-color);
 }
+.th-btn.style8 {
+    background-color: #25D366;
+}
+.th-btn.style8:hover {
+    background-color: var(--theme-color2);
+}
 .th-btn.style4 {
     background-color: var(--white-color);
     color: var(--title-color);
@@ -1741,7 +1747,7 @@ textarea.is-invalid {
     }
 }
 .sub-title::before {
-    background-color: #f7941f;
+    background-color: #FFD06D;
     margin-left: -4.5rem;
 }
 @media (max-width: 767px) {
@@ -1756,7 +1762,7 @@ textarea.is-invalid {
     }
 }
 .sub-title::after {
-    background-color: #f7941f;
+    background-color: #FFD06D;
     margin-left: 0.8rem;
 }
 .sub-title:has(img) {
@@ -2045,6 +2051,7 @@ hr.title-line {
 }
 .box-text {
     margin-bottom: -0.5em;
+    
 }
 .btn-group {
     display: -webkit-inline-box;
@@ -12531,7 +12538,7 @@ span.select2-selection.select2-selection--single:focus {
 }
 .counter-card-wrap .divider {
     background: url("../img/icon/shape.svg");
-    filter: invert(63%) sepia(91%) saturate(700%) hue-rotate(359deg) brightness(101%) contrast(102%);
+    filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
     background-repeat: no-repeat;
     width: 57px;
     height: 82px;
@@ -13854,7 +13861,7 @@ span.select2-selection.select2-selection--single:focus {
     background-color: transparent;
     background-image: none;
     font-family: var(--icon-font);
-    color: #f7941f;
+    color: #FFD06D;
     font-weight: 500;
     font-size: 1em;
     display: grid;
@@ -14363,6 +14370,9 @@ span.select2-selection.select2-selection--single:focus {
 }
 .service-block.style1:nth-child(2) {
     padding: 0 48px 0 0;
+}
+.service-block.style1:nth-child(3) {
+    padding: 0 60px 0 0;
 }
 @media (max-width: 767px) {
     .service-block.style1:nth-child(2) {

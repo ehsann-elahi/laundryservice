@@ -41,8 +41,8 @@
             margin-bottom: 30px;
         }
         .btn-primary {
-            background-color: #2B2F7B;
-            border-color: #2B2F7B;
+            background-color: #0890F1;
+            border-color: #0890F1;
             font-weight: bold;
             padding: 12px 25px;
             border-radius: 8px;

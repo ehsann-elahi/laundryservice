@@ -14,9 +14,7 @@
 @section('description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? SunCity laundry offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
 @section('og:title', 'Dry Cleaner near me | Dubai | Abu Dhabi')
 @section('og:description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? SunCity laundry offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
-@section('og:url', 'https://www.laundryservice.ae/dry-cleaning-near-me')
-@section('canonical', 'https://www.laundryservice.ae/dry-cleaning-near-me')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
 	.price li {
@@ -107,7 +105,7 @@
 @section('content')
 <!-- breadcrum -->
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/washnfold.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h2 class="breadcumb-title" style="font-size: 46px;">Launderer & Dry Cleaner Service</h2>

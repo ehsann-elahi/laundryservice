@@ -3,9 +3,7 @@
 @section('description','Get the best Laundry & dry cleaning service in Abu Dhabi at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, pay per kg & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. Laundromat is near Musaffah, Shamkha, Khalifa City, Al Reef.')
 @section('og:title', 'Laundry & Dry Cleaning Service in Dubai & Abu Dhabi | Free Pickup')
 @section('og:description','Get the best Laundry & dry cleaning service in Abu Dhabi at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, pay per kg & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. Laundromat is near Musaffah, Shamkha, Khalifa City, Al Reef.')
-@section('og:url', 'https://www.laundryservice.ae')
-@section('canonical', 'https://www.laundryservice.ae')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .app-download-banner {
@@ -159,9 +157,12 @@
         }
     }
 
-    .color-change {
-        filter: invert(63%) sepia(91%) saturate(700%) hue-rotate(359deg) brightness(101%) contrast(102%);
-    }
+ .color-change {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
+}
+
+
+
 
     .bottom-half {
         margin-bottom: 0px !important;
@@ -192,6 +193,8 @@
         justify-content: center;
         text-decoration: none;
         height: 100px;
+        height: 40px;
+        width: 50px;
         width: 180px;
         transition: transform 0.3s ease;
     }
@@ -203,6 +206,15 @@
     .partner-logo img {
         max-height: 80px;
         max-width: 100%;
+        width: 66px;
+        height: 40px;
+        object-fit: contain;
+    }
+    .partner-logo1 img {
+        max-height: 80px;
+        max-width: 100%;
+        width: 80px;
+        height: 40px;
         object-fit: contain;
     }
 
@@ -228,18 +240,25 @@
     }
 
     .logo-text .green {
-        color: #54B963;
-        font-size: 20px;
+        color: #f9f9f9ff;
+        font-size: 7px;
+        margin-left: 10px;
+    }
+    .logo-text .green1 {
+        color: #f9f9f9ff;
+        font-size: 7px;
+       
     }
 
     .logo-text .black {
-        color: #000;
-        font-size: 20px;
+        color: #f4f4f4ff;
+        font-size: 7px;
     }
 
     .logo-icon i.green-icon {
-        color: #54B963;
-        font-size: 40px;
+        color: #ffffffff;
+        font-size: 27px;
+        margin-left: 25px;
     }
 
     /* Responsive: Tablets and below */
@@ -251,7 +270,7 @@
 
         .logo-text .green,
         .logo-text .black {
-            font-size: 18px;
+            font-size: 15px;
         }
 
         .logo-icon i.green-icon {
@@ -360,12 +379,14 @@
      filter: invert(1);
     content: url("data:image/svg+xml; base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgODcwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI4NzAiPgoJPHRpdGxlPkxheWVyIGNvcHk8L3RpdGxlPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICMwMDAwMDAgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSIgY2xhc3M9InMwIiBkPSJtODguMyAxYzAuNCAwLjYgMi42IDMuMyA0LjcgNS45IDE1LjMgMTguMiAyNi44IDQ3LjggMzMgODUuMSA0LjEgMjQuNSA0LjMgMzIuMiA0LjMgMTI1LjZ2ODdoLTQxLjhjLTM4LjIgMC00Mi42LTAuMi01MC4xLTEuNy0xMS44LTIuNS0yNC05LjItMzIuMi0xNy44LTYuNS02LjktNi4zLTcuMy01LjkgMTMuNiAwLjUgMTcuMyAwLjcgMTkuMiAzLjIgMjguNiA0IDE0LjkgOS41IDI2IDE3LjggMzUuOSAxMS4zIDEzLjYgMjIuOCAyMS4yIDM5LjIgMjYuMyAzLjUgMSAxMC45IDEuNCAzNy4xIDEuNmwzMi43IDAuNXY0My4zIDQzLjRsLTQ2LjEtMC4zLTQ2LjMtMC4zLTgtMy4yYy05LjUtMy44LTEzLjgtNi42LTIzLjEtMTQuOWwtNi44LTYuMSAwLjQgMTkuMWMwLjUgMTcuNyAwLjYgMTkuNyAzLjEgMjguNyA4LjcgMzEuOCAyOS43IDU0LjUgNTcuNCA2MS45IDYuOSAxLjkgOS42IDIgMzguNSAyLjRsMzAuOSAwLjR2ODkuNmMwIDU0LjEtMC4zIDk0LTAuOCAxMDAuOC0wLjUgNi4yLTIuMSAxNy44LTMuNSAyNS45LTYuNSAzNy4zLTE4LjIgNjUuNC0zNSA4My42bC0zLjQgMy43aDE2OS4xYzEwMS4xIDAgMTc2LjctMC40IDE4Ny44LTAuOSAxOS41LTEgNjMtNS4zIDcyLjgtNy40IDMuMS0wLjYgOC45LTEuNSAxMi43LTIuMSA4LjEtMS4yIDIxLjUtNCA0MC44LTguOSAyNy4yLTYuOCA1Mi0xNS4zIDc2LjMtMjYuMSA3LjYtMy40IDI5LjQtMTQuNSAzNS4yLTE4IDMuMS0xLjggNi44LTQgOC4yLTQuNyAzLjktMi4xIDEwLjQtNi4zIDE5LjktMTMuMSA0LjctMy40IDkuNC02LjcgMTAuNC03LjQgNC4yLTIuOCAxOC43LTE0LjkgMjUuMy0yMSAyNS4xLTIzLjEgNDYuMS00OC44IDYyLjQtNzYuMyAyLjMtNCA1LjMtOSA2LjYtMTEuMSAzLjMtNS42IDE2LjktMzMuNiAxOC4yLTM3LjggMC42LTEuOSAxLjQtMy45IDEuOC00LjMgMi42LTMuNCAxNy42LTUwLjYgMTkuNC02MC45IDAuNi0zLjMgMC45LTMuOCAzLjQtNC4zIDEuNi0wLjMgMjQuOS0wLjMgNTEuOC0wLjEgNTMuOCAwLjQgNTMuOCAwLjQgNjUuNyA1LjkgNi43IDMuMSA4LjcgNC41IDE2LjEgMTEuMiA5LjcgOC43IDguOCAxMC4xIDguMi0xMS43LTAuNC0xMi44LTAuOS0yMC43LTEuOC0yMy45LTMuNC0xMi4zLTQuMi0xNC45LTcuMi0yMS4xLTkuOC0yMS40LTI2LjItMzYuNy00Ny4yLTQ0bC04LjItMy0zMy40LTAuNC0zMy4zLTAuNSAwLjQtMTEuN2MwLjQtMTUuNCAwLjQtNDUuOS0wLjEtNjEuNmwtMC40LTEyLjYgNDQuNi0wLjJjMzguMi0wLjIgNDUuMyAwIDQ5LjUgMS4xIDEyLjYgMy41IDIxLjEgOC4zIDMxLjUgMTcuOGw1LjggNS40di0xNC44YzAtMTcuNi0wLjktMjUuNC00LjUtMzctNy4xLTIzLjUtMjEuMS00MS00MS4xLTUxLjgtMTMtNy0xMy44LTcuMi01OC41LTcuNS0yNi4yLTAuMi0zOS45LTAuNi00MC42LTEuMi0wLjYtMC42LTEuMS0xLjYtMS4xLTIuNCAwLTAuOC0xLjUtNy4xLTMuNS0xMy45LTIzLjQtODIuNy02Ny4xLTE0OC40LTEzMS0xOTcuMS04LjctNi43LTMwLTIwLjgtMzguNi0yNS42LTMuMy0xLjktNi45LTMuOS03LjgtNC41LTQuMi0yLjMtMjguMy0xNC4xLTM0LjMtMTYuNi0zLjYtMS42LTguMy0zLjYtMTAuNC00LjQtMzUuMy0xNS4zLTk0LjUtMjkuOC0xMzkuNy0zNC4zLTcuNC0wLjctMTcuMi0xLjgtMjEuNy0yLjItMjAuNC0yLjMtNDguNy0yLjYtMjA5LjQtMi42LTEzNS44IDAtMTY5LjkgMC4zLTE2OS40IDF6bTMzMC43IDQzLjNjMzMuOCAyIDU0LjYgNC42IDc4LjkgMTAuNSA3NC4yIDE3LjYgMTI2LjQgNTQuOCAxNjQuMyAxMTcgMy41IDUuOCAxOC4zIDM2IDIwLjUgNDIuMSAxMC41IDI4LjMgMTUuNiA0NS4xIDIwLjEgNjcuMyAxLjEgNS40IDIuNiAxMi42IDMuMyAxNiAwLjcgMy4zIDEgNi40IDAuNyA2LjctMC41IDAuNC0xMDAuOSAwLjYtMjIzLjMgMC41bC0yMjIuNS0wLjItMC4zLTEyOC41Yy0wLjEtNzAuNiAwLTEyOS4zIDAuMy0xMzAuNGwwLjQtMS45aDcxLjFjMzkgMCA3OCAwLjQgODYuNSAwLjl6bTI5Ny41IDM1MC4zYzAuNyA0LjMgMC43IDc3LjMgMCA4MC45bC0wLjYgMi43LTIyNy41LTAuMi0yMjcuNC0wLjMtMC4yLTQyLjRjLTAuMi0yMy4zIDAtNDIuNyAwLjItNDMuMSAwLjMtMC41IDk3LjItMC44IDIyNy43LTAuOGgyMjcuMnptLTEwLjIgMTcxLjdjMC41IDEuNS0xLjkgMTMuOC02LjggMzMuOC01LjYgMjIuNS0xMy4yIDQ1LjItMjAuOSA2Mi0zLjggOC42LTEzLjMgMjcuMi0xNS42IDMwLjctMS4xIDEuNi00LjMgNi43LTcuMSAxMS4yLTE4IDI4LjItNDMuNyA1My45LTczIDcyLjktMTAuNyA2LjgtMzIuNyAxOC40LTM4LjYgMjAuMi0xLjIgMC4zLTIuNSAwLjktMyAxLjMtMC43IDAuNi05LjggNC0yMC40IDcuOC0xOS41IDYuOS01Ni42IDE0LjQtODYuNCAxNy41LTE5LjMgMS45LTIyLjQgMi05Ni43IDJoLTc2Ljl2LTEyOS43LTEyOS44bDIyMC45LTAuNGMxMjEuNS0wLjIgMjIxLjYtMC41IDIyMi40LTAuNyAwLjktMC4xIDEuOCAwLjUgMi4xIDEuMnoiLz4KPC9zdmc+");
 }    
-     img.aed2{
-    height:0.8em;
-    width:auto;
-    vertical-align: 0.01em;
-    content: url("data:image/svg+xml; base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgODcwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI4NzAiPgoJPHRpdGxlPkxheWVyIGNvcHk8L3RpdGxlPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICMyQjJGN0IgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSIgY2xhc3M9InMwIiBkPSJtODguMyAxYzAuNCAwLjYgMi42IDMuMyA0LjcgNS45IDE1LjMgMTguMiAyNi44IDQ3LjggMzMgODUuMSA0LjEgMjQuNSA0LjMgMzIuMiA0LjMgMTI1LjZ2ODdoLTQxLjhjLTM4LjIgMC00Mi42LTAuMi01MC4xLTEuNy0xMS44LTIuNS0yNC05LjItMzIuMi0xNy44LTYuNS02LjktNi4zLTcuMy01LjkgMTMuNiAwLjUgMTcuMyAwLjcgMTkuMiAzLjIgMjguNiA0IDE0LjkgOS41IDI2IDE3LjggMzUuOSAxMS4zIDEzLjYgMjIuOCAyMS4yIDM5LjIgMjYuMyAzLjUgMSAxMC45IDEuNCAzNy4xIDEuNmwzMi43IDAuNXY0My4zIDQzLjRsLTQ2LjEtMC4zLTQ2LjMtMC4zLTgtMy4yYy05LjUtMy44LTEzLjgtNi42LTIzLjEtMTQuOWwtNi44LTYuMSAwLjQgMTkuMWMwLjUgMTcuNyAwLjYgMTkuNyAzLjEgMjguNyA4LjcgMzEuOCAyOS43IDU0LjUgNTcuNCA2MS45IDYuOSAxLjkgOS42IDIgMzguNSAyLjRsMzAuOSAwLjR2ODkuNmMwIDU0LjEtMC4zIDk0LTAuOCAxMDAuOC0wLjUgNi4yLTIuMSAxNy44LTMuNSAyNS45LTYuNSAzNy4zLTE4LjIgNjUuNC0zNSA4My42bC0zLjQgMy43aDE2OS4xYzEwMS4xIDAgMTc2LjctMC40IDE4Ny44LTAuOSAxOS41LTEgNjMtNS4zIDcyLjgtNy40IDMuMS0wLjYgOC45LTEuNSAxMi43LTIuMSA4LjEtMS4yIDIxLjUtNCA0MC44LTguOSAyNy4yLTYuOCA1Mi0xNS4zIDc2LjMtMjYuMSA3LjYtMy40IDI5LjQtMTQuNSAzNS4yLTE4IDMuMS0xLjggNi44LTQgOC4yLTQuNyAzLjktMi4xIDEwLjQtNi4zIDE5LjktMTMuMSA0LjctMy40IDkuNC02LjcgMTAuNC03LjQgNC4yLTIuOCAxOC43LTE0LjkgMjUuMy0yMSAyNS4xLTIzLjEgNDYuMS00OC44IDYyLjQtNzYuMyAyLjMtNCA1LjMtOSA2LjYtMTEuMSAzLjMtNS42IDE2LjktMzMuNiAxOC4yLTM3LjggMC42LTEuOSAxLjQtMy45IDEuOC00LjMgMi42LTMuNCAxNy42LTUwLjYgMTkuNC02MC45IDAuNi0zLjMgMC45LTMuOCAzLjQtNC4zIDEuNi0wLjMgMjQuOS0wLjMgNTEuOC0wLjEgNTMuOCAwLjQgNTMuOCAwLjQgNjUuNyA1LjkgNi43IDMuMSA4LjcgNC41IDE2LjEgMTEuMiA5LjcgOC43IDguOCAxMC4xIDguMi0xMS43LTAuNC0xMi44LTAuOS0yMC43LTEuOC0yMy45LTMuNC0xMi4zLTQuMi0xNC45LTcuMi0yMS4xLTkuOC0yMS40LTI2LjItMzYuNy00Ny4yLTQ0bC04LjItMy0zMy40LTAuNC0zMy4zLTAuNSAwLjQtMTEuN2MwLjQtMTUuNCAwLjQtNDUuOS0wLjEtNjEuNmwtMC40LTEyLjYgNDQuNi0wLjJjMzguMi0wLjIgNDUuMyAwIDQ5LjUgMS4xIDEyLjYgMy41IDIxLjEgOC4zIDMxLjUgMTcuOGw1LjggNS40di0xNC44YzAtMTcuNi0wLjktMjUuNC00LjUtMzctNy4xLTIzLjUtMjEuMS00MS00MS4xLTUxLjgtMTMtNy0xMy44LTcuMi01OC41LTcuNS0yNi4yLTAuMi0zOS45LTAuNi00MC42LTEuMi0wLjYtMC42LTEuMS0xLjYtMS4xLTIuNCAwLTAuOC0xLjUtNy4xLTMuNS0xMy45LTIzLjQtODIuNy02Ny4xLTE0OC40LTEzMS0xOTcuMS04LjctNi43LTMwLTIwLjgtMzguNi0yNS42LTMuMy0xLjktNi45LTMuOS03LjgtNC41LTQuMi0yLjMtMjguMy0xNC4xLTM0LjMtMTYuNi0zLjYtMS42LTguMy0zLjYtMTAuNC00LjQtMzUuMy0xNS4zLTk0LjUtMjkuOC0xMzkuNy0zNC4zLTcuNC0wLjctMTcuMi0xLjgtMjEuNy0yLjItMjAuNC0yLjMtNDguNy0yLjYtMjA5LjQtMi42LTEzNS44IDAtMTY5LjkgMC4zLTE2OS40IDF6bTMzMC43IDQzLjNjMzMuOCAyIDU0LjYgNC42IDc4LjkgMTAuNSA3NC4yIDE3LjYgMTI2LjQgNTQuOCAxNjQuMyAxMTcgMy41IDUuOCAxOC4zIDM2IDIwLjUgNDIuMSAxMC41IDI4LjMgMTUuNiA0NS4xIDIwLjEgNjcuMyAxLjEgNS40IDIuNiAxMi42IDMuMyAxNiAwLjcgMy4zIDEgNi40IDAuNyA2LjctMC41IDAuNC0xMDAuOSAwLjYtMjIzLjMgMC41bC0yMjIuNS0wLjItMC4zLTEyOC41Yy0wLjEtNzAuNiAwLTEyOS4zIDAuMy0xMzAuNGwwLjQtMS45aDcxLjFjMzkgMCA3OCAwLjQgODYuNSAwLjl6bTI5Ny41IDM1MC4zYzAuNyA0LjMgMC43IDc3LjMgMCA4MC45bC0wLjYgMi43LTIyNy41LTAuMi0yMjcuNC0wLjMtMC4yLTQyLjRjLTAuMi0yMy4zIDAtNDIuNyAwLjItNDMuMSAwLjMtMC41IDk3LjItMC44IDIyNy43LTAuOGgyMjcuMnptLTEwLjIgMTcxLjdjMC41IDEuNS0xLjkgMTMuOC02LjggMzMuOC01LjYgMjIuNS0xMy4yIDQ1LjItMjAuOSA2Mi0zLjggOC42LTEzLjMgMjcuMi0xNS42IDMwLjctMS4xIDEuNi00LjMgNi43LTcuMSAxMS4yLTE4IDI4LjItNDMuNyA1My45LTczIDcyLjktMTAuNyA2LjgtMzIuNyAxOC40LTM4LjYgMjAuMi0xLjIgMC4zLTIuNSAwLjktMyAxLjMtMC43IDAuNi05LjggNC0yMC40IDcuOC0xOS41IDYuOS01Ni42IDE0LjQtODYuNCAxNy41LTE5LjMgMS45LTIyLjQgMi05Ni43IDJoLTc2Ljl2LTEyOS43LTEyOS44bDIyMC45LTAuNGMxMjEuNS0wLjIgMjIxLjYtMC41IDIyMi40LTAuNyAwLjktMC4xIDEuOCAwLjUgMi4xIDEuMnoiLz4KPC9zdmc+");
+
+  img.aed2 {
+  height: 0.8em;
+  width: auto;
+  vertical-align: 0.01em;
+  content: url("data:image/svg+xml; base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgODcwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI4NzAiPgoJPHRpdGxlPkxheWVyIGNvcHk8L3RpdGxlPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICMwODkwRjEgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSIgY2xhc3M9InMwIiBkPSJtODguMyAxYzAuNCAwLjYgMi42IDMuMyA0LjcgNS45IDE1LjMgMTguMiAyNi44IDQ3LjggMzMgODUuMSA0LjEgMjQuNSA0LjMgMzIuMiA0LjMgMTI1LjZ2ODdoLTQxLjhjLTM4LjIgMC00Mi42LTAuMi01MC4xLTEuNy0xMS44LTIuNS0yNC05LjItMzIuMi0xNy44LTYuNS02LjktNi4zLTcuMy01LjkgMTMuNiAwLjUgMTcuMyAwLjcgMTkuMiAzLjIgMjguNiA0IDE0LjkgOS41IDI2IDE3LjggMzUuOSAxMS4zIDEzLjYgMjIuOCAyMS4yIDM5LjIgMjYuMyAzLjUgMSAxMC45IDEuNCAzNy4xIDEuNmwzMi43IDAuNXY0My4zIDQzLjRsLTQ2LjEtMC4zLTQ2LjMtMC4zLTgtMy4yYy05LjUtMy44LTEzLjgtNi42LTIzLjEtMTQuOWwtNi44LTYuMSAwLjQgMTkuMWMwLjUgMTcuNyAwLjYgMTkuNyAzLjEgMjguNyA4LjcgMzEuOCAyOS43IDU0LjUgNTcuNCA2MS45IDYuOSAxLjkgOS42IDIgMzguNSAyLjRsMzAuOSAwLjR2ODkuNmMwIDU0LjEtMC4zIDk0LTAuOCAxMDAuOC0wLjUgNi4yLTIuMSAxNy44LTMuNSAyNS45LTYuNSAzNy4zLTE4LjIgNjUuNC0zNSA4My42bC0zLjQgMy43aDE2OS4xYzEwMS4xIDAgMTc2LjctMC40IDE4Ny44LTAuOSAxOS41LTEgNjMtNS4zIDcyLjgtNy40IDMuMS0wLjYgOC45LTEuNSAxMi43LTIuMSA4LjEtMS4yIDIxLjUtNCA0MC44LTguOSAyNy4yLTYuOCA1Mi0xNS4zIDc2LjMtMjYuMSA3LjYtMy40IDI5LjQtMTQuNSAzNS4yLTE4IDMuMS0xLjggNi44LTQgOC4yLTQuNyAzLjktMi4xIDEwLjQtNi4zIDE5LjktMTMuMSA0LjctMy40IDkuNC02LjcgMTAuNC03LjQgNC4yLTIuOCAxOC43LTE0LjkgMjUuMy0yMSAyNS4xLTIzLjEgNDYuMS00OC44IDYyLjQtNzYuMyAyLjMtNCA1LjMtOSA2LjYtMTEuMSAzLjMtNS42IDE2LjktMzMuNiAxOC4yLTM3LjggMC42LTEuOSAxLjQtMy45IDEuOC00LjMgMi42LTMuNCAxNy42LTUwLjYgMTkuNC02MC45IDAuNi0zLjMgMC45LTMuOCAzLjQtNC4zIDEuNi0wLjMgMjQuOS0wLjMgNTEuOC0wLjEgNTMuOCAwLjQgNTMuOCAwLjQgNjUuNyA1LjkgNi43IDMuMSA4LjcgNC41IDE2LjEgMTEuMiA5LjcgOC43IDguOCAxMC4xIDguMi0xMS43LTAuNC0xMi44LTAuOS0yMC43LTEuOC0yMy45LTMuNC0xMi4zLTQuMi0xNC45LTcuMi0yMS4xLTkuOC0yMS40LTI2LjItMzYuNy00Ny4yLTQ0bC04LjItMy0zMy40LTAuNC0zMy4zLTAuNSAwLjQtMTEuN2MwLjQtMTUuNCAwLjQtNDUuOS0wLjEtNjEuNmwtMC40LTEyLjYgNDQuNi0wLjJjMzguMi0wLjIgNDUuMyAwIDQ5LjUgMS4xIDEyLjYgMy41IDIxLjEgOC4zIDMxLjUgMTcuOGw1LjggNS40di0xNC44YzAtMTcuNi0wLjktMjUuNC00LjUtMzctNy4xLTIzLjUtMjEuMS00MS00MS4xLTUxLjgtMTMtNy0xMy44LTcuMi01OC41LTcuNS0yNi4yLTAuMi0zOS45LTAuNi00MC42LTEuMi0wLjYtMC42LTEuMS0xLjYtMS4xLTIuNCAwLTAuOC0xLjUtNy4xLTMuNS0xMy45LTIzLjQtODIuNy02Ny4xLTE0OC40LTEzMS0xOTcuMS04LjctNi43LTMwLTIwLjgtMzguNi0yNS42LTMuMy0xLjktNi45LTMuOS03LjgtNC41LTQuMi0yLjMtMjguMy0xNC4xLTM0LjMtMTYuNi0zLjYtMS42LTguMy0zLjYtMTAuNC00LjQtMzUuMy0xNS4zLTk0LjUtMjkuOC0xMzkuNy0zNC4zLTcuNC0wLjctMTcuMi0xLjgtMjEuNy0yLjItMjAuNC0yLjMtNDguNy0yLjYtMjA5LjQtMi42LTEzNS44IDAtMTY5LjkgMC4zLTE2OS40IDF6bTMzMC43IDQzLjNjMzMuOCAyIDU0LjYgNC42IDc4LjkgMTAuNSA3NC4yIDE3LjYgMTI2LjQgNTQuOCAxNjQuMyAxMTcgMy41IDUuOCAxOC4zIDM2IDIwLjUgNDIuMSAxMC41IDI4LjMgMTUuNiA0NS4xIDIwLjEgNjcuMyAxLjEgNS40IDIuNiAxMi42IDMuMyAxNiAwLjcgMy4zIDEgNi40IDAuNyA2LjctMC41IDAuNC0xMDAuOSAwLjYtMjIzLjMgMC41bC0yMjIuNS0wLjItMC4zLTEyOC41Yy0wLjEtNzAuNiAwLTEyOS4zIDAuMy0xMzAuNGwwLjQtMS45aDcxLjFjMzkgMCA3OCAwLjQgODYuNSAwLjl6bTI5Ny41IDM1MC4zYzAuNyA0LjMgMC43IDc3LjMgMCA4MC45bC0wLjYgMi43LTIyNy41LTAuMi0yMjcuNC0wLjMtMC4yLTQyLjRjLTAuMi0yMy4zIDAtNDIuNyAwLjItNDMuMSAwLjMtMC41IDk3LjItMC44IDIyNy43LTAuOGgyMjcuMnptLTEwLjIgMTcxLjdjMC41IDEuNS0xLjkgMTMuOC02LjggMzMuOC01LjYgMjIuNS0xMy4yIDQ1LjItMjAuOSA2Mi0zLjggOC42LTEzLjMgMjcuMi0xNS42IDMwLjctMS4xIDEuNi00LjMgNi43LTcuMSAxMS4yLTE4IDI4LjItNDMuNyA1My45LTczIDcyLjktMTAuNyA2LjgtMzIuNyAxOC40LTM4LjYgMjAuMi0xLjIgMC4zLTIuNSAwLjktMyAxLjMtMC43IDAuNi05LjggNC0yMC40IDcuOC0xOS41IDYuOS01Ni42IDE0LjQtODYuNCAxNy41LTE5LjMgMS45LTIyLjQgMi05Ni43IDJoLTc2Ljl2LTEyOS43LTEyOS44bDIyMC45LTAuNGMxMjEuNS0wLjIgMjIxLjYtMC41IDIyMi40LTAuNyAwLjktMC4xIDEuOCAwLjUgMi4xIDEuMnoiLz4KPC9zdmc+");
 }
+
   
                
 </style>
@@ -389,13 +410,13 @@
                                 </h1>
                                 <p class="hero-text" data-ani="slideindown" data-ani-delay="0.7s">
                                     We are providing services in Abu-Dhabi, Dubai, Sharjah and Ajman.
-                                    Get Your Weekly Laundry Cleaned with Our Cheapest Per
-                                    KG.
+                                  <span style="color: #FFD06D;">Get Your Weekly Laundry Cleaned with Our Cheapest Per
+                                    KG.</span>  
                                     Laundry Packages - Including Free Pickup Service
                                 </p>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.9s">
                                     <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup"
-                                        id="supportBtn" target="_blank" class="th-btn style2">
+                                        id="supportBtn" target="_blank" class="th-btn style8">
                                         <i class="fab fa-whatsapp"></i> <span>Quick Support</span>
                                     </a>
                                     <a href="{{ route('booking-form') }}" class="th-btn style2" id="supportBtn">Schedule
@@ -420,14 +441,13 @@
                                     Wash & Fold Service <span class="text-theme">.</span>
                                 </h3>
                                 <p class="hero-text" data-ani="slideindown" data-ani-delay="0.7s">
-                                    Wash and fold service is one of our most favored laundry services, now you can get a
-                                    complete week <br> of dirty laundry cleaned only <img class="aed1">
-                                    65 , with no extra charges,
+                                    Wash and fold service is one of our most favored laundry services,<span style="color: #FFD06D;"> now you can get a
+                                    complete week <br> of dirty laundry cleaned only</span><span style="font-size:large"> 65 <img class="aed1"> </span>, with no extra charges,
                                     and next-day free delivery service.
                                 </p>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.9s">
                                     <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup"
-                                        id="supportBtn" target="_blank" class="th-btn style2">
+                                        id="supportBtn" target="_blank" class="th-btn style8">
                                         <i class="fab fa-whatsapp"></i></i> <span>Quick Support</span>
                                     </a>
                                     <a href="{{ route('booking-form') }}" class="th-btn style2" id="supportBtn">Schedule
@@ -455,15 +475,14 @@
                                 <p class="hero-text" data-ani="slideindown" data-ani-delay="0.7s">
                                     Do you hate ironing but are too fussy about presentable? Let’s skip it with SunCity
                                     laundry's very affordable
-                                    Ironing package, get your whole week's laundry ironed for only <img class="aed1">
-                                    119, with no extra
+                                   <span style="color: #FFD06D;"> Ironing package, get your whole week's laundry ironed for only</span><span style="font-size: large;"> 119 <img class="aed1"></span></span>, with no extra
                                     charges, with free
                                     next-day delivery service.
                                 </p>
                                 <div class="btn-group" data-ani="slideinup" data-ani-delay="0.9s">
                                     <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup"
-                                        id="supportBtn" target="_blank" class="th-btn style2">
-                                        <i class="fab fa-whatsapp"></i> <span>Quick Support</span>
+                                        id="supportBtn" target="_blank" class="th-btn style8">
+                                        <i class="fab fa-whatsapp"></i> <span>Quick Support
                                     </a>
                                     <a href="{{ route('booking-form') }}" class="th-btn style2" id="supportBtn">Schedule
                                         Pickup</a>
@@ -529,46 +548,44 @@
     </div>
 </section>
 
-<div class="about-sec overflow-hidden space-top" id="about-sec">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 wow fadeInLeft ">
-                <div class="img-box1">
-                    <div class="img1"><img loading="lazy" src="{{asset('/assets/front/img/normal/about_1.jpg')}}" alt="About" /></div>
-                    <div class="img2 d-none d-md-block"><img loading="lazy" src="{{asset('/assets/front/img/normal/2.png')}}" alt="About" /></div>
-                    <div class="th-experience jump d-none d-md-block">
-                        <h3 class="experience-year"><span class="counter-number">20</span>+</h3>
-                        <p class="experience-text">Years</p>
+<section class="space py-5">
+    <div class="container mt-3">
+        <div class="title-area text-center">
+            <span class="sub-title">What We Offer</span>
+            <h2 class="sec-title">Popular Laundry Packages</h2>
+            <h3 class="" style="font-size: 26px">Most loveable Laundry Packages by Our Customers</h3>
+           <a href="https://www.laundryservice.ae/" ><p>Cheaper - Suitable - Convenient</p></a>
+        </div>
+        <div class="row gy-4 justify-content-center">
+            @foreach ($packages as $package)
+            <div class="col-xl-4 col-md-6">
+                <div class="price-card">
+
+                    <h3 class="box-title">{{ $package->name }}</h3>
+                    <div class="price-card_content">
+                        <h4 class="price-card_price" style="font-size: 22px"><img class="aed2">
+                            {{ $package->price }}<span
+                                class="period">/{{ $package->weight }}</span>
+                        </h4>
+
+                        <div class="checklist">
+                            <ul>
+                                {!! $package->list !!}
+                            </ul>
+                        </div>
+                        <div class="form-btn col-12 mt-4 d-flex justify-content-center">
+                            <a href="{{ route('booking-form') }}" class="th-btn btn-fw text-white">Schedule Pickup Now</a>
+                        </div>
+
                     </div>
                 </div>
+
             </div>
-            <div class="col-xl-6">
-                <div class="ps-xl-4 wow fadeInRight">
-                    <div class="title-area mb-25">
-                        <span class="sub-title style1">About Us</span>
-                        <h2 class="sec-title mb-20">Dry Cleaning & Stain Removal Experts</h2>
-                        <p class="about-desc">
-                            Specify the range of services your laundry offers, including wash and fold, dry
-                            cleaning, ironing, stain removal, and any specialized treatments for delicate fabrics or
-                            special garments.
-                        </p>
-                    </div>
-                    <div class="checklist list-two-column">
-                        <ul>
-                            <li>Pickup and Delivery Service</li>
-                            <li>Energy-Efficient Machines</li>
-                            <li>Same-Day or Express Service</li>
-                            <li>Folding Preferences</li>
-                            <li>Hanging or Bagging Options</li>
-                            <li>Satisfaction Guarantee</li>
-                        </ul>
-                    </div>
-                    <div class="btn-group mt-30 justify-content-start"><a href="{{route('booking-form')}}" class="th-btn">Book Now</a></div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
-</div>
+</section>
+
 
 <div class="overflow-hidden space" id="feature-area">
     <div class="container">
@@ -637,8 +654,7 @@
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
                                 <h3 class="box-title"><a href="{{route('curtain-cleaning')}}">Dry Cleaning</a></h3>
-                                <p class="service-box_text">Dry cleaning is a method of cleaning clothing and
-                                    textiles.</p>
+                                <p class="service-box_text">Dry cleaning is a cleaning process of clothes and textiles</p>
                                 <a href="{{route('curtain-cleaning')}}" class="th-btn border">Price List</a>
                             </div>
                         </div>
@@ -758,7 +774,7 @@
                     <div class="media-body">
                         <span class="contact-feature_subtitle text-white">Call Us For Service</span>
                         <h3 class="box-title"><a href="tel:+1636543569">+971 52 273 2873</a></h3>
-                        <p class="box-text">Call 24/7 Anytime For Our Laundry Servicing.</p>
+                        <p class="box-text text-white">Call 24/7 Anytime For Our Laundry Servicing.</p>
                     </div>
                 </div>
             </div>
@@ -768,7 +784,7 @@
                     <div class="media-body">
                         <span class="contact-feature_subtitle text-white">Email Us Anytime For Service</span>
                         <h3 class="box-title"><a href="mailto:info@Laun.com">laundryservice.ae</a></h3>
-                        <p class="box-text">Email 24/7 at support@laundryservice.ae</p>
+                        <p class="box-text text-white">Email 24/7 at support@laundryservice.ae</p>
                     </div>
                 </div>
             </div>
@@ -801,7 +817,7 @@
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">Reliable and Hassle-Free</a></h3>
-                        <p class="mb-0">All you have to do is place an order and we will get the job done quickly & efficiently saving your time to enjoy life!</p>
+                        <p class="mb-0">Just make an order and we will work as quickly and efficiently as possible leaving more time to live your life</p>
                     </div>
                 </div>
                 <div class="service-block style1 wow fadeInLeft">
@@ -855,7 +871,7 @@
             <p>Schedule your service, let our experts clean your clothes, and get them delivered fresh and neatly packaged.</p>
         </div>
         <div class="step-wrap">
-            <div class="process-line"></div>
+            <div class=""></div>
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card">
@@ -951,43 +967,45 @@
         </div>
     </div>
 </section>
-<section class="space py-5">
-    <div class="container mt-5">
-        <div class="title-area text-center">
-            <span class="sub-title">What We Offer</span>
-            <h2 class="sec-title">Popular Laundry Packages</h2>
-            <h3 class="" style="font-size: 26px">Cheaper - Suitable - Convenient</h3>
-            <p>Pay Per Kg Packages - Transparent - Convenient - Suitable</p>
-        </div>
-        <div class="row gy-4 justify-content-center">
-            @foreach ($packages as $package)
-            <div class="col-xl-4 col-md-6">
-                <div class="price-card">
 
-                    <h3 class="box-title">{{ $package->name }}</h3>
-                    <div class="price-card_content">
-                        <h4 class="price-card_price" style="font-size: 22px"><img class="aed2">
-                            {{ $package->price }}<span
-                                class="period">/{{ $package->weight }}</span>
-                        </h4>
-
-                        <div class="checklist">
-                            <ul>
-                                {!! $package->list !!}
-                            </ul>
-                        </div>
-                        <div class="form-btn col-12 mt-4 d-flex justify-content-center">
-                            <a href="{{ url($package->slug) }}" class="th-btn btn-fw text-white">Schedule Pickup Now</a>
-                        </div>
-
+<div class="about-sec overflow-hidden space-top" id="about-sec">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-6 wow fadeInLeft ">
+                <div class="img-box1">
+                    <div class="img1"><img loading="lazy" src="{{asset('/assets/front/img/normal/about_1.jpg')}}" alt="About" /></div>
+                    <div class="img2 d-none d-md-block"><img loading="lazy" src="{{asset('/assets/front/img/normal/2.png')}}" alt="About" /></div>
+                    <div class="th-experience jump d-none d-md-block">
+                        <h3 class="experience-year"><span class="counter-number">20</span>+</h3>
+                        <p class="experience-text">Years</p>
                     </div>
                 </div>
-
             </div>
-            @endforeach
+            <div class="col-xl-6">
+                <div class="ps-xl-4 wow fadeInRight">
+                    <div class="title-area mb-25">
+                        <span class="sub-title style1">About Us</span>
+                        <h2 class="sec-title mb-20">Dry Cleaning & Stain Removal Experts</h2>
+                        <p class="about-desc">
+                        Years describe the types of services that your laundry will provide such as wash and fold dry cleaning ironing stain removal and special care of delicate materials certain items
+                        </p>
+                    </div>
+                    <div class="checklist list-two-column">
+                        <ul>
+                            <li>Pickup and Delivery Service</li>
+                            <li>Energy-Efficient Machines</li>
+                            <li>Same-Day or Express Service</li>
+                            <li>Folding Preferences</li>
+                            <li>Hanging or Bagging Options</li>
+                            <li>Satisfaction Guarantee</li>
+                        </ul>
+                    </div>
+                    <div class="btn-group mt-30 mb-30 justify-content-start"><a href="{{route('booking-form')}}" class="th-btn">Book Now</a></div>
+                </div>
+            </div>
         </div>
     </div>
-</section>
+</div>
 
 <section class="team-area space p-5" data-bg-src="{{asset('/assets/front/img/bg/team_bg_1.jpg')}}">
     <div class="container p-0 z-index-common">
@@ -1101,7 +1119,7 @@
                             </ul>
                         </div>
                         <div class="form-btn col-12 mt-4 d-flex justify-content-center">
-                            <a href="{{ url($pack->slug) }}" class="th-btn btn-fw text-white">Schedule Pickup Now</a>
+                            <a href="{{ route('booking-form') }}" class="th-btn btn-fw text-white">Schedule Pickup Now</a>
                         </div>
 
                     </div>
@@ -1195,8 +1213,7 @@
                         <div class="swiper-slide">
                             <div class="testi-grid">
                                 <p class="testi-grid_text">
-                                    Absolutely. Our staff is trained to handle a variety of fabrics, including delicate
-                                    and formal wear. We take special care to follow care many on instructions and use
+                                    Absolutely.	Our technicians have been trained on various types of fabrics including delicate and formal clothes. We take special care to follow care many on instructions and use
                                     gentle processes to preserve
                                     the quality of your specialty items man our
                                 </p>
@@ -1223,7 +1240,7 @@
                         <div class="swiper-slide">
                             <div class="testi-grid">
                                 <p class="testi-grid_text">
-                                    Fast and quick. I WhatsApp them regarding my home laundry service and within 5 minutes I received the price from the LaundryService.AE team. They complete job within 24 hours. It’s an awesome experience to have their services and the customer care is very helpful
+                                    Fast and quick. I WhatsApp them about a home laundry service and within five minutes I got to know the price from them at <a href="https://laundryservice.ae/"> LaundryService.ae.</a> They complete job within 24 hours. It’s an awesome experience to have their services and the customer care is very helpful
                                 </p>
                                 <div class="testimonial-profile">
                                     <div class="testi-grid_wrapper">
@@ -1273,10 +1290,8 @@
                         <div class="swiper-slide">
                             <div class="testi-grid">
                                 <p class="testi-grid_text">
-                                    Absolutely. Our staff is trained to handle a variety of fabrics, including delicate
-                                    and formal wear. We take special care to follow care many on instructions and use
-                                    gentle processes to preserve
-                                    the quality of your specialty items man our
+                                    Absolutely.Our technicians have been trained on various types of fabrics including delicate and formal clothes. We take special care to follow care many on instructions and use
+                                    gentle processes to preserve the quality of your specialty items man our
                                 </p>
                                 <div class="testimonial-profile">
                                     <div class="testi-grid_wrapper">
@@ -1301,10 +1316,7 @@
                         <div class="swiper-slide">
                             <div class="testi-grid">
                                 <p class="testi-grid_text">
-                                    I lived in Mussafah, I regularly used their services. I found their laundry services excellent. Staff at shop is very cooperative, good listener. I never had to go anywhere even if I need to do a little alteration or repair they did it for me. Overall process is so convenient and easy. I am completely satisfied by the dealer and service.
-
-
-                                </p>
+                                    I lived in Mussafah, I regularly used their services. I found their laundry services excellent. Staff at shop is very cooperative, good listener.I never had to travel anywhere even when I want to do some slight alteration or repair they did it on my behalf.  Overall process is so convenient and easy. I am completely satisfied by the dealer and service.</p>
                                 <div class="testimonial-profile">
                                     <div class="testi-grid_wrapper">
 
@@ -1360,31 +1372,7 @@
     </div>
 </section>
 
-<section class="partners-static-wrapper mt-5">
-    <span class="sub-title">CHANNELS</span>
-            <h2 class="sec-title">Our Channel Partners</h2>
-            <p class="mb-3">We have built strong relationships with channel partners who share our dedication to excellence in LaundryService.</p>
-    <div class="partners-static-track">
-        <a href="https://curtaincleaning.ae" target="_blank" class="partner-logo">
-            <img loading="lazy" src="{{asset('/assets/images/icon.png')}}" alt="curtaincleaning">
-        </a>
-        <a href="https://carpetwashing.ae" target="_blank" class="partner-logo">
-            <img loading="lazy" src="https://carpetwashing.ae/assets/frontened/images/lgo.png" alt="carpetwashing">
-        </a>
-        <a href="https://www.alkhyalcurtain.ae/" target="_blank" class="partner-logo">
-            <img loading="lazy" src="https://alkhyalcurtain.ae/assets/front/image/catalog/logo.png" alt="alkhyal">
-        </a>
-        <a href="https://curtainlaundry.com" class="partner-logo custom-logo">
-            <div class="logo-text">
-                <div><span class="green">C</span><span class="black">urtain</span></div>
-                <div><span class="green">L</span><span class="black">aundry</span></div>
-            </div>
-            <div class="logo-icon">
-                <i class="fas fa-hands-wash green-icon"></i>
-            </div>
-        </a>
-    </div>
-</section>
+
 
 <section class="overflow-hidden space" style="margin-top: -100px" id="blog-sec"
     data-bg-src="{{asset('/assets/front/img/bg/blog_bg_1.jpg')}}">

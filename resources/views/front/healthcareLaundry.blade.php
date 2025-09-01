@@ -14,8 +14,7 @@
 @section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"SunCity Laundry\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
 @section('og:title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
 @section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"SunCity Laundry\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
-@section('og:url', 'https://www.laundryservice.ae/suncity-laundry-abu-dhabi')
-@section('canonical', 'https://www.laundryservice.ae/suncity-laundry-abu-dhabi')
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .price li {
@@ -160,7 +159,7 @@
         <p class="text-center mb-5">We are open now in all major cities of UAE including Abu Dhabi, Dubai, Sharjah & Ajman</p>
         <P>To ranked laundromat & dry cleaner in the region, Mohamed Bin Zayed City, Abu Dhabi. Providing launderer services since 2011. We are keen to provide one-stop commercial & no-commercial dry cleaning services to our customers, our top-rated laundry & dry cleaning services are; Wash & Fold, Ironing Services, Dry Cleaning, Curtains Cleaning, Linen & bedding cleaning services.</P>
         <P>We are enthusiastic to keep you safe in this pandemic, therefore we delivered contactless clean laundries t your doorsteps. Our pick-up & drop-off is quite free in Mohamed Bin Zayed City without any upper limit restrictions.
-            It is quite easy to book a laundry & dry clean service with us at the cheapest rates, just send us a message on WhatsApp (+971 52 273 2873 or call us @ 02 552 1090, We are 24/7 here to let you enjoy your leisure time, our professionals will handle your dirty laundry.</P>
+            It is quite easy to book a <a href="https://www.laundryservice.ae/" >laundry & dry clean service </a> with us at the cheapest rates, just send us a message on WhatsApp (+971 52 273 2873 or call us @ 02 552 1090, We are 24/7 here to let you enjoy your leisure time, our professionals will handle your dirty laundry.</P>
         <div class="row w3-services-grids mt-lg-5 mt-4">
             <div class="col-lg-5 w3-services-left-grid price">
                 <h3>FAVOURITE SERVICES</h3>

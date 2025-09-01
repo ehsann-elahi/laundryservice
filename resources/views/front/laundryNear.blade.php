@@ -14,9 +14,7 @@
 @section('description','Get the best Laundry & dry cleaning service in Abu Dhabi at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, pay per kg & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. Laundromat is near Musaffah, Shamkha, Khalifa City, Al Reef.')
 @section('og:title', 'Laundry Near Me Dubai & Abu Dhabi')
 @section('og:description','Get the best Laundry & dry cleaning service in Abu Dhabi at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, pay per kg & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. Laundromat is near Musaffah, Shamkha, Khalifa City, Al Reef.')
-@section('og:url', 'https://www.laundryservice.ae/laundry-near-me')
-@section('canonical', 'https://www.laundryservice.ae/laundry-near-me')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
 	.img-curve {

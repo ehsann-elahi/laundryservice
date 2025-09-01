@@ -3,15 +3,13 @@
 @section('description','LaundryService.AE is committed to providing a safe, healthy environment to its employees & following health & safety guidelines from local authorities & international standards by WHO. Moreover, All laundry staff is vaccinated against the Coronavirus. In the same way, we are committed to make laundry process green.')
 @section('og:title', 'Laundry Environment Health & Safety Policy')
 @section('og:description','LaundryService.AE is committed to providing a safe, healthy environment to its employees & following health & safety guidelines from local authorities & international standards by WHO. Moreover, All laundry staff is vaccinated against the Coronavirus. In the same way, we are committed to make laundry process green.')
-@section('og:url', 'https://www.laundryservice.ae/enviornment-health-safety-policy')
-@section('canonical', 'https://www.laundryservice.ae/enviornment-health-safety-policy')
-
+@section('canonical', url()->current())
 @section('content')
 
 
 <!-- services block1 -->
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/ehs.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Environment, Health & Safety Policy</h1>

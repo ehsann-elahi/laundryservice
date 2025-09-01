@@ -7,15 +7,13 @@
     }, 9000);
 </script>
 @endif
-
 @endpush
 @extends('layouts.app')
 @section('title', 'Book Laundry Online in Dubai & Abu Dhabi')
 @section('description','LaundryService.AE has made it quite easy to book a laundry service with your favorite laundry in Abu Dhabi, Dubai, Sharjah & Ajman. Its quite simple, hassle free, fill form, schedule date & convenient time and submit. Leave rest of the things on our experts!')
 @section('og:title', 'Book Laundry Online in Dubai & Abu Dhabi')
 @section('og:description','LaundryService.AE has made it quite easy to book a laundry service with your favorite laundry in Abu Dhabi, Dubai, Sharjah & Ajman. Its quite simple, hassle free, fill form, schedule date & convenient time and submit. Leave rest of the things on our experts!')
-@section('og:url', 'https://www.laundryservice.ae/book-laundry-online')
-@section('canonical', 'https://www.laundryservice.ae/book-laundry-online')
+@section('canonical', url()->current())
 @section('styles')
 <style>
     img.aed {
@@ -72,8 +70,8 @@
 
     .address-type-option input[type="radio"]:checked+label {
         background-color: #e7f5ff;
-        border-color: #2B2F7B;
-        color: #2B2F7B;
+        border-color: #0890f1;
+        color: #0890f1;
     }
 
     .map-container {
@@ -128,7 +126,7 @@
     }
 
     .next-button {
-        background-color: #dee2e6;
+        background-color: #0890f1;
         color: #fff;
         border: none;
         border-radius: 4px;
@@ -139,12 +137,12 @@
 
     .selectable.active {
         background-color: #e7f5ff;
-        border-color: #2B2F7B;
-        color: #2B2F7B;
+        border-color: #0890f1;
+        color: #0890f1;
     }
 
     .selectable.active p {
-        color: #2B2F7B
+        color: #0890f1
     }
 
     .selectable {
@@ -312,11 +310,12 @@
 
 
 <main class="container py-4 mt-5">
+    <div class="container mt-32 mt-md-40 mb-100"></div>
     <div class="row">
         <!-- Left Column -->
-        <div class="col-md-8">
+        <div class="col-12 col-md-8 col-lg-7">
             <div class="step-address" data-step="1">
-                <h1 class="mb-4">Find your address</h1>
+                <h1 class="mb-4" style="font-size:40px;">Find your address</h1>
                 <input type="text" class="search-input mb-3" name="address" placeholder="Search for address or building">
                 <input type="hidden" name="lat" id="">
                 <input type="hidden" name="lng" id="">
@@ -357,28 +356,29 @@
                     <div class="col-md-12">
                         <div class="card-body p-0">
                             <div class="row pb-2" style="border-bottom: dashed 1px;">
-                                <div class="col-12">
-                                    <h3 class="pb-2 d-flex">Collection Time</h3>
-                                    <div class="col-md-12 pl-0">
-                                        <div class="form-group mb-3">
-                                            <label>Select Day</label>
-                                            <input class="form-control" type="text" id="collectDay" name="collectDay">
-                                        </div>
-                                    </div>
-                                    <div class="col-md-12 pl-0">
-                                        <div class="form-group mb-3">
-                                            <label>Select Time</label>
-                                            <input class="form-control" type="text" id="collectTime" name="collectTime">
-                                        </div>
+
+                                <h3 class="font-18-24 fw-medium deep-black mb-16">Collection Time</h3>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label>Select Day</label>
+                                        <input class="form-control" type="text" id="collectDay" name="collectDay">
                                     </div>
                                 </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-3">
+                                        <label>Select Time</label>
+                                        <input class="form-control" type="text" id="collectTime" name="collectTime">
+                                    </div>
+                                </div>
+
                                 <div class="col-12">
-                                    <h3 class="pb-2 d-flex">Collection Instructions</h3>
+
+                                    <h3 class="font-18-24 fw-medium deep-black mb-16">Collection Instructions</h3>
                                     <div class="row pt-3 pr-3">
                                         <input type="hidden" id="delivery_option_2" name="delivery_option_2" value="Collect from outside">
                                         <div class="col-lg-4 col-md-6 col-sm-12 pr-md-0 pb-md-0 pb-3">
                                             <div class="card card-icon-bg card-icon-bg-primary o-hidden selectable" data-group="collection" data-value="Collect from me in person">
-                                                <div class="text-center p-3">
+                                                <div class="text-center p-2">
                                                     <i class="fa-solid fa-person fa-3x"></i>
                                                     <p class="mt-2 mb-0">Collect from me in person</p>
                                                 </div>
@@ -386,7 +386,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-12 pr-md-0 pb-md-0 pb-3">
                                             <div class="card card-icon-bg card-icon-bg-primary o-hidden selectable active" data-group="collection" data-value="Collect from outside">
-                                                <div class="text-center p-3">
+                                                <div class="text-center p-2">
                                                     <i class="fa-solid fa-walking fa-3x"></i>
 
                                                     <p class="mt-2 mb-0">Collect from outside</p>
@@ -395,7 +395,7 @@
                                         </div>
                                         <div class="col-lg-4 col-md-6 col-sm-12 pr-md-0 pb-md-0 pb-3">
                                             <div class="card card-icon-bg card-icon-bg-primary o-hidden selectable" data-group="collection" data-value="Collect from reception">
-                                                <div class="text-center p-3">
+                                                <div class="text-center p-2">
                                                     <i class="fa-solid fa-building fa-3x"></i>
                                                     <p class="mt-2 mb-0">Collect from reception</p>
                                                 </div>
@@ -406,22 +406,22 @@
                             </div>
                             <div class="row pt-4 pb-2" style="border-bottom: dashed 1px;">
                                 <div class="col-12">
-                                    <h3 class="pb-2 d-flex">Deliver Time</h3>
-                                    <div class="col-md-12 pl-0">
-                                        <div class="form-group mb-3">
-                                            <label>Select Day</label>
-                                            <input class="form-control" type="text" id="dlvrDay" name="dlvrDay">
-                                        </div>
+                                    <h3 class="font-18-24 fw-medium deep-black mb-16">Deliver Time</h3>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group mb-3">
+                                        <label>Select Day</label>
+                                        <input class="form-control" type="text" id="dlvrDay" name="dlvrDay">
                                     </div>
-                                    <div class="col-md-12 pl-0">
-                                        <div class="form-group mb-3">
-                                            <label>Select Time</label>
-                                            <input class="form-control" type="text" id="dlvrTime" name="dlvrTime">
-                                        </div>
+                                </div>
+                                <div class="col-md-6 ">
+                                    <div class="form-group mb-3">
+                                        <label>Select Time</label>
+                                        <input class="form-control" type="text" id="dlvrTime" name="dlvrTime">
                                     </div>
                                 </div>
                                 <div class="col-12">
-                                    <h3 class="pb-2 d-flex">Deliver Instructions</h3>
+                                    <h3 class="font-18-24 fw-medium deep-black mb-16">Deliver Instructions</h3>
                                     <div class="row pt-3 pr-md-3">
                                         <input type="hidden" id="delivery_option_1" name="delivery_option_1" value="Collect from outside">
                                         <div class="col-lg-4 col-md-6 col-sm-12 pr-md-0 pb-md-0 pb-3 ">
@@ -455,17 +455,19 @@
                                 </div>
                             </div>
                             <div class="row pt-4 pb-2">
-                                <h3 class="col-md-6 col-12 pb-2 d-flex">Special Instructions</h3>
-                                <h4 class="col-md-6 pb-2 d-flex d-md-block d-none">Frequency</h4>
 
-                                <div class="col-md-6 col-12" style="border-right: dashed 1px black;">
+                                <div class="col-md-12 col-12">
+                                    <h3 class="font-18-24 fw-medium deep-black mb-16">Special Instructions</h3>
                                     <div class="form-group mb-0">
                                         <textarea class="form-control txtarea" type="textarea" name="specialInstruction" style="height: 149px;"></textarea>
                                     </div>
                                 </div>
+
+
+
                                 <input type="hidden" id="freq" name="freq" value="Just Once">
-                                <div class="col-md-6 col-12">
-                                    <h3 class="p-2 d-flex d-md-none d-block">Frequency</h3>
+                                <div class="col-md-12 col-12">
+                                    <h3 class="font-18-24 fw-medium deep-black mb-16">Frequency</h3>
                                     <div class="row">
                                         <div class="col-lg-6 col-md-6 col-sm-12">
                                             <div class="card card-icon-bg card-icon-bg-primary o-hidden mb-4 selectable active" data-group="freq" data-value="Just Once">
@@ -507,23 +509,27 @@
                     <div class="col-md-12 px-3">
                         <div class="card-body p-md-2 p-0">
                             <div class="col-12 pb-2">
-                                <div class="row pt-2">
+                                <div class="row ">
                                     @foreach($categories as $index => $category)
                                     @php
                                     $paddingClass = ($index % 2 == 0) ? 'pl-md-0' : 'pr-md-0';
                                     @endphp
-                                    <div class="col-md-6 col-sm-6 {{ $paddingClass }}">
-                                        <div class="card card-icon-bg o-hidden mb-4">
+                                    <div class="col-md-12 col-sm-6 p-1 {{ $paddingClass }}">
+                                        <div class="card card-icon-bg o-hidden ">
                                             <div class="card-body d-flex align-items-center">
                                                 <!-- Circular Icon -->
                                                 <div class="icon-circle">
-                                                    <i class="{{ $category['icon'] }}"></i>
+                                                    <div class="icon-circle">
+                                                        <img src="{{ $category['image'] }}"
+                                                            alt="{{ $category['name'] }}"
+                                                            width="48" height="48">
+                                                    </div>
                                                 </div>
                                                 <div class="ml-3 flex-grow-1">
                                                     <!-- Category Details -->
                                                     <p class="text-24 font-weight-bold line-height-1 mb-1">{{ $category['name'] }}</p>
 
-                                                    <div class="d-flex flex-wrap mb-2 p-2">
+                                                    <div class="d-flex flex-wrap  p-2">
                                                         <span class="bdg1 me-1 p-1">WASH</span>
                                                         <span class="bdg1 me-1 p-1">TUMBLE-DRY</span>
                                                         <span class="bdg1 p-1">IN A BAG</span>
@@ -554,8 +560,8 @@
                     <div class="col-md-12 px-3">
                         <div class="card-body">
                             <div class="row pb-2" style="border-bottom: dashed 1px;">
-                                <h3 class="col-md-6 pb-2 d-flex">User Information</h3>
-                                <h4 class="col-6 pb-2 d-md-block d-none">Payment Method</h4>
+                                <h3 class="col-md-6 font-18-24 fw-medium deep-black mb-16">User Information</h3>
+                                <h4 class="col-6  d-md-block d-none font-18-24 fw-medium deep-black mb-16">Payment Method</h4>
                                 <div class="col-md-6 col-12" style="border-right: dashed 1px black;">
                                     <div class="form-group mb-3">
                                         <label>Customer Name</label>
@@ -616,7 +622,7 @@
         </div>
 
         <!-- Right Column -->
-        <div class="col-md-4 mt-3 mt-md-0">
+        <div class="col-12 col-md-4 offset-lg-1 d-none d-md-block">
             <div class="card">
                 <div class="card-body p-0">
                     <button id="next-step" class="next-button" disabled>NEXT</button>
@@ -624,7 +630,7 @@
                     <!-- Progress Steps -->
                     <div class="progress-step" data-value="1">
                         <div class="d-flex align-items-center">
-                            <svg width="20" height="20" fill="currentColor" viewBox="0 0 16 16">
+                            <svg width="20" height="20" fill="#2fccc0" viewBox="0 0 16 16">
                                 <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-3.97-3.03a.75.75 0 0 0-1.08.022L7.477 9.417 5.384 7.323a.75.75 0 0 0-1.06 1.06L6.97 11.03a.75.75 0 0 0 1.079-.02l3.992-4.99a.75.75 0 0 0-.01-1.05z" />
                             </svg>
                             <span>Address</span>
@@ -904,12 +910,12 @@
 
         // Change the circle color
         const circle = addressStep.querySelector('.d-flex svg');
-        circle.setAttribute('fill', '#2B2F7B'); // Update to the desired color
+        circle.setAttribute('fill', '#2fccc0'); // Update to the desired color
 
         // Change the Next button color
         const nextButton = document.querySelector('.next-button');
-        nextButton.style.backgroundColor = '#2B2F7B'; // Update button color
-        nextButton.style.borderColor = '#2B2F7B'; // Update button border color
+        nextButton.style.backgroundColor = '#0890f1'; // Update button color
+        nextButton.style.borderColor = '#0890f1'; // Update button border color
 
         // Enable the button
         nextButton.disabled = false; // Enable the Next button
@@ -1026,12 +1032,8 @@
                     },
                     success: function(response) {
                         console.log('Success:', response);
-                        let bookingId = response.bookingId;
-                        if (bookingId) {
-                            window.location.href = 'thank_you/' + bookingId;
-                        } else {
-                            console.error('Booking ID not found in response');
-                        }
+                            window.location.href = '/thank-you';
+                        
                     },
                     error: function(xhr, status, error) {
                         // Handle any errors during the AJAX request
@@ -1060,8 +1062,8 @@
                     deliveryStep.classList.add('selected');
 
                     // Change the color of the circles
-                    collectionStep.querySelector('svg path').setAttribute('fill', '#2B2F7B');
-                    deliveryStep.querySelector('svg path').setAttribute('fill', '#2B2F7B');
+                    collectionStep.querySelector('svg path').setAttribute('fill', '#2fccc0');
+                    deliveryStep.querySelector('svg path').setAttribute('fill', '#2fccc0');
                 }
             }
 
@@ -1086,7 +1088,7 @@
                 const progressSteps = document.querySelectorAll('.progress-step');
                 const thirdStepCircle = progressSteps[3]?.querySelector('svg path');
 
-                if (thirdStepCircle && thirdStepCircle.getAttribute('fill') === '#2B2F7B') {
+                if (thirdStepCircle && thirdStepCircle.getAttribute('fill') === '#2fccc0') {
                     $('#next-step').text('Submit');
 
                     const laststep = document.querySelectorAll('.progress-step')[4]; // Adjust the index for the step
@@ -1094,7 +1096,7 @@
 
                     const fourthStepCircle = progressSteps[4]?.querySelector('svg path');
                     if (fourthStepCircle) {
-                        fourthStepCircle.setAttribute('fill', '#2B2F7B');
+                        fourthStepCircle.setAttribute('fill', '#2fccc0');
                     }
                 } else {
                     alert('Please select at least one item before proceeding.');
@@ -1385,7 +1387,7 @@
             // Change the color of the circle for services time
             const servicesCircle = servicesStep.querySelector('svg path'); // Target the path inside the SVG
 
-            servicesCircle.setAttribute('fill', '#2B2F7B'); // Update to desired color
+            servicesCircle.setAttribute('fill', '#2fccc0'); // Update to desired color
 
             // Save the services array to the local storage
             var services = formatServices();

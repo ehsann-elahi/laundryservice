@@ -4,12 +4,20 @@
 @section('description','Laundry near me in Dubai & Abu Dhabi, Laundry near me in Khalifa City, Laundry near me in Musaffah, Laundry near me Al Reff, Laundry Near me Yas Island')
 @section('og:title', 'Laundry near me')
 @section('og:description','Laundry near me in Dubai & Abu Dhabi, Laundry near me in Khalifa City, Laundry near me in Musaffah, Laundry near me Al Reff, Laundry Near me Yas Island')
-<meta property="og:url" content="{{ url()->current() }}"/>
-<link rel="canonical" href="{{ url()->current() }}" />
+@section('canonical', url()->current())
 
+@section('styles')
+<style>
+     .color-change {
+    filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
+}
+
+</style>
+@endsection
 @section('content')
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">BOOK NOW DRY CLEAN & LAUNDRY SERVICE.</h1>
@@ -22,14 +30,14 @@
     </div>
 </div>
 
-<div class="container min-vh-100 d-flex align-items-center">
+<div class="container min-vh-80 d-flex align-items-center">
 		<div class="row text-center">
-			<div class="col-12 col-md-8 col-lg-6">
+			<div class="col-12 col-md-12 col-lg-12">
 				<div class="content-wrapper py-5">
 					<h2 class="display-4 fw-bold mb-4" style="line-height: 1.2;">
-						Best Dry Clean & Laundry Service {{$cleanName}}
+						Best Dry Clean & Laundry Service <br>{{$cleanName}}
 					</h2>
-					<p class="lead mb-4">
+					<p class="lead mb-2">
 						We are the best dry cleaner in {{$cleanName}} because we offer the best family care laundry packages. They are cheaper, quite hassle-free, full of your bag without any restrictions and you will not pay per piece but by weight (Per KG).
 					</p>
 				</div>
@@ -37,8 +45,8 @@
 		</div>
 	</div>
 
- <section class="space mt-5">
-        <div class="container mt-5">
+ <section class="space">
+        <div class="container">
             <div class="title-area text-center">
                 <span class="sub-title">What We Offer</span>
                 <h2 class="sec-title">Popular 6 KG Packages</h2>
@@ -62,7 +70,7 @@
                                     </ul>
                                 </div>
                                 <div class="form-btn col-6 mt-4"><button class="th-btn btn-fw"><a
-                                            href="{{ url($package->slug) }}" class="text-white"> Schedule Pickup Now
+                                            href="{{ route('booking-form') }}" class="text-white"> Schedule Pickup Now
                                         </a></button>
                                 </div>
                             </div>

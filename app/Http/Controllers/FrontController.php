@@ -72,7 +72,7 @@ class FrontController extends Controller
 
     public function dubai()
     {
-            
+
         $packages = Package::where('weight', '6-Kg')->get();
         $allpackages = Package::where('weight', '!=', '6-Kg')->get();
         return view('front.dubai', compact('packages', 'allpackages'));
@@ -85,26 +85,26 @@ class FrontController extends Controller
     }
 
 
-public function shop(Request $request)
-{
-    $categories = ShopCategory::all();
+    public function shop(Request $request)
+    {
+        $categories = ShopCategory::all();
 
-    if ($request->ajax()) {
-        $products = Product::with('shopCategory')
-            ->when($request->category, function ($query) use ($request) {
-                return $query->where('shop_category_id', $request->category);
-            })->get();
+        if ($request->ajax()) {
+            $products = Product::with('shopCategory')
+                ->when($request->category, function ($query) use ($request) {
+                    return $query->where('shop_category_id', $request->category);
+                })->get();
 
-        $html = '';
+            $html = '';
 
-        foreach ($products as $product) {
-            $image = filter_var($product->main_image, FILTER_VALIDATE_URL)
-                ? $product->main_image
-                : asset('/assets/upload/shop/' . $product->main_image);
+            foreach ($products as $product) {
+                $image = filter_var($product->main_image, FILTER_VALIDATE_URL)
+                    ? $product->main_image
+                    : asset('/assets/upload/shop/' . $product->main_image);
 
-            $productUrl = route('product.detail', ['slug' => Str::slug($product->title)]);
+                $productUrl = route('product.detail', ['slug' => Str::slug($product->title)]);
 
-            $html .= '
+                $html .= '
                 <div class="col-xl-3 col-lg-4 col-sm-6 mb-4">
                     <div class="th-product product-grid">
                         <a href="' . $productUrl . '">
@@ -118,16 +118,16 @@ public function shop(Request $request)
                             <h3 class="product-title">
                                 <a href="' . $productUrl . '">' . $product->title . '</a>
                             </h3>
-                            <span class="count" style="color: #2B2F7B; font-weight: bold;">' . $product->price . '
+                            <span class="count" style="color: #0890F1; font-weight: bold;">' . $product->price . '
                                 <img class="aed2" style="width: 14px; vertical-align: middle;">';
 
-            if ($product->old_price) {
-                $html .= '<span class="old-price" style="margin-left: 5px;">' . $product->old_price . '
+                if ($product->old_price) {
+                    $html .= '<span class="old-price" style="margin-left: 5px;">' . $product->old_price . '
                               <img class="aed2" style="width: 14px; vertical-align: middle;">
                           </span>';
-            }
+                }
 
-            $html .= '</span>
+                $html .= '</span>
                       <a class="icon-btn blue-icon addcart" data-id="' . $product->id . '">
                           <i class="far fa-cart-plus"></i>
                       </a>
@@ -139,14 +139,14 @@ public function shop(Request $request)
                     </div>
                   </div>
                 </div>';
+            }
+
+            return response()->json($html);
         }
 
-        return response()->json($html);
+        $products = Product::with('shopCategory')->get();
+        return view('front.shop', compact('products', 'categories'));
     }
-
-    $products = Product::with('shopCategory')->get();
-    return view('front.shop', compact('products', 'categories'));
-}
 
 
 
@@ -154,6 +154,7 @@ public function shop(Request $request)
     public function itemDetail($slug)
     {
         $formattedTitle = str_replace('-', ' ', $slug);
+        
 
         $product = Product::get()->filter(function ($item) use ($slug) {
             return Str::slug($item->title) === $slug;
@@ -173,24 +174,25 @@ public function shop(Request $request)
         return view('front.price_abuDhabi', compact('categories'));
     }
 
-public function price_dubai()
-{
-    $categories = DB::table('price_list_dubai')
-        ->select('category')
-        ->groupBy('category')
-        ->get();
+    public function price_dubai()
+    {
+        $categories = DB::table('price_list_dubai')
+            ->select('category')
+            ->groupBy('category')
+            ->get();
 
-    return view('front.price_dubai', compact('categories'));
-}
+        return view('front.price_dubai', compact('categories'));
+    }
 
 
     public function price_ajman()
-    {   $categories = DB::table('price_list_ajman_&_sharjah')
-        ->select('category')
-        ->groupBy('category')
-        ->get();
+    {
+        $categories = DB::table('price_list_ajman_&_sharjah')
+            ->select('category')
+            ->groupBy('category')
+            ->get();
 
-    return view('front.price_ajman', compact('categories'));
+        return view('front.price_ajman', compact('categories'));
     }
 
     public function blog()
@@ -231,28 +233,28 @@ public function price_dubai()
         return response()->json(['status' => 'success']);
     }
 
- public function viewCart()
-{
-    $cart = session()->get('cart', []);
-    $cartItems = [];
-    $subtotal = 0;
+    public function viewCart()
+    {
+        $cart = session()->get('cart', []);
+        $cartItems = [];
+        $subtotal = 0;
 
-    foreach ($cart as $id => $item) {
-        // Add the item ID to each item
-        $item['id'] = $id;
+        foreach ($cart as $id => $item) {
+            // Add the item ID to each item
+            $item['id'] = $id;
 
-        // Push to the new cartItems array
-        $cartItems[] = $item;
+            // Push to the new cartItems array
+            $cartItems[] = $item;
 
-        // Calculate subtotal
-        $subtotal += $item['price'] * $item['quantity'];
+            // Calculate subtotal
+            $subtotal += $item['price'] * $item['quantity'];
+        }
+
+        $shipping = 'Free';
+        $total = $subtotal;
+
+        return view('front.viewCart', compact('cartItems', 'subtotal', 'shipping', 'total'));
     }
-
-    $shipping = 'Free';
-    $total = $subtotal;
-
-    return view('front.viewCart', compact('cartItems', 'subtotal', 'shipping', 'total'));
-}
 
 
     public function cartUpdate(Request $request)
@@ -303,9 +305,9 @@ public function price_dubai()
         return response()->json([]);
     }
 
-    public function thankYou($id)
+    public function thankYou()
     {
-        return view('front.thank_you', compact('id'));
+        return view('front.thank_you');
     }
 
     public function returnPolicy()
@@ -412,7 +414,12 @@ public function price_dubai()
 
         return view('front.laundryDetails', compact('packages', 'cleanName'));
     }
-    public function linenrental(){
+    public function linenrental()
+    {
         return view('front.linenrental');
+    }
+    public function partner()
+    {
+        return view('front.partner');
     }
 }

@@ -3,9 +3,7 @@
 @section('description','Best laundry &a dry cleaning service in Dubai &amp; Abu Dhabi? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
 @section('og:title', 'Blog for Laundry & Dry Cleaning Service')
 @section('og:description','Best laundry &amp; dry cleaning service in Dubai &amp; Abu Dhabi? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
-@section('og:url', 'https://www.laundryservice.ae/blog')
-@section('canonical', 'https://www.laundryservice.ae/blog')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .blog-single {
@@ -32,7 +30,7 @@
 @endsection
  
 @section('content')
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog-detail.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Blogs</h1>

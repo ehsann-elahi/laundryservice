@@ -21,22 +21,22 @@ class BookingController extends Controller
             [
                 'name' => 'Wash',
                 
-                'icon' => 'fa-solid fa-tshirt fa-3x',
+               'image' => asset('assets/front/icons/wash.png'),
             ],
             [
                 'name' => 'Pressing',
                 
-                'icon' => 'fa-solid fa-wind fa-3x',
+                'image' => asset('assets/front/icons/ironing.png'),
             ],
             [
                 'name' => 'Wash & Press',
                 
-                'icon' => 'fa-solid fa-water fa-3x',
+                'image' => asset('assets/front/icons/clean_and_iron.png'),
             ],
             [
                 'name' => 'Dry Clean',
                 
-                'icon' => 'fa-solid fa-spray-can fa-3x',
+                'image' => asset('assets/front/icons/duvets_and_bulky_items.png'),
             ],
         ];
 
@@ -208,6 +208,7 @@ class BookingController extends Controller
         $subCategory = $request->input('subCategory');  // Subcategory (Men, Women, etc.)
 
         // Start with the Service model query
+        
         $query = Service::query();
 
         // Filter by main category prices

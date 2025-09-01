@@ -14,14 +14,12 @@
 @section('description','Get the best Laundry & dry cleaning service in Dubai at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, Kg laundry & urgent SUNCITY LAUNDRY LLCs, online booking. We do the ironing, steam pressing, Wash & fold. The laundromat is near Uptown, Jumeirah, Arabian Ranches, Liwan, Academic city.')
 @section('og:title', 'Best Laundry & Dry Cleaning Service in Dubai | Book Online')
 @section('og:description','Get the best Laundry & dry cleaning service in Dubai at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, Kg laundry & urgent SUNCITY LAUNDRY LLCs, online booking. We do the ironing, steam pressing, Wash & fold. The laundromat is near Uptown, Jumeirah, Arabian Ranches, Liwan, Academic city.')
-@section('og:url', 'https://www.laundryservice.ae/linen-rental')
-@section('canonical', 'https://www.laundryservice.ae/linen-rental')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .color-change {
-        filter: invert(63%) sepia(91%) saturate(700%) hue-rotate(359deg) brightness(101%) contrast(102%);
-    }
+    filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
+}
 
     .price li {
         list-style-type: disc;
@@ -75,7 +73,7 @@
     }
 
     .secondary-color {
-        color: #2B2F7B;
+        color: #0890F1;
         font-weight: 600;
     }
 
@@ -93,7 +91,7 @@
     .quick-support-btn {
         display: inline-block;
         padding: 0 30px;
-        border: 1px solid #2B2F7B;
+        border: 1px solid #0890F1;
         line-height: 52px;
         /* Button color */
         color: #1F2C5D;
@@ -107,7 +105,7 @@
 
     .quick-support-btn:hover {
         background-color: #5EC5CE;
-        border: 1px solid #2B2F7B;
+        border: 1px solid #0890F1;
         color: white;
         /* Darker color on hover */
     }
@@ -206,7 +204,7 @@
     }
 
     .theme-button {
-        background-color: #2B2F7B;
+        background-color: #0890F1;
         color: #fff;
     }
 
@@ -248,7 +246,7 @@
 
 
     .feature-card {
-        background-color: #2B2F7B;
+        background-color: #0890F1;
         border-radius: 16px;
         color: white !important;
         transition: all 0.3s ease-in-out;
@@ -258,7 +256,7 @@
     }
 
     .feature-card:hover {
-        background-color: #f7941f;
+        background-color: #FFD06D;
         color: white;
     }
 
@@ -287,7 +285,7 @@
 @endsection
 @section('content')
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/hotelrental.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title text-white" style="font-size: 46px;">PROFESSIONAL LINEN RENTAL SERVICES <br> FOR YOU</h1>
@@ -381,7 +379,7 @@
             <div class="col-lg-6">
                 <div class="title-area text-center text-lg-start">
                     <span class="sub-title style1">Beneficial</span>
-                    <h2 class="sec-title">Benefits of Partnering with The LaundryService.ae</h2>
+                    <h2 class="sec-title">Benefits of Partnering with The Suncity Laundry LLC</h2>
                 </div>
             </div>
             <div class="col-lg-6 d-none d-lg-block">
@@ -394,8 +392,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Comprehensive Linen Rental Services</strong></h5>
@@ -408,8 +406,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Cost-Effective Linen Solutions</strong></h5>
@@ -422,8 +420,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Convenient And Reliable Delivery</strong></h5>
@@ -436,8 +434,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>High-Quality And Hygienic Linens</strong></h5>
@@ -457,8 +455,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Flexible Rental Plans Tailored For You</strong></h5>
@@ -471,11 +469,11 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
-                    <h5 class="text-white"><strong>Environmentally Friendly Practices</strong></h5>
+                   <a href="https://laundryservice.ae/enviornment-health-safety-policy"> <h5 class="text-white"><strong>Environmentally Friendly Practices</strong></h5></a>
                     <p>At SUNCITY LAUNDRY LLC we take responsibility for our impact on the planet. That is why we have integrated eco conscious processes into every part of our service from using energy efficient machines to reducing water waste and choosing biodegradable detergents. Our commitment to sustainability means you get fresh high quality linens without compromising the environment.</p>
                 </div>
             </div>
@@ -485,8 +483,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Fully Insured And Compliant Service</strong></h5>
@@ -499,8 +497,8 @@
                 <div class="feature-card shadow-sm">
                     <div class="icon-box">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
-                            <circle cx="12" cy="12" r="10" stroke="#f7941f" stroke-width="2" fill="white" />
-                            <path d="M8 12l2 2 4-4" stroke="#f7941f" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
+                            <circle cx="12" cy="12" r="10" stroke="#FFD06D" stroke-width="2" fill="white" />
+                            <path d="M8 12l2 2 4-4" stroke="#FFD06D" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round" />
                         </svg>
                     </div>
                     <h5 class="text-white"><strong>Local Availability For Quick Service</strong></h5>

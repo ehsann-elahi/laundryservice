@@ -14,9 +14,7 @@
 @section('description','Career Opportunities Jobs are available for experienced laundry workers, laundry pick-up & delivery drivers, pressmen, and wash man & laundry supervisors. Now you can apply online for a laundry job, explore a range of available positions & upload your documents in quite easy & simple steps.')
 @section('og:title', 'Jobs in Laundry| Apply Online for Jobs in Laundry | SunCity Laundry')
 @section('og:description','Career Opportunities Jobs are available for experienced laundry workers, laundry pick-up & delivery drivers, pressmen, and wash man & laundry supervisors. Now you can apply online for a laundry job, explore a range of available positions & upload your documents in quite easy & simple steps.')
-@section('og:url', 'https://www.laundryservice.ae/jobs')
-@section('canonical', 'https://www.laundryservice.ae/jobs')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
 	.price li {

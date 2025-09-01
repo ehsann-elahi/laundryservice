@@ -4,11 +4,9 @@
 @section('description','Your clothes are protected with us! We have adopted a very transparent policy to facilitate our valued launder customers in case of any undesired situation. Our Laundry staff is trained & having experience of more than 12 years.')
 @section('og:title', 'Laundry Service Return Policy | Dubai & Abu Dhabi')
 @section('og:description','Your clothes are protected with us! We have adopted a very transparent policy to facilitate our valued launder customers in case of any undesired situation. Our Laundry staff is trained & having experience of more than 12 years.')
-@section('og:url', 'https://www.laundryservice.ae/return-policy')
-@section('canonical', 'https://www.laundryservice.ae/return-policy')
-
+@section('canonical', url()->current())
 @section('content')
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/ehs.jpg')}}">
         <div class="container">
             <div class="breadcumb-content">
                 <h1 class="breadcumb-title">Term & Conditions</h1>
@@ -101,4 +99,88 @@
         </div>
     </section>
 
+    <div class="space overflow-hidden" style="margin-top: -100px" id="faq-sec">
+    <div class="container">
+        <div class="row align-items-end">
+            <div class="col-xl-6 text-center text-xl-start align-self-center">
+                <div class="">
+                    <div class="title-area text-center text-xl-start">
+                        <span class="sub-title style1">FAQ</span>
+                        <h2 class="sec-title">Frequently Asked Have Any Questions</h2>
+                    </div>
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-1">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
+                                    Services Do You Offer?</button>
+                            </div>
+                            <div id="collapse-1" class="accordion-collapse collapse show"
+                                aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We value your feedback! Let us know about your experience
+                                        and if there's anything else we can do to make your laundry service even
+                                        better. We're always here to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-2">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
+                                    Do You Have Certified Technicians?
+                                </button>
+                            </div>
+                            <div id="collapse-2" class="accordion-collapse collapse"
+                                aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We value your feedback! Let us know about your experience
+                                        and if there's anything else we can do to make your laundry service even
+                                        better. We're always here to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-3">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
+                                    Can You Provide a Customized Service Plan?
+                                </button>
+                            </div>
+                            <div id="collapse-3" class="accordion-collapse collapse"
+                                aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We value your feedback! Let us know about your experience
+                                        and if there's anything else we can do to make your laundry service even
+                                        better. We're always here to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-card">
+                            <div class="accordion-header" id="collapse-item-4">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
+                                    What is Your Pricing Structure?
+                                </button>
+                            </div>
+                            <div id="collapse-4" class="accordion-collapse collapse"
+                                aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    <p class="faq-text">We value your feedback! Let us know about your experience
+                                        and if there's anything else we can do to make your laundry service even
+                                        better. We're always here to assist you.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-6">
+                <div class="faq-img1 ps-xl-4">
+                    <div class="img1"><img loading="lazy" src="{{asset('/assets/front/img/normal/faq_1_1.png')}}" alt="faq" /></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 @endsection

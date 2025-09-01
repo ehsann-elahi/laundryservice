@@ -1,5 +1,8 @@
 User-agent: *
 Allow: /
+Disallow: /admin/
+
+# Googlebot rule
 User-agent: Googlebot
 Disallow: *?lightbox=
 

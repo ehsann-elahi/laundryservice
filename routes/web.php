@@ -7,6 +7,7 @@ use App\Http\Controllers\BookingController;
 use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PaymentController;
+use App\Http\Controllers\PartnerController;
 
 /*
 |--------------------------------------------------------------------------
@@ -36,7 +37,7 @@ Route::get('/blog', [FrontController::class, 'blog'])->name('blog');
 Route::get('/blog/{slug}', [FrontController::class, 'blogShow'])->name('blog-single');
 
 Route::get('/buy-laundry-products', [FrontController::class, 'shop'])->name('shop');
-Route::get('/product-page', [FrontController::class, 'shop'])->name('shop');
+
 Route::get('/product-page/{slug}', [FrontController::class, 'itemDetail'])->name('product.detail');
 
 Route::get('/laundry-price-list-abu-dhabi', [FrontController::class, 'price_abuDhabi'])->name('price_abuDhabi');
@@ -58,7 +59,7 @@ Route::post('/get-dateTime', [BookingController::class, 'getDateTime']);
 Route::post('/fetch-services', [BookingController::class, 'fetchServicesByCategory']);
 Route::post('/create-order', [BookingController::class, 'bookOrder'])->name('order.create');
 
-Route::get('/thank_you/{id}', [FrontController::class, 'thankYou'])->name('thankYou');
+Route::get('/thank-you', [FrontController::class, 'thankYou'])->name('thankYou');
 Route::get('/return-policy', [FrontController::class, 'returnPolicy'])->name('returnPolicy');
 Route::get('/laundry-faqs', [FrontController::class, 'faq'])->name('faq');
 Route::get('/enviornment-health-safety-policy', [FrontController::class, 'EHSPolicy'])->name('EHSPolicy');
@@ -81,7 +82,10 @@ Route::get('/cart/sidebar', function () {
 })->name('cart.sidebar');
 Route::post('/remove-from-cart', [CartController::class, 'removeFromCart'])->name('remove.from.cart');
 Route::get('/linen-rental', [FrontController::class, 'linenrental'])->name('linen.rental');
+Route::get('/laundry-partner', [FrontController::class, 'partner'])->name('partner');
 
 // payment route
 Route::get('/pay', [PaymentController::class, 'pay'])->name('payment.pay');
 Route::get('/payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
+Route::post('/partners/ajax', [PartnerController::class, 'ajaxStore'])->name('partners.ajaxStore');
+

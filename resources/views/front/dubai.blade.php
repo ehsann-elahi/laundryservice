@@ -1,26 +1,13 @@
-@push('footer')
-@if (session('message'))
-<script>
-	setTimeout(function() {
-		let msg = document.getElementById('msg');
-		msg.style.display = 'none';
-	}, 9000);
-</script>
-@endif
-
-@endpush
 @extends('layouts.app')
 @section('title', 'Best Laundry & Dry Cleaning Service in Dubai | Book Online')
 @section('description','Get the best Laundry & dry cleaning service in Dubai at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, Kg laundry & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. The laundromat is near Uptown, Jumeirah, Arabian Ranches, Liwan, Academic city.')
 @section('og:title', 'Best Laundry & Dry Cleaning Service in Dubai | Book Online')
 @section('og:description','Get the best Laundry & dry cleaning service in Dubai at the cheapest price with free laundry pickup & delivery service. We also provide same-day laundry, Kg laundry & urgent laundry services, online booking. We do the ironing, steam pressing, Wash & fold. The laundromat is near Uptown, Jumeirah, Arabian Ranches, Liwan, Academic city.')
-@section('og:url', 'https://www.laundryservice.ae/dubai')
-@section('canonical', 'https://www.laundryservice.ae/dubai')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .color-change {
-        filter: invert(63%) sepia(91%) saturate(700%) hue-rotate(359deg) brightness(101%) contrast(102%);
+        filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
     }
 
     .price li {
@@ -75,7 +62,7 @@
     }
 
     .secondary-color {
-        color: #2B2F7B;
+        color: #0890F1;
         font-weight: 600;
     }
 
@@ -90,27 +77,54 @@
         gap: 20px;
     }
 
-    .quick-support-btn {
+.quick-support-btn {
         display: inline-block;
         padding: 0 30px;
-        border: 1px solid #2B2F7B;
+        border: 1px solid #0890F1;
         line-height: 52px;
         /* Button color */
-        color: #1F2C5D;
+        color: white;
         /* Text color */
         text-decoration: none;
+        background-color: #0890F1;
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s, color 0.3s;
         text-align: center;
+        border-radius: 20px;
     }
 
     .quick-support-btn:hover {
-        background-color: #5EC5CE;
-        border: 1px solid #2B2F7B;
+        background-color: #FFD06D;
+        border: 1px solid #FFD06D;
         color: white;
         /* Darker color on hover */
     }
+.quick-support-btn1 {
+        display: inline-block;
+        padding: 0 50px;
+        border: 1px solid #FFD06D;
+        line-height: 52px;
+        /* Button color */
+        color: white;
+        /* Text color */
+        text-decoration: none;
+        background-color: #FFD06D;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .quick-support-btn1:hover {
+        background-color: #0890F1;
+        border: 1px solid #0890F1;
+        color: white;
+        /* Darker color on hover */
+    }
+
+
 
     .dubai_para {
         font-size: 20px !important;
@@ -118,7 +132,7 @@
     }
 
     .change_text_para {
-        background-color: #1F2C5D;
+        background-color: #FFD06D;
         color: white;
         font-size: 28px;
         opacity: 1;
@@ -206,22 +220,22 @@
     }
 
     .theme-button {
-        background-color: #2B2F7B;
+        background-color: #0890F1;
         color: #fff;
     }
 
-   
-  img.aed2{
-    height:0.8em;
-    width:auto;
-    vertical-align: 0.01em;
-    content: url("data:image/svg+xml; base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgODcwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI4NzAiPgoJPHRpdGxlPkxheWVyIGNvcHk8L3RpdGxlPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICMyQjJGN0IgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSIgY2xhc3M9InMwIiBkPSJtODguMyAxYzAuNCAwLjYgMi42IDMuMyA0LjcgNS45IDE1LjMgMTguMiAyNi44IDQ3LjggMzMgODUuMSA0LjEgMjQuNSA0LjMgMzIuMiA0LjMgMTI1LjZ2ODdoLTQxLjhjLTM4LjIgMC00Mi42LTAuMi01MC4xLTEuNy0xMS44LTIuNS0yNC05LjItMzIuMi0xNy44LTYuNS02LjktNi4zLTcuMy01LjkgMTMuNiAwLjUgMTcuMyAwLjcgMTkuMiAzLjIgMjguNiA0IDE0LjkgOS41IDI2IDE3LjggMzUuOSAxMS4zIDEzLjYgMjIuOCAyMS4yIDM5LjIgMjYuMyAzLjUgMSAxMC45IDEuNCAzNy4xIDEuNmwzMi43IDAuNXY0My4zIDQzLjRsLTQ2LjEtMC4zLTQ2LjMtMC4zLTgtMy4yYy05LjUtMy44LTEzLjgtNi42LTIzLjEtMTQuOWwtNi44LTYuMSAwLjQgMTkuMWMwLjUgMTcuNyAwLjYgMTkuNyAzLjEgMjguNyA4LjcgMzEuOCAyOS43IDU0LjUgNTcuNCA2MS45IDYuOSAxLjkgOS42IDIgMzguNSAyLjRsMzAuOSAwLjR2ODkuNmMwIDU0LjEtMC4zIDk0LTAuOCAxMDAuOC0wLjUgNi4yLTIuMSAxNy44LTMuNSAyNS45LTYuNSAzNy4zLTE4LjIgNjUuNC0zNSA4My42bC0zLjQgMy43aDE2OS4xYzEwMS4xIDAgMTc2LjctMC40IDE4Ny44LTAuOSAxOS41LTEgNjMtNS4zIDcyLjgtNy40IDMuMS0wLjYgOC45LTEuNSAxMi43LTIuMSA4LjEtMS4yIDIxLjUtNCA0MC44LTguOSAyNy4yLTYuOCA1Mi0xNS4zIDc2LjMtMjYuMSA3LjYtMy40IDI5LjQtMTQuNSAzNS4yLTE4IDMuMS0xLjggNi44LTQgOC4yLTQuNyAzLjktMi4xIDEwLjQtNi4zIDE5LjktMTMuMSA0LjctMy40IDkuNC02LjcgMTAuNC03LjQgNC4yLTIuOCAxOC43LTE0LjkgMjUuMy0yMSAyNS4xLTIzLjEgNDYuMS00OC44IDYyLjQtNzYuMyAyLjMtNCA1LjMtOSA2LjYtMTEuMSAzLjMtNS42IDE2LjktMzMuNiAxOC4yLTM3LjggMC42LTEuOSAxLjQtMy45IDEuOC00LjMgMi42LTMuNCAxNy42LTUwLjYgMTkuNC02MC45IDAuNi0zLjMgMC45LTMuOCAzLjQtNC4zIDEuNi0wLjMgMjQuOS0wLjMgNTEuOC0wLjEgNTMuOCAwLjQgNTMuOCAwLjQgNjUuNyA1LjkgNi43IDMuMSA4LjcgNC41IDE2LjEgMTEuMiA5LjcgOC43IDguOCAxMC4xIDguMi0xMS43LTAuNC0xMi44LTAuOS0yMC43LTEuOC0yMy45LTMuNC0xMi4zLTQuMi0xNC45LTcuMi0yMS4xLTkuOC0yMS40LTI2LjItMzYuNy00Ny4yLTQ0bC04LjItMy0zMy40LTAuNC0zMy4zLTAuNSAwLjQtMTEuN2MwLjQtMTUuNCAwLjQtNDUuOS0wLjEtNjEuNmwtMC40LTEyLjYgNDQuNi0wLjJjMzguMi0wLjIgNDUuMyAwIDQ5LjUgMS4xIDEyLjYgMy41IDIxLjEgOC4zIDMxLjUgMTcuOGw1LjggNS40di0xNC44YzAtMTcuNi0wLjktMjUuNC00LjUtMzctNy4xLTIzLjUtMjEuMS00MS00MS4xLTUxLjgtMTMtNy0xMy44LTcuMi01OC41LTcuNS0yNi4yLTAuMi0zOS45LTAuNi00MC42LTEuMi0wLjYtMC42LTEuMS0xLjYtMS4xLTIuNCAwLTAuOC0xLjUtNy4xLTMuNS0xMy45LTIzLjQtODIuNy02Ny4xLTE0OC40LTEzMS0xOTcuMS04LjctNi43LTMwLTIwLjgtMzguNi0yNS42LTMuMy0xLjktNi45LTMuOS03LjgtNC41LTQuMi0yLjMtMjguMy0xNC4xLTM0LjMtMTYuNi0zLjYtMS42LTguMy0zLjYtMTAuNC00LjQtMzUuMy0xNS4zLTk0LjUtMjkuOC0xMzkuNy0zNC4zLTcuNC0wLjctMTcuMi0xLjgtMjEuNy0yLjItMjAuNC0yLjMtNDguNy0yLjYtMjA5LjQtMi42LTEzNS44IDAtMTY5LjkgMC4zLTE2OS40IDF6bTMzMC43IDQzLjNjMzMuOCAyIDU0LjYgNC42IDc4LjkgMTAuNSA3NC4yIDE3LjYgMTI2LjQgNTQuOCAxNjQuMyAxMTcgMy41IDUuOCAxOC4zIDM2IDIwLjUgNDIuMSAxMC41IDI4LjMgMTUuNiA0NS4xIDIwLjEgNjcuMyAxLjEgNS40IDIuNiAxMi42IDMuMyAxNiAwLjcgMy4zIDEgNi40IDAuNyA2LjctMC41IDAuNC0xMDAuOSAwLjYtMjIzLjMgMC41bC0yMjIuNS0wLjItMC4zLTEyOC41Yy0wLjEtNzAuNiAwLTEyOS4zIDAuMy0xMzAuNGwwLjQtMS45aDcxLjFjMzkgMCA3OCAwLjQgODYuNSAwLjl6bTI5Ny41IDM1MC4zYzAuNyA0LjMgMC43IDc3LjMgMCA4MC45bC0wLjYgMi43LTIyNy41LTAuMi0yMjcuNC0wLjMtMC4yLTQyLjRjLTAuMi0yMy4zIDAtNDIuNyAwLjItNDMuMSAwLjMtMC41IDk3LjItMC44IDIyNy43LTAuOGgyMjcuMnptLTEwLjIgMTcxLjdjMC41IDEuNS0xLjkgMTMuOC02LjggMzMuOC01LjYgMjIuNS0xMy4yIDQ1LjItMjAuOSA2Mi0zLjggOC42LTEzLjMgMjcuMi0xNS42IDMwLjctMS4xIDEuNi00LjMgNi43LTcuMSAxMS4yLTE4IDI4LjItNDMuNyA1My45LTczIDcyLjktMTAuNyA2LjgtMzIuNyAxOC40LTM4LjYgMjAuMi0xLjIgMC4zLTIuNSAwLjktMyAxLjMtMC43IDAuNi05LjggNC0yMC40IDcuOC0xOS41IDYuOS01Ni42IDE0LjQtODYuNCAxNy41LTE5LjMgMS45LTIyLjQgMi05Ni43IDJoLTc2Ljl2LTEyOS43LTEyOS44bDIyMC45LTAuNGMxMjEuNS0wLjIgMjIxLjYtMC41IDIyMi40LTAuNyAwLjktMC4xIDEuOCAwLjUgMi4xIDEuMnoiLz4KPC9zdmc+");
-}
+
+    img.aed2 {
+        height: 0.8em;
+        width: auto;
+        vertical-align: 0.01em;
+        content: url("data:image/svg+xml; base64,PHN2ZyB2ZXJzaW9uPSIxLjIiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyIgdmlld0JveD0iMCAwIDEwMDAgODcwIiB3aWR0aD0iMTAwMCIgaGVpZ2h0PSI4NzAiPgoJPHRpdGxlPkxheWVyIGNvcHk8L3RpdGxlPgoJPHN0eWxlPgoJCS5zMCB7IGZpbGw6ICMwODkwRjEgfSAKCTwvc3R5bGU+Cgk8cGF0aCBpZD0iTGF5ZXIgY29weSIgY2xhc3M9InMwIiBkPSJtODguMyAxYzAuNCAwLjYgMi42IDMuMyA0LjcgNS45IDE1LjMgMTguMiAyNi44IDQ3LjggMzMgODUuMSA0LjEgMjQuNSA0LjMgMzIuMiA0LjMgMTI1LjZ2ODdoLTQxLjhjLTM4LjIgMC00Mi42LTAuMi01MC4xLTEuNy0xMS44LTIuNS0yNC05LjItMzIuMi0xNy44LTYuNS02LjktNi4zLTcuMy01LjkgMTMuNiAwLjUgMTcuMyAwLjcgMTkuMiAzLjIgMjguNiA0IDE0LjkgOS41IDI2IDE3LjggMzUuOSAxMS4zIDEzLjYgMjIuOCAyMS4yIDM5LjIgMjYuMyAzLjUgMSAxMC45IDEuNCAzNy4xIDEuNmwzMi43IDAuNXY0My4zIDQzLjRsLTQ2LjEtMC4zLTQ2LjMtMC4zLTgtMy4yYy05LjUtMy44LTEzLjgtNi42LTIzLjEtMTQuOWwtNi44LTYuMSAwLjQgMTkuMWMwLjUgMTcuNyAwLjYgMTkuNyAzLjEgMjguNyA4LjcgMzEuOCAyOS43IDU0LjUgNTcuNCA2MS45IDYuOSAxLjkgOS42IDIgMzguNSAyLjRsMzAuOSAwLjR2ODkuNmMwIDU0LjEtMC4zIDk0LTAuOCAxMDAuOC0wLjUgNi4yLTIuMSAxNy44LTMuNSAyNS45LTYuNSAzNy4zLTE4LjIgNjUuNC0zNSA4My42bC0zLjQgMy43aDE2OS4xYzEwMS4xIDAgMTc2LjctMC40IDE4Ny44LTAuOSAxOS41LTEgNjMtNS4zIDcyLjgtNy40IDMuMS0wLjYgOC45LTEuNSAxMi43LTIuMSA4LjEtMS4yIDIxLjUtNCA0MC44LTguOSAyNy4yLTYuOCA1Mi0xNS4zIDc2LjMtMjYuMSA3LjYtMy40IDI5LjQtMTQuNSAzNS4yLTE4IDMuMS0xLjggNi44LTQgOC4yLTQuNyAzLjktMi4xIDEwLjQtNi4zIDE5LjktMTMuMSA0LjctMy40IDkuNC02LjcgMTAuNC03LjQgNC4yLTIuOCAxOC43LTE0LjkgMjUuMy0yMSAyNS4xLTIzLjEgNDYuMS00OC44IDYyLjQtNzYuMyAyLjMtNCA1LjMtOSA2LjYtMTEuMSAzLjMtNS42IDE2LjktMzMuNiAxOC4yLTM3LjggMC42LTEuOSAxLjQtMy45IDEuOC00LjMgMi42LTMuNCAxNy42LTUwLjYgMTkuNC02MC45IDAuNi0zLjMgMC45LTMuOCAzLjQtNC4zIDEuNi0wLjMgMjQuOS0wLjMgNTEuOC0wLjEgNTMuOCAwLjQgNTMuOCAwLjQgNjUuNyA1LjkgNi43IDMuMSA4LjcgNC41IDE2LjEgMTEuMiA5LjcgOC43IDguOCAxMC4xIDguMi0xMS43LTAuNC0xMi44LTAuOS0yMC43LTEuOC0yMy45LTMuNC0xMi4zLTQuMi0xNC45LTcuMi0yMS4xLTkuOC0yMS40LTI2LjItMzYuNy00Ny4yLTQ0bC04LjItMy0zMy40LTAuNC0zMy4zLTAuNSAwLjQtMTEuN2MwLjQtMTUuNCAwLjQtNDUuOS0wLjEtNjEuNmwtMC40LTEyLjYgNDQuNi0wLjJjMzguMi0wLjIgNDUuMyAwIDQ5LjUgMS4xIDEyLjYgMy41IDIxLjEgOC4zIDMxLjUgMTcuOGw1LjggNS40di0xNC44YzAtMTcuNi0wLjktMjUuNC00LjUtMzctNy4xLTIzLjUtMjEuMS00MS00MS4xLTUxLjgtMTMtNy0xMy44LTcuMi01OC41LTcuNS0yNi4yLTAuMi0zOS45LTAuNi00MC42LTEuMi0wLjYtMC42LTEuMS0xLjYtMS4xLTIuNCAwLTAuOC0xLjUtNy4xLTMuNS0xMy45LTIzLjQtODIuNy02Ny4xLTE0OC40LTEzMS0xOTcuMS04LjctNi43LTMwLTIwLjgtMzguNi0yNS42LTMuMy0xLjktNi45LTMuOS03LjgtNC41LTQuMi0yLjMtMjguMy0xNC4xLTM0LjMtMTYuNi0zLjYtMS42LTguMy0zLjYtMTAuNC00LjQtMzUuMy0xNS4zLTk0LjUtMjkuOC0xMzkuNy0zNC4zLTcuNC0wLjctMTcuMi0xLjgtMjEuNy0yLjItMjAuNC0yLjMtNDguNy0yLjYtMjA5LjQtMi42LTEzNS44IDAtMTY5LjkgMC4zLTE2OS40IDF6bTMzMC43IDQzLjNjMzMuOCAyIDU0LjYgNC42IDc4LjkgMTAuNSA3NC4yIDE3LjYgMTI2LjQgNTQuOCAxNjQuMyAxMTcgMy41IDUuOCAxOC4zIDM2IDIwLjUgNDIuMSAxMC41IDI4LjMgMTUuNiA0NS4xIDIwLjEgNjcuMyAxLjEgNS40IDIuNiAxMi42IDMuMyAxNiAwLjcgMy4zIDEgNi40IDAuNyA2LjctMC41IDAuNC0xMDAuOSAwLjYtMjIzLjMgMC41bC0yMjIuNS0wLjItMC4zLTEyOC41Yy0wLjEtNzAuNiAwLTEyOS4zIDAuMy0xMzAuNGwwLjQtMS45aDcxLjFjMzkgMCA3OCAwLjQgODYuNSAwLjl6bTI5Ny41IDM1MC4zYzAuNyA0LjMgMC43IDc3LjMgMCA4MC45bC0wLjYgMi43LTIyNy41LTAuMi0yMjcuNC0wLjMtMC4yLTQyLjRjLTAuMi0yMy4zIDAtNDIuNyAwLjItNDMuMSAwLjMtMC41IDk3LjItMC44IDIyNy43LTAuOGgyMjcuMnptLTEwLjIgMTcxLjdjMC41IDEuNS0xLjkgMTMuOC02LjggMzMuOC01LjYgMjIuNS0xMy4yIDQ1LjItMjAuOSA2Mi0zLjggOC42LTEzLjMgMjcuMi0xNS42IDMwLjctMS4xIDEuNi00LjMgNi43LTcuMSAxMS4yLTE4IDI4LjItNDMuNyA1My45LTczIDcyLjktMTAuNyA2LjgtMzIuNyAxOC40LTM4LjYgMjAuMi0xLjIgMC4zLTIuNSAwLjktMyAxLjMtMC43IDAuNi05LjggNC0yMC40IDcuOC0xOS41IDYuOS01Ni42IDE0LjQtODYuNCAxNy41LTE5LjMgMS45LTIyLjQgMi05Ni43IDJoLTc2Ljl2LTEyOS43LTEyOS44bDIyMC45LTAuNGMxMjEuNS0wLjIgMjIxLjYtMC41IDIyMi40LTAuNyAwLjktMC4xIDEuOCAwLjUgMi4xIDEuMnoiLz4KPC9zdmc+");
+    }
 </style>
 @endsection
 @section('content')
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/dubai.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">BOOK NOW DRY CLEAN & LAUNDRY SERVICE.</h1>
@@ -245,18 +259,18 @@
                 <h4 class="dubai_style_heading">in <span class="primary-color bold_font">Dubai</span> with <span
                         class="secondary-color">Free Pickup & Delivery</span> </h4>
                 <div class="dubai_contact">
-                    <a href="tel:+971522732873" class="quick-support-btn">
-                        <i class="fa fa-phone"></i>
+                    <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup" class="quick-support-btn">
+                        <i class="fab fa-whatsapp"></i>
                         <span>Quick Support</span>
                     </a>
-                    <a href="{{route('booking-form')}}" class="btn theme-button">
+                    <a href="{{route('booking-form')}}" class="quick-support-btn1">
                         <i class="fa fa-handshake-o"></i> Book Now
                     </a>
                 </div>
                 <p class="dubai_para">It's quite easy & convenient, let's see the collection time</p>
             </div>
             <div class="col-lg-4 w3-services-right-grid mt-lg-0 mt-5 mx-auto  ">
-                <img loading="lazy"src="{{asset('/assets/images/image_move.gif')}}" class="img-fluid img-curve" alt="" />
+                <img loading="lazy" src="{{asset('/assets/images/image_move.gif')}}" class="img-fluid img-curve" alt="" />
             </div>
         </div>
     </div>
@@ -278,7 +292,7 @@
             <div class="row gy-4 justify-content-center">
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card">
-                        <div class="box-icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/process_card_1.svg')}}" alt="icon" />
+                        <div class="box-icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/process_card_1.svg')}}" alt="icon" />
                         </div>
                         <div class="box-content">
                             <div class="box-top">
@@ -291,7 +305,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card active">
-                        <div class="box-icon"><img loading="lazy"class="color-change"
+                        <div class="box-icon"><img loading="lazy" class="color-change"
                                 src="{{asset('/assets/front/img/icon/process_card_2.svg')}}" alt="icon" />
                         </div>
                         <div class="box-content">
@@ -305,7 +319,7 @@
                 </div>
                 <div class="col-xl-4 col-md-6">
                     <div class="process-card">
-                        <div class="box-icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/process_card_3.svg')}}" alt="icon" />
+                        <div class="box-icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/process_card_3.svg')}}" alt="icon" />
                         </div>
                         <div class="box-content">
                             <div class="box-top">
@@ -325,7 +339,9 @@
     <div class="container mt-5">
         <div class="title-area text-center">
             <span class="sub-title">What We Offer</span>
-            <h2 class="sec-title">Popular Laundry Packages in Families</h2>
+            <a href="https://laundryservice.ae/laundry-price-list-dubai">
+                <h2 class="sec-title">Popular Laundry Packages in Families</h2>
+            </a>
             <h3 class="" style="font-size: 26px">Cheaper - Suitable - Convenient</h3>
             <p>Pay Per Kg Packages - Transparent - Convenient - Suitable</p>
         </div>
@@ -347,7 +363,7 @@
                             </ul>
                         </div>
                         <div class="form-btn col-6 mt-4"><button class="th-btn btn-fw"><a
-                                    href="{{ url($package->slug) }}" class="text-white"> Schedule Pickup Now
+                                    href="{{ route('booking-form') }}" class="text-white"> Schedule Pickup Now
                                 </a></button>
                         </div>
                     </div>
@@ -374,9 +390,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/service_box_2.jpg')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/service_box_2.jpg')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_1.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_1.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -390,9 +406,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/wf3.jpg')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/wf3.jpg')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_2.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_2.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -405,9 +421,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/pressing.png')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/pressing.png')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_3.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_3.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -420,9 +436,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/wp.png')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/wp.png')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_4.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_4.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -437,9 +453,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/curtain.png')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/curtain.png')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_5.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_5.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -454,9 +470,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/service_grid_3.jpg')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/service_grid_3.jpg')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_6.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_6.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -469,9 +485,9 @@
                     <div class="swiper-slide">
                         <div class="service-box">
                             <div class="service-box_wrapper">
-                                <div class="service-box_img"><img loading="lazy"src="{{asset('/assets/front/img/service/cl.png')}}"
+                                <div class="service-box_img"><img loading="lazy" src="{{asset('/assets/front/img/service/cl.png')}}"
                                         alt="img" /></div>
-                                <div class="service-box_icon"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_box_6.svg')}}"
+                                <div class="service-box_icon"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_box_6.svg')}}"
                                         alt="Icon" /></div>
                             </div>
                             <div class="box-content" data-bg-src="{{asset('/assets/front/img/shape/service_shape_1.png')}}">
@@ -504,7 +520,7 @@
         <div class="row gy-4 justify-content-between align-items-center">
             <div class="col-md-6 col-xl-auto">
                 <div class="service-block style1 wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_1.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_1.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">On Demand</a></h3>
@@ -512,7 +528,7 @@
                     </div>
                 </div>
                 <div class="service-block style1 wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_2.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_2.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">Reliable and Hassle-Free</a></h3>
@@ -520,7 +536,7 @@
                     </div>
                 </div>
                 <div class="service-block style1 wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_3.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_3.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">Revitalize Your Fabrics</a></h3>
@@ -529,12 +545,12 @@
                 </div>
             </div>
             <div class="col col-xl-auto text-center d-none d-xl-block">
-                <div class="service-image wow fadeInUp"><img loading="lazy"src="{{asset('/assets/front/img/normal/choose-img.png')}}"
+                <div class="service-image wow fadeInUp"><img loading="lazy" src="{{asset('/assets/front/img/normal/choose-img.png')}}"
                         alt="" /></div>
             </div>
             <div class="col-md-6 col-xl-auto">
                 <div class="service-block wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_4.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_4.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">Live Chat & Support</a></h3>
@@ -542,7 +558,7 @@
                     </div>
                 </div>
                 <div class="service-block wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_5.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_5.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">No Third Party</a></h3>
@@ -550,7 +566,7 @@
                     </div>
                 </div>
                 <div class="service-block wow fadeInLeft">
-                    <div class="service-block_img"><img loading="lazy"src="{{asset('/assets/front/img/icon/service_1_6.svg')}}" alt="Service" />
+                    <div class="service-block_img"><img loading="lazy" src="{{asset('/assets/front/img/icon/service_1_6.svg')}}" alt="Service" />
                     </div>
                     <div class="service-block_wrapper">
                         <h3 class="box-title"><a href="{{route('booking-form')}}">No Extra Charges, No Minimum Cap</a></h3>
@@ -587,7 +603,7 @@
                             </ul>
                         </div>
                         <div class="form-btn col-6 mt-4"><button class="th-btn btn-fw"><a
-                                    href="{{ url($pack->slug) }}" class="text-white"> Schedule Pickup Now
+                                    href="{{ route('booking-form') }}" class="text-white"> Schedule Pickup Now
                                 </a></button>
                         </div>
                     </div>
@@ -677,7 +693,7 @@
             </div>
             <div class="col-xl-6">
                 <div class="faq-img1 ps-xl-4">
-                    <div class="img1"><img loading="lazy"src="{{asset('/assets/front/img/normal/faq_1_1.png')}}" alt="faq" /></div>
+                    <div class="img1"><img loading="lazy" src="{{asset('/assets/front/img/normal/faq_1_1.png')}}" alt="faq" /></div>
                 </div>
             </div>
         </div>
@@ -707,27 +723,27 @@
 @endsection
 @section('script')
 <script>
-	document.addEventListener('DOMContentLoaded', function() {
-		// Fetch default category (MEN)
-		fetchCategoryItems('MEN');
+    document.addEventListener('DOMContentLoaded', function() {
+        // Fetch default category (MEN)
+        fetchCategoryItems('MEN');
 
-		// Attach event listener for category selection
-		document.getElementById('categorySelect').addEventListener('change', function() {
-			const category = this.value;
-			fetchCategoryItems(category);
-		});
-	});
+        // Attach event listener for category selection
+        document.getElementById('categorySelect').addEventListener('change', function() {
+            const category = this.value;
+            fetchCategoryItems(category);
+        });
+    });
 
-	function fetchCategoryItems(category) {
-		if (category) {
-			fetch(`/get-services?category=${category}`)
-				.then(response => response.json())
-				.then(data => {
-					const itemDisplay = document.getElementById('itemDisplay');
-					itemDisplay.innerHTML = ''; // Clear previous items
+    function fetchCategoryItems(category) {
+        if (category) {
+            fetch(`/get-services?category=${category}`)
+                .then(response => response.json())
+                .then(data => {
+                    const itemDisplay = document.getElementById('itemDisplay');
+                    itemDisplay.innerHTML = ''; // Clear previous items
 
-					data.forEach(service => {
-						itemDisplay.innerHTML += `
+                    data.forEach(service => {
+                        itemDisplay.innerHTML += `
                         <div class="col-lg-6 col-sm-12 feature-grid">
                             <a href="#url">
                                 <div class="feature-body active">
@@ -745,56 +761,56 @@
                                 </div>
                             </a>
                         </div>`;
-					});
-				})
-				.catch(error => console.error('Error fetching data:', error));
-		}
-	}
+                    });
+                })
+                .catch(error => console.error('Error fetching data:', error));
+        }
+    }
 
-	// Select the "Quick Support" button
-	const quickSupportBtn = document.querySelector('.quick-support-btn');
-	const quickSupportBtnText = document.querySelector('.quick-support-btn span');
+    // Select the "Quick Support" button
+    const quickSupportBtn = document.querySelector('.quick-support-btn');
+    const quickSupportBtnText = document.querySelector('.quick-support-btn span');
 
 
-	// Event listener for mouse enter (hover)
-	quickSupportBtn.addEventListener('mouseenter', () => {
-		quickSupportBtnText.textContent = '+971522732873'; // Change content to phone number
-	});
+    // Event listener for mouse enter (hover)
+    quickSupportBtn.addEventListener('mouseenter', () => {
+        quickSupportBtnText.textContent = '+971522732873'; // Change content to phone number
+    });
 
-	// Event listener for mouse leave
-	quickSupportBtn.addEventListener('mouseleave', () => {
-		quickSupportBtnText.textContent = 'Quick Support'; // Revert content to default
-	});
+    // Event listener for mouse leave
+    quickSupportBtn.addEventListener('mouseleave', () => {
+        quickSupportBtnText.textContent = 'Quick Support'; // Revert content to default
+    });
 
-	const textArray = [
-		"We Made Laundry Simple",
-		"First Ever Family Laundry in Dubai",
-		"Affordable Laundry Packages",
-		"Cheapest in Price, Best in Quality",
-		"Quality Service with Affordable Pricing",
-	];
+    const textArray = [
+        "We Made Laundry Simple",
+        "First Ever Family Laundry in Dubai",
+        "Affordable Laundry Packages",
+        "Cheapest in Price, Best in Quality",
+        "Quality Service with Affordable Pricing",
+    ];
 
-	// Select the paragraph element
-	const textElement = document.querySelector('.change_text_para');
+    // Select the paragraph element
+    const textElement = document.querySelector('.change_text_para');
 
-	// Initialize an index to track the current text
-	let index = 0;
+    // Initialize an index to track the current text
+    let index = 0;
 
-	// Function to change the text
-	function changeText() {
-		// Add fade-out class
-		textElement.classList.add('fade-out');
+    // Function to change the text
+    function changeText() {
+        // Add fade-out class
+        textElement.classList.add('fade-out');
 
-		// Wait for the fade-out effect, then change text
-		setTimeout(() => {
-			textElement.textContent = textArray[index];
-			index = (index + 1) % textArray.length;
-			// Remove fade-out class to fade back in
-			textElement.classList.remove('fade-out');
-		}, 500); // Match the CSS transition duration
-	}
+        // Wait for the fade-out effect, then change text
+        setTimeout(() => {
+            textElement.textContent = textArray[index];
+            index = (index + 1) % textArray.length;
+            // Remove fade-out class to fade back in
+            textElement.classList.remove('fade-out');
+        }, 500); // Match the CSS transition duration
+    }
 
-	// Call changeText every 3 seconds
-	setInterval(changeText, 2400);
+    // Call changeText every 3 seconds
+    setInterval(changeText, 2400);
 </script>
 @endsection

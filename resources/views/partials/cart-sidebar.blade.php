@@ -31,7 +31,7 @@
     </span>
 </p>
 <p class="woocommerce-mini-cart__buttons buttons">
-    <a href="{{route('view.cart')}}" style="background-color: #2B2F7B; color:white" class="btn  w-100 view-cart-button">View Cart</a>
+    <a href="{{route('view.cart')}}" style="background-color: #0890F1; color:white" class="btn  w-100 view-cart-button">View Cart</a>
 
     
 </p>

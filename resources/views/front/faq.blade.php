@@ -3,8 +3,7 @@
 @section('og:description', "SUNCITY LAUNDRY")
 @section('og:title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
 @section('og:description', "SUNCITY LAUNDRY")
-@section('og:url', 'https://www.laundryservice.ae/laundry-faqs')
-@section('canonical', 'https://www.laundryservice.ae/laundry-faqs')
+@section('canonical', url()->current())
 @section('styles')
 <style>
     body {
@@ -62,7 +61,7 @@
         display: inline-block;
         margin-top: 30px;
         padding: 12px 28px;
-        background: #2B2F7B;
+        background: #0890F1;
         color: white;
         border: none;
         border-radius: 30px;
@@ -74,7 +73,7 @@
 
     .cta-button:hover {
         transform: translateY(-2px);
-        background: #f7941f;
+        background: #FFD06D;
         color: white;
     }
 
@@ -96,7 +95,7 @@
 </style>
 @endsection
 @section('content')
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/faq.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Laundry FAQs</h1>
@@ -150,7 +149,7 @@
             <h3 style="font-size: 32px">How much does it cost to get the wash & fold clothes in Abu Dhabi?</h3>
             <p>Wash & fold service in Abu Dhabi varies from 2 AED to 5 AED per item, it depends upon the customer what other services he/she expects from the laundry service provider.</p>
             <h3 style="font-size: 32px">How to save on the laundry ironing services when visiting or living in Abu Dhabi?</h3>
-            <p>If you want to save more visit SunCity laundry in Mohamed Bin Zayed City & drop off your laundry for pressing, it will save you a lot. In another case, if it is difficult to commute or you are a busy person, you can avail of pickup & drop service that costs you an extra 10 AED, however, pickup & delivery service is free if you order 49AED or more.</p>
+            <p>If you want to save more visit <a href="https://laundryservice.ae/"> SunCity laundry</a> in Mohamed Bin Zayed City & drop off your laundry for pressing, it will save you a lot. In another case, if it is difficult to commute or you are a busy person, you can avail of pickup & drop service that costs you an extra 10 AED, however, pickup & delivery service is free if you order 49AED or more.</p>
             <h3 style="font-size: 32px">How can I come to know that what laundry offer is going on currently?</h3>
             <p>It's very simple, we are almost on all your favourite social platforms, you can follow us there or you can also visit our website regularly to check for the latest offers & packages.</p>
             <h3 style="font-size: 32px">How much does it cost to clean carpet in Abu Dhabi & Dubai?</h3>
@@ -158,7 +157,7 @@
             <h3 style="font-size: 32px">How do I calculate the carpet cleaning price?</h3>
             <p>First, you need to check the what is price your company offer per square meter. Then measure the carpet size in two directions length & width. Multiply length & width that will be the total area of carpet in square meters. Then multiply the area with the price offered by your service provider that is in the case of LaundryService.AE is 15 AED/Square meters only.</p>
             <h3 style="font-size: 32px">What is the best way to clean the carpets?</h3>
-            <p>Prices vary from as per their cleaning process, mainly companies in Dubai & Abu Dhabi offer two types of cleaning services, at-home carpet cleaning service & carpet cleaning service in the industry that is also called deep cleaning carpet cleaning. Experts recommend a later cleaning treatment to get rid-of complete dust, bacteria, germs & viruses.</p>
+            <p>Prices vary from as per their cleaning process, mainly companies in Dubai & Abu Dhabi offer two types of cleaning services, at-home <a href="https://carpetwashing.ae/"> cleaning service & carpet cleaning service</a> in the industry that is also called deep cleaning carpet cleaning. Experts recommend a later cleaning treatment to get rid-of complete dust, bacteria, germs & viruses.</p>
             <h3 style="font-size: 32px">How can I avail a laundry & dry cleaning offer?</h3>
             <p>It is quite easy & hassle-free, just contact our customer support team (WhatsApp; +971 52 273 2873) & book service, automatically we will include your order in the latest going on offer.</p>
         </div>

@@ -14,14 +14,12 @@
 @section('description','Are you searching for the best Laundry & dry cleaning service with free laundry pickup & delivery service in Ajman & Sharjah at the cheapest price? We provide same-day laundry, per kg & urgent laundry services, online booking & payment. We do carpet & curtains cleaning, clothe ironing, steam pressing, Wash & fold. The laundromat is near Al Nuaimia, Al Rashidiya, Al Rumailah, Al Nakhil, Al Meshairef, Al Jerf.')
 @section('og:title', 'Best Dry Clean & Laundry Near in Ajman & Sharjah')
 @section('og:description','Are you searching for the best Laundry & dry cleaning service with free laundry pickup & delivery service in Ajman & Sharjah at the cheapest price? We provide same-day laundry, per kg & urgent laundry services, online booking & payment. We do carpet & curtains cleaning, clothe ironing, steam pressing, Wash & fold. The laundromat is near Al Nuaimia, Al Rashidiya, Al Rumailah, Al Nakhil, Al Meshairef, Al Jerf.')
-@section('og:url', 'https://www.laundryservice.ae/ajman-sharjah')
-@section('canonical', 'https://www.laundryservice.ae/ajman-sharjah')
-
+@section('canonical', url()->current())
 @section('styles')
 <style>
     .color-change {
-        filter: invert(63%) sepia(91%) saturate(700%) hue-rotate(359deg) brightness(101%) contrast(102%);
-    }
+    filter: brightness(0) saturate(100%) invert(85%) sepia(26%) saturate(690%) hue-rotate(330deg) brightness(105%) contrast(101%);
+}
 
     .price li {
         list-style-type: disc;
@@ -75,7 +73,7 @@
     }
 
     .secondary-color {
-        color: #2B2F7B;
+        color: #0890F1;
         font-weight: 600;
     }
 
@@ -90,24 +88,49 @@
         gap: 20px;
     }
 
-    .quick-support-btn {
+   .quick-support-btn {
         display: inline-block;
         padding: 0 30px;
-        border: 1px solid #2B2F7B;
+        border: 1px solid #0890F1;
         line-height: 52px;
         /* Button color */
-        color: #1F2C5D;
+        color: white;
         /* Text color */
         text-decoration: none;
+        background-color: #0890F1;
         font-size: 16px;
         font-weight: bold;
         transition: background-color 0.3s, color 0.3s;
         text-align: center;
+        border-radius: 20px;
     }
 
     .quick-support-btn:hover {
-        background-color: #5EC5CE;
-        border: 1px solid #2B2F7B;
+        background-color: #FFD06D;
+        border: 1px solid #FFD06D;
+        color: white;
+        /* Darker color on hover */
+    }
+.quick-support-btn1 {
+        display: inline-block;
+        padding: 0 50px;
+        border: 1px solid #FFD06D;
+        line-height: 52px;
+        /* Button color */
+        color: white;
+        /* Text color */
+        text-decoration: none;
+        background-color: #FFD06D;
+        font-size: 16px;
+        font-weight: bold;
+        transition: background-color 0.3s, color 0.3s;
+        text-align: center;
+        border-radius: 20px;
+    }
+
+    .quick-support-btn1:hover {
+        background-color: #0890F1;
+        border: 1px solid #0890F1;
         color: white;
         /* Darker color on hover */
     }
@@ -118,7 +141,7 @@
     }
 
     .change_text_para {
-        background-color: #1F2C5D;
+        background-color: #FFD06D;
         color: white;
         font-size: 28px;
         opacity: 1;
@@ -206,7 +229,7 @@
     }
 
     .theme-button {
-        background-color: #2B2F7B;
+        background-color: #0890F1;
         color: #fff;
     }
       img.aed2{
@@ -221,7 +244,7 @@
 @section('content')
 
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/sharjah.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title" style="font-size: 40px;">ONE OF THE BEST PROFESSIONAL DRY CLEAN & LAUNDER in AJMAN & SHARJAH</h1>
@@ -246,11 +269,11 @@
                 <h4 class="dubai_style_heading">It's quite <span class="primary-color bold_font">Easy &
                         Convenient,</span> let's see the available time</h5>
                 <div class="dubai_contact">
-                    <a href="tel:+971522732873" class="quick-support-btn">
+                    <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup" class="quick-support-btn">
                         <i class="fa fa-phone"></i>
                         <span>Quick Support</span>
                     </a>
-                    <a href="{{route('booking-form')}}" class="btn theme-button">
+                    <a href="{{route('booking-form')}}" class="quick-support-btn1">
                         <i class="fa fa-handshake-o"></i> Book Now
                     </a>
                 </div>
@@ -351,7 +374,7 @@
                             </ul>
                         </div>
                         <div class="form-btn col-6 mt-4"><button class="th-btn btn-fw"><a
-                                    href="{{ url($package->slug) }}" class="text-white"> Schedule Pickup Now
+                                    href="{{ route('booking-form') }}" class="text-white"> Schedule Pickup Now
                                 </a></button>
                         </div>
                     </div>
@@ -570,7 +593,7 @@
     <div class="container">
         <div class="title-area text-center">
             <span class="sub-title">Competitive. Affordable. Transparent</span>
-            <h2 class="sec-title">LAUNDRY & DRY CLEANING PRICING in Ajman & Sharjah</h2>
+            <a href="https://laundryservice.ae/laundry-price-list-ajman"><h2 class="sec-title">LAUNDRY & DRY CLEANING PRICING in Ajman & Sharjah</h2></a>
             <p>Pay Per Piece - Transparent - Convenient - Suitable</p>
         </div>
         <div class="row gy-4 justify-content-center">
@@ -591,7 +614,7 @@
                             </ul>
                         </div>
                         <div class="form-btn col-6 mt-4"><button class="th-btn btn-fw"><a
-                                    href="{{ url($pack->slug) }}" class="text-white"> Schedule Pickup Now
+                                    href="{{ route('booking-form') }}" class="text-white"> Schedule Pickup Now
                                 </a></button>
                         </div>
                     </div>

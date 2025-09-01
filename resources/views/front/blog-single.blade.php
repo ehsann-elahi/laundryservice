@@ -14,13 +14,11 @@
 @section('description','Read our blog post to know how a professional laundry works? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
 @section('og:title', 'Laundry near me')
 @section('og:description','Read our blog post to know how a professional laundry works? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
-<meta property="og:url" content="{{ url()->current() }}" />
-<link rel="canonical" href="{{ url()->current() }}" />
-
+@section('canonical', url()->current())
 @section('content')
 <!-- breadcrum -->
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/breadcumb-bg.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog.jpg')}}">
 	<div class="container">
 		<div class="breadcumb-content">
 			<h1 style="font-size: 40px;" class="breadcumb-title">{{$blog->title}}</h1>
