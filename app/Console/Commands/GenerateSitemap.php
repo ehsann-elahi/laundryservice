@@ -37,7 +37,7 @@ class GenerateSitemap extends Command
             ->add(Url::create("{$baseUrl}/laundry-faqs"))
             ->add(Url::create("{$baseUrl}/enviornment-health-safety-policy"))
             ->add(Url::create("{$baseUrl}/privacy-policy"))
-            ->add(Url::create("{$baseUrl}/suncity-laundry-abu-dhabi"))
+            ->add(Url::create("{$baseUrl}/laundry-abu-dhabi"))
             ->add(Url::create("{$baseUrl}/jobs"))
             ->add(Url::create("{$baseUrl}/laundry-near-me"))
             ->add(Url::create("{$baseUrl}/linen-rental"))

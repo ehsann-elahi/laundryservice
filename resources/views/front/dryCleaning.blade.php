@@ -11,9 +11,9 @@
 @endpush
 @extends('layouts.app')
 @section('title', 'Dry Cleaner near me | Dubai | Abu Dhabi')
-@section('description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? SunCity laundry offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
+@section('description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? LaundryService offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
 @section('og:title', 'Dry Cleaner near me | Dubai | Abu Dhabi')
-@section('og:description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? SunCity laundry offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
+@section('og:description','Do your clothes need special care? Or your fancy suit needs to be refresh but strikes fear in heart of high dry clean prices? LaundryService offers you a dry cleaning service at the cheapest price forever in Abu Dhabi. We are a professional dry cleaner, providing commercial & non-commercial services since 2011.')
 @section('canonical', url()->current())
 @section('styles')
 <style>
@@ -72,6 +72,7 @@
 		.header-section h1 {
 			font-size: 20px !important;
 		}
+
 		.header-section h2 {
 			font-size: 20px !important;
 		}
@@ -83,6 +84,7 @@
 		.mobile-info h2 {
 			font-size: 22px !important;
 		}
+
 		.mobile-info h3 {
 			font-size: 20px !important;
 		}
@@ -90,14 +92,16 @@
 		.mobile-info p {
 			font-size: 18px !important;
 		}
-		.three-grids-columns h3{
+
+		.three-grids-columns h3 {
 			font-size: 18px;
 		}
-		.three-grids-columns p{
+
+		.three-grids-columns p {
 			font-size: 16px;
 		}
 
-		
+
 	}
 </style>
 
@@ -128,7 +132,7 @@
 		</div>
 		<div class="row w3-services-grids mt-lg-5 mt-4">
 			<h3 class="fs-22">We are experts in delivering dry cleaned all types of household textile</h3>
-			<p>Do your clothes need special care? Or your fancy suit needs to be refreshed but strike fear in the heart of high dry clean prices? SunCity laundry offers you a dry cleaning service at the lowest price for ever in Dubai & Abu Dhabi. Dry clean starts from only 6 AED.</p>
+			<p>Do your clothes need special care? Or your fancy suit needs to be refreshed but strike fear in the heart of high dry clean prices? LaundryService offers you a dry cleaning service at the lowest price for ever in Dubai & Abu Dhabi. Dry clean starts from only 6 AED.</p>
 		</div>
 	</div>
 </div>
@@ -162,7 +166,7 @@
 				<!-- <img src="assets/images/banner-2.jpg" class="d-block w-100" alt="..."> -->
 				<div class="carousel-caption container">
 					<h3 class="title-cover-9">Laundry Abu Dhabi</h3>
-					<p class="para-cover-9">SunCity Laundry Abu Dhabi picture gallery,, laundry service abu dhabi, laundry abu dhabi, dry cleaning abu dhabi, dry clean service abu dhabi</p>
+					<p class="para-cover-9">LaundryService Abu Dhabi picture gallery,, laundry service abu dhabi, laundry abu dhabi, dry cleaning abu dhabi, dry clean service abu dhabi</p>
 				</div>
 			</div>
 		</div>
@@ -178,33 +182,33 @@
 </section>
 
 <section class="space pt-0">
-        <div class="container">
-            <div class="title-area text-center">
-                <h2 class="sec-title">Cheapest Pressing Service UAE</h3>
-            </div>
-            <h5>Pricing list/Item</h5>
-            <div class="col-md-4 col-12  px-0">
-                <div class="form-group mb-3">
+	<div class="container">
+		<div class="title-area text-center">
+			<h2 class="sec-title">Cheapest Pressing Service UAE</h3>
+		</div>
+		<h5>Pricing list/Item</h5>
+		<div class="col-md-4 col-12  px-0">
+			<div class="form-group mb-3">
 
-                    <select class="form-control form-control-rounded mb-5" name="category_id" id="categorySelect"
-                        required>
-                        @foreach ($categories as $category)
-                            <option value="{{ $category->name }}" selected>PRICE LIST - {{ $category->name }}</option>
-                        @endforeach
-                    </select>
-                </div>
-            </div>
-            <div class="row gy-4 justify-content-center">
-                <div class="header-section text-center">
-                    <h4 style="font-size: 22px;">Steam Pressing (AED)</h4>
-                </div>
+				<select class="form-control form-control-rounded mb-5" name="category_id" id="categorySelect"
+					required>
+					@foreach ($categories as $category)
+					<option value="{{ $category->name }}" selected>PRICE LIST - {{ $category->name }}</option>
+					@endforeach
+				</select>
+			</div>
+		</div>
+		<div class="row gy-4 justify-content-center">
+			<div class="header-section text-center">
+				<h4 style="font-size: 22px;">Steam Pressing (AED)</h4>
+			</div>
 
-                <div class="row features mb-5" id="itemDisplay">
-                    <!-- Items will be dynamically loaded here -->
-                </div>
-            </div>
-        </div>
-    </section>
+			<div class="row features mb-5" id="itemDisplay">
+				<!-- Items will be dynamically loaded here -->
+			</div>
+		</div>
+	</div>
+</section>
 
 
 <div class="w3-services1 py-5">
@@ -215,8 +219,8 @@
 		<div class="row w3-services-grids mt-lg-5 mt-4">
 			<div class="col-lg-7 w3-services-left-grid">
 				<h3 style="font-size: 30px;">DROP-OFF SERVICE</h3>
-				
-						<p>We are located in Mohammed Bin Zayed city, Shabia - 11 Mussafah - Abu Dhabi. All you have to do is to drop off your laundry any time between 8:00AM to 11:30PM and pick it up when ready. With the uttermost attention and care, you will return home with all of your clothes fresh, clean, and ready to wear! It's our pleasure to served our customer at destination.</p>
+
+				<p>We are located in Mohammed Bin Zayed city, Shabia - 11 Mussafah - Abu Dhabi. All you have to do is to drop off your laundry any time between 8:00AM to 11:30PM and pick it up when ready. With the uttermost attention and care, you will return home with all of your clothes fresh, clean, and ready to wear! It's our pleasure to served our customer at destination.</p>
 			</div>
 			<div class="col-lg-4 w3-services-right-grid mt-lg-0 mt-5 mx-auto  ">
 				<img src="{{asset('/assets/images/Laundromat.jpg')}}" class="img-fluid img-curve" height="100" alt="" />
@@ -235,7 +239,7 @@
 			</div>
 			<div class="col-lg-7 w3-services-left-grid">
 				<h3>Free Pickup & Delivery Service</h3>
-						<p>We are ambitious to provide quite hassle free services to our laundry customers, our pick-up & deliver services is quite free for all our customers. You can avail the service in all over the Abu Dhabi any time. Message us or call us to schedule a pick-up.</p>
+				<p>We are ambitious to provide quite hassle free services to our laundry customers, our pick-up & deliver services is quite free for all our customers. You can avail the service in all over the Abu Dhabi any time. Message us or call us to schedule a pick-up.</p>
 			</div>
 		</div>
 	</div>
@@ -248,8 +252,8 @@
 		<div class="row w3-services-grids mt-lg-5 mt-4">
 			<div class="col-lg-7 w3-services-left-grid">
 				<h3>Commercial Service</h3>
-				
-						<p>When you are busy in your core business activities, you need not to be worried about your laundry. We provide full range of services to all businesses including hotel & restaurants industry, airline industry and health care industry.</p>
+
+				<p>When you are busy in your core business activities, you need not to be worried about your laundry. We provide full range of services to all businesses including hotel & restaurants industry, airline industry and health care industry.</p>
 			</div>
 			<div class="col-lg-4 w3-services-right-grid mt-lg-0 mt-5 mx-auto  ">
 				<img src="{{asset('/assets/images/Business handshake.jpg')}}" class="img-fluid img-curve" height="100" alt="" />
@@ -340,7 +344,7 @@
 		</div>
 		<div class="row mt-lg-5 mt-4 mb-5">
 			<div class="col-md-6 col-12 mb-md-0 mb-4">
-				<h3 class="primary-color fs-22">Do the SunCity dry cleaner provide a delivery service?</h3>
+				<h3 class="primary-color fs-22">Do the LaundryService dry cleaner provide a delivery service?</h3>
 				<div class="col-12 px-0">
 					<p>We encourage our customers to drop-off laundry at our laundromat situated in Mohamed Bin Zayed City, Abu Dhabi, however, to facilitate our busy customer, we also provide the delivery service on demand.</p>
 				</div>
@@ -360,9 +364,9 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-12">
-				<h3 class="primary-color fs-22">Do the SunCity dry cleaner provide same-day dry clean service?</h3>
+				<h3 class="primary-color fs-22">Do the LaundryService dry cleaner provide same-day dry clean service?</h3>
 				<div class="col-12 px-0">
-					<p>Yes, We @SunCity dry cleaner provides same-day delivery service but there are extra charges, check the detail above in pricing</p>
+					<p>Yes, We @LaundryService dry cleaner provides same-day delivery service but there are extra charges, check the detail above in pricing</p>
 				</div>
 			</div>
 		</div>
@@ -374,7 +378,7 @@
 				</div>
 			</div>
 			<div class="col-md-6 col-12">
-				<h3 class="primary-color fs-22">How SunCity dry cleaner is providing quality services at these lowest prices? </h3>
+				<h3 class="primary-color fs-22">How LaundryService dry cleaner is providing quality services at these lowest prices? </h3>
 				<div class="col-12 px-0">
 					<p>It's pleasure to assist you! We are offering high-quality services at the lowest prices in an Abu Dhabi market because we are collecting orders directly online from customers and handle all laundry service processes from the collection, dry cleaning, packing & delivery by our own fleets that support us to give the best laundry services at cheaper prices.:-) There is no third party involved.</p>
 				</div>
@@ -386,29 +390,29 @@
 @endsection
 @section('script')
 
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            // Fetch default category (MEN)
-            fetchCategoryItems('MEN');
+<script>
+	document.addEventListener('DOMContentLoaded', function() {
+		// Fetch default category (MEN)
+		fetchCategoryItems('MEN');
 
-            // Attach event listener for category selection
-            document.getElementById('categorySelect').addEventListener('change', function() {
-                const cat = this.value;
-                var category = encodeURIComponent(cat);
-                fetchCategoryItems(category);
-            });
-        });
+		// Attach event listener for category selection
+		document.getElementById('categorySelect').addEventListener('change', function() {
+			const cat = this.value;
+			var category = encodeURIComponent(cat);
+			fetchCategoryItems(category);
+		});
+	});
 
-        function fetchCategoryItems(category) {
-            if (category) {
-                fetch(`/get-services?category=${category}`)
-                    .then(response => response.json())
-                    .then(data => {
-                        const itemDisplay = document.getElementById('itemDisplay');
-                        itemDisplay.innerHTML = ''; // Clear previous items
+	function fetchCategoryItems(category) {
+		if (category) {
+			fetch(`/get-services?category=${category}`)
+				.then(response => response.json())
+				.then(data => {
+					const itemDisplay = document.getElementById('itemDisplay');
+					itemDisplay.innerHTML = ''; // Clear previous items
 
-                        data.forEach(service => {
-                            itemDisplay.innerHTML += `
+					data.forEach(service => {
+						itemDisplay.innerHTML += `
        <div class="col-lg-3 col-md-6 col-12">
     <div class="price-box">
         <div class="price-box_icon"> <img loading="lazy"src="${service.image}" alt="" height="50" width="70"></div>
@@ -421,10 +425,10 @@
         </div>
     </div>
 </div>`;
-                        });
-                    })
-                    .catch(error => console.error('Error fetching data:', error));
-            }
-        }
-    </script>
+					});
+				})
+				.catch(error => console.error('Error fetching data:', error));
+		}
+	}
+</script>
 @endsection

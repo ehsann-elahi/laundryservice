@@ -7626,6 +7626,7 @@ ul.comment-list:has(> .th-comment-item ~ .th-comment-item):first-child > .th-pos
     border-radius: 50%;
     object-fit: cover;
     z-index: -1;
+    transform: rotate(-90deg);
 }
 .hero-2 .thumbsSlider .swiper-slide-thumb-active:after {
     -webkit-transform: scale(1);
@@ -12452,7 +12453,7 @@ span.select2-selection.select2-selection--single:focus {
     width: 90px;
     height: 90px;
     line-height: 90px;
-    background-color: var(--theme-color);
+    background-color: white;
     text-align: center;
     border-radius: 50%;
     overflow: hidden; /* This makes the image stay inside the circle */

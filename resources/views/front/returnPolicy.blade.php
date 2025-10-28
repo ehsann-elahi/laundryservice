@@ -112,15 +112,12 @@
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
-                                    Services Do You Offer?</button>
+                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Why do I need to read the Terms and Conditions?</button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse show"
                                 aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Our Terms and Conditions explain how we provide laundry services pricing pick-up delivery and garment care. They help both us and customers avoid confusion.</p>
                                 </div>
                             </div>
                         </div>
@@ -128,15 +125,13 @@
                             <div class="accordion-header" id="collapse-item-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                    Do You Have Certified Technicians?
+                                    What happens if my clothes get damaged?
                                 </button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">We take maximum care with every item. If an issue arises you can report it within 24 hours of delivery and our team will review it according to our policy.</p>
                                 </div>
                             </div>
                         </div>
@@ -144,15 +139,13 @@
                             <div class="accordion-header" id="collapse-item-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                                    Can You Provide a Customized Service Plan?
+                                    What if I need same day service?
                                 </button>
                             </div>
                             <div id="collapse-3" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Express or same day services are available but may carry an additional fee depending on availability.</p>
                                 </div>
                             </div>
                         </div>
@@ -160,15 +153,13 @@
                             <div class="accordion-header" id="collapse-item-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                    What is Your Pricing Structure?
+                                    Can the Terms and Conditions change?
                                 </button>
                             </div>
                             <div id="collapse-4" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we may update them from time to time. The latest version will always be available on our website.</p>
                                 </div>
                             </div>
                         </div>

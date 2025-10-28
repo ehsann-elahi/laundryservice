@@ -1,9 +1,20 @@
 <!-- Google Tag Manager -->
-<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-})(window,document,'script','dataLayer','GTM-WG8BCD8H');</script>
+<script>
+    (function(w, d, s, l, i) {
+        w[l] = w[l] || [];
+        w[l].push({
+            'gtm.start': new Date().getTime(),
+            event: 'gtm.js'
+        });
+        var f = d.getElementsByTagName(s)[0],
+            j = d.createElement(s),
+            dl = l != 'dataLayer' ? '&l=' + l : '';
+        j.async = true;
+        j.src =
+            'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+        f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-WG8BCD8H');
+</script>
 <!-- End Google Tag Manager -->
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -24,7 +35,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     {
         "@context": "https://schema.org/",
         "@type": "LocalBusiness",
-        "name": "SunCity Laundry",
+        "name": "LaundryService",
         "url": "https://www.laundryservice.ae",
         "image": "https://static.wixstatic.com/media/48295e_a26ef3183ad94554827ae554f017d4ed~mv2.png",
         "address": {
@@ -179,7 +190,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     }
 </script>
 <meta name="keywords" content=" best laundry in Abu Dhabi, best dry cleaner, dry cleaning in Abu Dhabi, laundry price list in Abu Dhabi, same day laundry Abu Dhabi, washmen Abu Dhabi, cheapest laundry near me, laundromat Abu Dhabi, laundry service abu dhabi,ironing service Abu Dhabi, near" />
-<meta name="twitter:title" content="SunCity Laundry" />
+<meta name="twitter:title" content="LaundryService" />
 <meta name="twitter:site" content="@laundry_uae" />
 <meta name="twitter:creator" content="@ laundry_uae " />
 <meta name="geo.region" content="AE-AZ" />
@@ -187,7 +198,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="geo.position" content="24.3261172;54.5366851" />
 <meta name="ICBM" content="22.6627417; 57.3772202" />
 <meta name="fb_admins_meta_tag" content="laundryservice.ae" />
-<meta name="google-site-verification" content="6daCiokIeEbEXRPQfXWTl96jCOVLoxmol9IXbOuon5Q" />
+<meta name="google-site-verification" content="nZLaA8mlXMAjpS5ydZdmF1cI7X7HfCotQaZCnOt37L8" />
 <meta property="fb:admins" content="laundryservice.ae" />
 <link rel="alternate" href="https://www.laundryservice.ae/blog-feed.xml" type="application/rss+xml" title="LaundryService - RSS" />
 <meta name="twitter:card" content="summary_large_image" />
@@ -195,32 +206,30 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="twitter:image" content="https://static.wixstatic.com/media/48295e_bb51ad2ceb5a4e36acdce432e78fca73~mv2.jpeg/v1/fill/w_1280,h_853,al_c/48295e_bb51ad2ceb5a4e36acdce432e78fca73~mv2.jpeg" />
 <link rel="canonical" href="@yield('canonical')" />
 <link href="{{asset('/assets/icon/favicon.png')}}" rel="icon">
- <link rel="manifest" href="{{asset('/assets/front/img/favicons/manifest.json')}}" />
- <meta name="msapplication-TileColor" content="#ffffff" />
- <meta name="theme-color" content="#ffffff" />
- <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&amp;display=swap" rel="stylesheet" />
- <link rel="stylesheet" href="{{asset('/assets/front/css/bootstrap.min.css')}}" />
- <link rel="stylesheet" href="{{asset('/assets/front/css/magnific-popup.min.css')}}" />
- <link rel="stylesheet" href="{{asset('/assets/front/css/swiper-bundle.min.css')}}" />
- <link rel="stylesheet" href="{{asset('/assets/front/css/style.css?v=' . time()) }}" />
- <link rel="stylesheet" href="{{asset('/assets/front/css/fontawesome.min.css')}}" />
+<link rel="manifest" href="{{asset('/assets/front/img/favicons/manifest.json')}}" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="theme-color" content="#ffffff" />
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300;400;500;600;700;800;900&amp;family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900&amp;display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="{{asset('/assets/front/css/bootstrap.min.css')}}" />
+<link rel="stylesheet" href="{{asset('/assets/front/css/magnific-popup.min.css')}}" />
+<link rel="stylesheet" href="{{asset('/assets/front/css/swiper-bundle.min.css')}}" />
+<link rel="stylesheet" href="{{asset('/assets/front/css/style.css?v=' . time()) }}" />
+<link rel="stylesheet" href="{{asset('/assets/front/css/fontawesome.min.css')}}" />
 
- <!-- jQuery (required by Bootstrap 4) -->
- <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<!-- jQuery (required by Bootstrap 4) -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
 
- <!-- Popper.js -->
- <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<!-- Popper.js -->
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 
- <!-- Bootstrap JS -->
+<!-- Bootstrap JS -->
 
 <!-- USE THIS (Bootstrap 5 Bundle) -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
- <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
+<!-- Bootstrap Icons -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
 
- @yield('styles')
- @stack('header')
-
-
-
-
+<meta name="google-site-verification" content="Nn1CVKxT5v0pdBKda5_Y4mXvFz-tsLNlZ2lEJEpW5WE" />
+@yield('styles')
+@stack('header')

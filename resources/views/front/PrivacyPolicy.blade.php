@@ -181,15 +181,12 @@
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
-                                    Services Do You Offer?</button>
+                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What personal details do you collect when I use your laundry service?</button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse show"
                                 aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">We collect only the basic details such as your name phone number address and order preferences so we can pick up clean and deliver your laundry on time.</p>
                                 </div>
                             </div>
                         </div>
@@ -197,15 +194,13 @@
                             <div class="accordion-header" id="collapse-item-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                    Do You Have Certified Technicians?
+                                    Do you share my information with anyone else?
                                 </button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">No. Your information is private. We only use it to process your laundry orders and if needed with delivery staff to ensure smooth service.</p>
                                 </div>
                             </div>
                         </div>
@@ -213,15 +208,13 @@
                             <div class="accordion-header" id="collapse-item-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                                    Can You Provide a Customized Service Plan?
+                                    How do you keep my data safe?
                                 </button>
                             </div>
                             <div id="collapse-3" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">We use secure systems and strict safety measures so your personal details and payment information stay protected.</p>
                                 </div>
                             </div>
                         </div>
@@ -229,15 +222,15 @@
                             <div class="accordion-header" id="collapse-item-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                    What is Your Pricing Structure?
+                                    How can I contact you for privacy concerns?
                                 </button>
                             </div>
                             <div id="collapse-4" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">You can always reach us through our website contact form email or customer care number if you have questions about how we handle your information.
+
+</p>
                                 </div>
                             </div>
                         </div>

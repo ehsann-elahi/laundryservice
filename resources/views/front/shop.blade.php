@@ -1,7 +1,7 @@
 @extends('layouts.app')
 @section('title', 'Buy quality laundry products at wholesale price')
 @section('description','Buy best-quality products recommended by laundry experts at wholesale rates for your laundry like washing powders, liquid detergents, fabric softeners, hangers, commercial heavy-duty laundry washers, steam iron, ironing shoes, laundry bags, packing material and laundry dryers online at the cheapest price from the LaundryService.AE. Get free delivery on all products. Buy products with peace of mind.')
-@section('og:title', 'Buy quality laundry products at wholesale price | SunCity Laundry')
+@section('og:title', 'Buy quality laundry products at wholesale price | LaundryService')
 @section('og:description','Buy best-quality products recommended by laundry experts at wholesale rates for your laundry like washing powders, liquid detergents, fabric softeners, hangers, commercial heavy-duty laundry washers, steam iron, ironing shoes, laundry bags, packing material and laundry dryers online at the cheapest price from the LaundryService.AE. Get free delivery on all products. Buy products with peace of mind.')
 @section('canonical', url()->current())
 @section('styles')

@@ -11,13 +11,13 @@
 @extends('layouts.app')
 @section('title', 'Laundry ironing Service in Dubai & Abu Dhabi')
 @section('description',
-'Do you hate ironing but are too fussy about presentable? Lets skip it with SunCity laundrys
+'Do you hate ironing but are too fussy about presentable? Lets skip it with LaundryService laundrys
 very affordable Ironing packages in Dubai, Abu Dhabi, Ajman & Sharjah, get your whole weeks laundry ironed for only @69
 <img class="aed">, with no extra charges, with free next-day delivery service. Also available same-day ironing service & urgent 2-hour
 pressing service at extra charge.')
 @section('og:title', 'Laundry ironing Service in Dubai & Abu Dhabi')
 @section('og:description',
-'Do you hate ironing but are too fussy about presentable? Lets skip it with SunCity laundrys
+'Do you hate ironing but are too fussy about presentable? Lets skip it with LaundryService laundrys
 very affordable Ironing packages in Dubai, Abu Dhabi, Ajman & Sharjah, get your whole weeks laundry ironed for only @69
 <img class="aed">, with no extra charges, with free next-day delivery service. Also available same-day ironing service & urgent 2-hour
 pressing service at extra charge.')
@@ -115,7 +115,7 @@ pressing service at extra charge.')
                     <div class="page-content">
                         <h3 class="sec-title page-title" style="font-size: 26px">IRONING/PRESSING SERVICE</h3>
                         <p class="">
-                            Do you hate ironing but are too fussy about presentable? Let’s skip it with SunCity
+                            Do you hate ironing but are too fussy about presentable? Let’s skip it with LaundryService
                             laundry's very affordable Ironing package, get your whole week's laundry ironed for only 119
                             <img class="aed">, with no extra charges, with free next-day delivery service.
                         </p>
@@ -262,7 +262,7 @@ pressing service at extra charge.')
                         <div class="checklist">
                             <ul>
                                 <li>It's very convenient, just WhatsApp
-                                    your address & pin location at SunCity customer contact number:
+                                    your address & pin location at LaundryService customer contact number:
                                     <a href="+971 52 273 2873">+971 52 273 2873</a>
                                 </li>
                                 <li>You can also book service via <a

@@ -1,8 +1,8 @@
 @extends('layouts.app')
 @section('title', 'Laundry Price List Dubai | Cheapest Laundry')
-@section('description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
+@section('description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@LaundryService offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
 @section('og:title', 'Laundry Price List Dubai | Cheapest Laundry')
-@section('og:description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
+@section('og:description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@LaundryService offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
 @section('canonical', url()->current())
 @section('styles')
 <style>
@@ -236,7 +236,7 @@
             <h2 style="font-size: 36px">DUBAI</h2>
         </div>
         <div class="row w3-services-grids mt-lg-5 mt-4">
-            <p style="font-size: 18px">Providing exceptional quality and service is only half the value we deliver @SunCity Laundromat. The other half is doing so at competitive and affordable rates. To be completely transparent our pricing was developed as a result of surveying our three top competitors in the emirates of Dubai, taking the average of their rates, and ultimately beating them by 20-30%</p>
+            <p style="font-size: 18px">Providing exceptional quality and service is only half the value we deliver @LaundryService. The other half is doing so at competitive and affordable rates. To be completely transparent our pricing was developed as a result of surveying our three top competitors in the emirates of Dubai, taking the average of their rates, and ultimately beating them by 20-30%</p>
             <p style="font-size: 18px">Free collection & delivery service at a minimum order of @65 <img class="aed">.</p>
         </div>
     </div>
@@ -367,7 +367,7 @@
                         <div class="checklist">
                             <ul>
                                 <li>It's very convenient, just WhatsApp
-                                    your address & pin location at SunCity customer contact number:
+                                    your address & pin location at LaundryService customer contact number:
                                     <a href="+971 52 273 2873">+971 52 273 2873</a>
                                 </li>
                                 <li>You can also book service via <a
@@ -399,15 +399,12 @@
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
-                                    Services Do You Offer?</button>
+                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1"> Do you offer pay per kg laundry service in Dubai?</button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse show"
                                 aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we provide a convenient pay per kg option so you only pay for the exact weight of your clothes simple and transparent.</p>
                                 </div>
                             </div>
                         </div>
@@ -415,15 +412,13 @@
                             <div class="accordion-header" id="collapse-item-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                    Do You Have Certified Technicians?
+                                     How is laundry prices calculated?
                                 </button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Prices are mostly based on weight or per item depending on the type of clothing or fabric. Special items like abayas curtains or bedding may have individual rates.</p>
                                 </div>
                             </div>
                         </div>
@@ -431,15 +426,13 @@
                             <div class="accordion-header" id="collapse-item-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                                    Can You Provide a Customized Service Plan?
+                                    How do you charge for items like curtains or carpets?
                                 </button>
                             </div>
                             <div id="collapse-3" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Large items such as curtains carpets and duvets are usually priced per piece rather than per kg because of their size and cleaning method</p>
                                 </div>
                             </div>
                         </div>
@@ -447,15 +440,13 @@
                             <div class="accordion-header" id="collapse-item-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                    What is Your Pricing Structure?
+                                    Are same-day or express laundry services available in Dubai?
                                 </button>
                             </div>
                             <div id="collapse-4" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we do offer express and same day laundry at slightly higher rates. It is ideal if you need your clothes urgently.</p>
                                 </div>
                             </div>
                         </div>

@@ -2,12 +2,12 @@
 @section('title', 'Laundry Price List Abu Dhabi | Cheapest Laundry')
 @section('description',
 'Get premium laundry & dry cleaning service in Abu Dhabi at the lowest price. Prices start from
-3 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers
+3 <img class="aed"> & free delivery service.@LaundryService Laundromat offers complete laundry & dry cleaning solutions to our customers
 including wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price.')
 @section('og:title', 'Laundry Price List Abu Dhabi | Cheapest Laundry')
 @section('og:description',
 'Get premium laundry & dry cleaning service in Abu Dhabi at the lowest price. Prices start
-from 3 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers
+from 3 <img class="aed"> & free delivery service.@LaundryService Laundromat offers complete laundry & dry cleaning solutions to our customers
 including wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price.')
 @section('canonical', url()->current())
 @section('styles')
@@ -241,7 +241,7 @@ including wash & fold service, Steam pressing, Ironing service, linen & bedding 
         </div>
         <div class="row w3-services-grids mt-lg-5 mt-4">
             <p style="font-size: 18px">Get<a href="https://laundryservice.ae/"> premium laundry & dry cleaning service</a> in Abu Dhabi at lowest price, we
-                @SunCity Laundromat offer complete laundry & dry cleaning solutions to our customers including wash &
+                @LaundryService Laundromat offer complete laundry & dry cleaning solutions to our customers including wash &
                 fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price.</p>
             <p style="font-size: 18px">Free collection & delivery service at a minimum order of @65 <img class="aed">.</p>
         </div>
@@ -372,7 +372,7 @@ including wash & fold service, Steam pressing, Ironing service, linen & bedding 
                         <div class="checklist">
                             <ul>
                                 <li>It's very convenient, just WhatsApp
-                                    your address & pin location at SunCity customer contact number:
+                                    your address & pin location at LaundryService customer contact number:
                                     <a href="+971 52 273 2873">+971 52 273 2873</a>
                                 </li>
                                 <li>You can also book service via <a

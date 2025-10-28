@@ -12,7 +12,7 @@
 @extends('layouts.app')
 @section('title', 'Jobs in Laundry| Apply Online for Jobs in Laundry')
 @section('description','Career Opportunities Jobs are available for experienced laundry workers, laundry pick-up & delivery drivers, pressmen, and wash man & laundry supervisors. Now you can apply online for a laundry job, explore a range of available positions & upload your documents in quite easy & simple steps.')
-@section('og:title', 'Jobs in Laundry| Apply Online for Jobs in Laundry | SunCity Laundry')
+@section('og:title', 'Jobs in Laundry| Apply Online for Jobs in Laundry | LaundryService')
 @section('og:description','Career Opportunities Jobs are available for experienced laundry workers, laundry pick-up & delivery drivers, pressmen, and wash man & laundry supervisors. Now you can apply online for a laundry job, explore a range of available positions & upload your documents in quite easy & simple steps.')
 @section('canonical', url()->current())
 @section('styles')
@@ -97,7 +97,7 @@
 
 			<div class="col-lg-5 w3-services-left-grid">
 				<p>
-					SunCity Laundry requires as a condition of employment that all successful candidates in the UAE be fully vaccinated against COVID-19 prior to their start date and may require proof of the same.
+					LaundryService requires as a condition of employment that all successful candidates in the UAE be fully vaccinated against COVID-19 prior to their start date and may require proof of the same.
 				</p>
 			</div>
 			<div class="col-lg-4 w3-services-right-grid mt-lg-0 mt-5 mx-auto  ">

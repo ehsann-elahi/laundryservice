@@ -1,24 +1,21 @@
-@push('footer')
-@if (session('message'))
-<script>
-	setTimeout(function() {
-		let msg = document.getElementById('msg');
-		msg.style.display = 'none';
-	}, 9000);
-</script>
-@endif
+@php
+    use Illuminate\Support\Str;
 
-@endpush
+    $cleanDescription = strip_tags($blog->description); // remove HTML
+    $cleanDescription = preg_replace('/\s+/', ' ', $cleanDescription); // normalize spaces
+    $cleanDescription = trim($cleanDescription);
+    $limitedDescription = Str::limit($cleanDescription, 150); // limit to 150 characters
+@endphp
 @extends('layouts.app')
-@section('title', 'Laundry blog post')
-@section('description','Read our blog post to know how a professional laundry works? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
-@section('og:title', 'Laundry near me')
-@section('og:description','Read our blog post to know how a professional laundry works? Where to find the best laundry near me? How to clean laundry at cheapest price when you are on visit in Dubai? How to clean the blackout curtains?')
+@section('title', $blog->title)
+@section('description',$limitedDescription)
+@section('og:title', $blog->title)
+@section('og:description',$limitedDescription)
 @section('canonical', url()->current())
 @section('content')
 <!-- breadcrum -->
 
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog-detail.jpg')}}">
 	<div class="container">
 		<div class="breadcumb-content">
 			<h1 style="font-size: 40px;" class="breadcumb-title">{{$blog->title}}</h1>
@@ -35,10 +32,10 @@
 	<div class="text-element-9 py-5">
 		<div class="container py-lg-3">
 			<div class="row grid-text-9">
-				<div class="col-lg-8">
+				<div class="col-lg-12">
 					<div class="blog-single-post">
 						<div class="single-post-image mb-4">
-							<img style="width: 800px" loading="lazy" src="{{$blog->image}}" class="img-fluid " alt="blog-post-image" />
+							<img style="width: 100%; height: 400px" loading="lazy" src="{{$blog->image}}" class="img-fluid " alt="blog-post-image" />
 							<ul class="blog-author-date d-flex align-items-center mt-3 mb-2">
 								<li>By <span class="author">Admin</span> </li>
 								<li><span class="fa fa-calendar-o" aria-hidden="true"></span> {{ $blog->created_at->format('M d, Y') }}</li>
@@ -71,7 +68,7 @@
 
 
 				</div>
-				<div class="col-lg-4">
+				<div class="col-lg-6">
 					<h3>Related Posts</h3>
 					<nav class="post-navigation row mt-2 py-4">
 						@if($previousBlog)
@@ -118,6 +115,7 @@
 						</ul>
 					</div>
 				</div>
+				
 			</div>
 		</div>
 	</div>

@@ -8,6 +8,8 @@ use App\Http\Controllers\ChatController;
 use App\Http\Controllers\CartController;
 use App\Http\Controllers\PaymentController;
 use App\Http\Controllers\PartnerController;
+use App\Http\Controllers\FormController;
+
 
 /*
 |--------------------------------------------------------------------------
@@ -64,7 +66,7 @@ Route::get('/return-policy', [FrontController::class, 'returnPolicy'])->name('re
 Route::get('/laundry-faqs', [FrontController::class, 'faq'])->name('faq');
 Route::get('/enviornment-health-safety-policy', [FrontController::class, 'EHSPolicy'])->name('EHSPolicy');
 Route::get('/privacy-policy', [FrontController::class, 'PrivacyPolicy'])->name('privacyPolicy');
-Route::get('/suncity-laundry-abu-dhabi', [FrontController::class, 'healthcareLaundry'])->name('healthcareLaundry');
+Route::get('/laundry-abu-dhabi', [FrontController::class, 'healthcareLaundry'])->name('healthcareLaundry');
 Route::get('/jobs', [FrontController::class, 'jobs'])->name('jobs');
 Route::post('/job-apply', [FrontController::class, 'applyJob'])->name('job.store');
 
@@ -89,3 +91,16 @@ Route::get('/pay', [PaymentController::class, 'pay'])->name('payment.pay');
 Route::get('/payment/callback', [PaymentController::class, 'callback'])->name('payment.callback');
 Route::post('/partners/ajax', [PartnerController::class, 'ajaxStore'])->name('partners.ajaxStore');
 
+
+
+// ----------------------------------------
+// Requirement Form (slug-based dynamic form)
+// ----------------------------------------
+
+Route::get('/form/{slug}', [FormController::class, 'show'])->name('forms.show');
+Route::post('/form/{slug}', [FormController::class, 'store'])->name('forms.store');
+
+// Admin area (simple list)
+Route::get('/admin/forms', [FormController::class, 'index'])->name('admin.forms.index');
+Route::get('/admin/forms/{id}/submissions', [FormController::class, 'submissions'])->name('admin.forms.submissions');
+Route::get('/admin/submission/{id}/download', [FormController::class, 'downloadPdf'])->name('admin.submissions.download');

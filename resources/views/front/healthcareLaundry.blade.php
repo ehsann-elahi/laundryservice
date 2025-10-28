@@ -10,10 +10,10 @@
 
 @endpush
 @extends('layouts.app')
-@section('title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
-@section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"SunCity Laundry\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
-@section('og:title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
-@section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"SunCity Laundry\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
+@section('title', 'Laundromat in Abu Dhabi | LaundryService | Abu Dhabi | LaundryService')
+@section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"LaundryService\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
+@section('og:title', 'Laundromat in Abu Dhabi | LaundryService | Abu Dhabi | LaundryService')
+@section('og:description', "Welcome to Abu Dhabi's favorite Laundry & dry cleaner laundromat \"LaundryService\". We provide dry cleaning, cleaning, and pressing, minor alteration services with free pick up and delivery in Mohamed Bin Zayed City & Khalifa")
 @section('canonical', url()->current())
 @section('styles')
 <style>
@@ -121,7 +121,7 @@
 <section class="w3l-breadcrum">
     <div class="breadcrum">
         <div class="container">
-            <p><a href="{{route('index')}}">Home</a> &nbsp; / &nbsp; Suncity Laundry Abu Dhabi</p>
+            <p><a href="{{route('index')}}">Home</a> &nbsp; / &nbsp; LaundryService Abu Dhabi</p>
         </div>
     </div>
 </section>
@@ -155,7 +155,7 @@
         </section>
 
 
-        <h3 class="text-center">SunCity Laundry</h3>
+        <h3 class="text-center">LaundryService</h3>
         <p class="text-center mb-5">We are open now in all major cities of UAE including Abu Dhabi, Dubai, Sharjah & Ajman</p>
         <P>To ranked laundromat & dry cleaner in the region, Mohamed Bin Zayed City, Abu Dhabi. Providing launderer services since 2011. We are keen to provide one-stop commercial & no-commercial dry cleaning services to our customers, our top-rated laundry & dry cleaning services are; Wash & Fold, Ironing Services, Dry Cleaning, Curtains Cleaning, Linen & bedding cleaning services.</P>
         <P>We are enthusiastic to keep you safe in this pandemic, therefore we delivered contactless clean laundries t your doorsteps. Our pick-up & drop-off is quite free in Mohamed Bin Zayed City without any upper limit restrictions.
@@ -290,9 +290,9 @@
                 <div class="header-section mb-5 price">
                     <ul class="ml-4">
                         <li>
-                            <p lang="en" dir="ltr">Get Your Curtain Laundry Cleaned at 30 AED/Pair<br>SunCity Laundry on <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a> <a href="https://t.co/6cfaYciKm0">https://t.co/6cfaYciKm0</a></p>
+                            <p lang="en" dir="ltr">Get Your Curtain Laundry Cleaned at 30 AED/Pair<br>LaundryService on <a href="https://twitter.com/hashtag/Google?src=hash&amp;ref_src=twsrc%5Etfw">#Google</a> <a href="https://t.co/6cfaYciKm0">https://t.co/6cfaYciKm0</a></p>
                         </li>
-                        <li>— SunCity Laundry (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1364410770268643333?ref_src=twsrc%5Etfw">February 24, 2021</a></li>
+                        <li>— LaundryService (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1364410770268643333?ref_src=twsrc%5Etfw">February 24, 2021</a></li>
                     </ul>
                 </div>
             </div>
@@ -300,9 +300,9 @@
                 <div class="book header-section mb-5">
                     <ul class="ml-4">
                         <li>
-                            <p lang="en" dir="ltr">SunCity Laundry:<a href="https://twitter.com/hashtag/laundryoffer?src=hash&amp;ref_src=twsrc%5Etfw">#laundryoffer</a> <a href="https://twitter.com/hashtag/weekend?src=hash&amp;ref_src=twsrc%5Etfw">#weekend</a> <a href="https://twitter.com/hashtag/offer?src=hash&amp;ref_src=twsrc%5Etfw">#offer</a> <a href="https://twitter.com/hashtag/AbuDhabi?src=hash&amp;ref_src=twsrc%5Etfw">#AbuDhabi</a> <br>Get 7 Kg dirty laundry bag wash &amp; fold, only <a href="https://twitter.com/40?ref_src=twsrc%5Etfw">@40</a> AED<a href="https://t.co/sPsSdGX47y">https://t.co/sPsSdGX47y</a></p>
+                            <p lang="en" dir="ltr">LaundryService:<a href="https://twitter.com/hashtag/laundryoffer?src=hash&amp;ref_src=twsrc%5Etfw">#laundryoffer</a> <a href="https://twitter.com/hashtag/weekend?src=hash&amp;ref_src=twsrc%5Etfw">#weekend</a> <a href="https://twitter.com/hashtag/offer?src=hash&amp;ref_src=twsrc%5Etfw">#offer</a> <a href="https://twitter.com/hashtag/AbuDhabi?src=hash&amp;ref_src=twsrc%5Etfw">#AbuDhabi</a> <br>Get 7 Kg dirty laundry bag wash &amp; fold, only <a href="https://twitter.com/40?ref_src=twsrc%5Etfw">@40</a> AED<a href="https://t.co/sPsSdGX47y">https://t.co/sPsSdGX47y</a></p>
                         </li>
-                        <li>— SunCity Laundry (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1359736048465678337?ref_src=twsrc%5Etfw">February 11, 2021</a></li>
+                        <li>— LaundryService (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1359736048465678337?ref_src=twsrc%5Etfw">February 11, 2021</a></li>
                     </ul>
                 </div>
             </div>
@@ -310,8 +310,8 @@
         <div class="row price mt-3 justify-content-end">
             <div class="col-md-6 col-12">
                 <div class="header-section mb-5 price">
-                    <p lang="en" dir="ltr">Same-Day Laundry Service - SunCity Laundry - Abu Dhabi<a href="https://twitter.com/hashtag/wash?src=hash&amp;ref_src=twsrc%5Etfw">#wash</a> &amp; fold, Steam Pressing, Dry Cleaning.<a href="https://twitter.com/hashtag/laundry?src=hash&amp;ref_src=twsrc%5Etfw">#laundry</a> <a href="https://twitter.com/hashtag/AbuDhabi?src=hash&amp;ref_src=twsrc%5Etfw">#AbuDhabi</a> <br>Visit us:<a href="https://t.co/9MAiQmt2o5">https://t.co/9MAiQmt2o5</a><br>We are on all your favorite social platform:<br>Facebook:<a href="https://t.co/g46AVPjhMF">https://t.co/g46AVPjhMF</a><br>Instagram:<a href="https://t.co/eEr01AyS0H">https://t.co/eEr01AyS0H</a> <a href="https://t.co/qYV77BghMn">pic.twitter.com/qYV77BghMn</a></p>
-                    — SunCity Laundry (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1352868097456267265?ref_src=twsrc%5Etfw">January 23, 2021</a>
+                    <p lang="en" dir="ltr">Same-Day Laundry Service - LaundryService - Abu Dhabi<a href="https://twitter.com/hashtag/wash?src=hash&amp;ref_src=twsrc%5Etfw">#wash</a> &amp; fold, Steam Pressing, Dry Cleaning.<a href="https://twitter.com/hashtag/laundry?src=hash&amp;ref_src=twsrc%5Etfw">#laundry</a> <a href="https://twitter.com/hashtag/AbuDhabi?src=hash&amp;ref_src=twsrc%5Etfw">#AbuDhabi</a> <br>Visit us:<a href="https://t.co/9MAiQmt2o5">https://t.co/9MAiQmt2o5</a><br>We are on all your favorite social platform:<br>Facebook:<a href="https://t.co/g46AVPjhMF">https://t.co/g46AVPjhMF</a><br>Instagram:<a href="https://t.co/eEr01AyS0H">https://t.co/eEr01AyS0H</a> <a href="https://t.co/qYV77BghMn">pic.twitter.com/qYV77BghMn</a></p>
+                    — LaundryService (@Laundry_uae) <a href="https://twitter.com/Laundry_uae/status/1352868097456267265?ref_src=twsrc%5Etfw">January 23, 2021</a>
                 </div>
             </div>
             <div class="col-md-6 col-12">

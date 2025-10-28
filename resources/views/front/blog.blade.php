@@ -30,7 +30,7 @@
 @endsection
  
 @section('content')
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog-detail.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/blog.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Blogs</h1>

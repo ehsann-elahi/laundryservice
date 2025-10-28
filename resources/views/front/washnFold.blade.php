@@ -1,14 +1,14 @@
 @extends('layouts.app')
-@section('title', 'Wash and Fold Service & Price in Dubai & Abu Dhabi')
+@section('title', 'Laundry Wash & Fold in Dubai & Abu Dhabi – Fast, Reliable & Affordable Care')
 @section('description',
 'Laundry wash and fold service is one of our most favored laundry services in Dubai & Abu Dhabi,
-Ajman & Sharjah, now you can get a complete week of dirty laundry cleaned at only 49 <img class="aed">, with no extra charges, and a
+Ajman & Sharjah, now you can get a complete week of dirty laundry cleaned at only 49 AED, with no extra charges, and a
 next-day free delivery service. Also, available same-day wash & fold service & urgent 2-hour wash fold service at
 additional price.')
-@section('og:title', 'Wash and Fold Service & Price in Dubai & Abu Dhabi')
+@section('og:title', 'Laundry Wash & Fold in Dubai & Abu Dhabi – Fast, Reliable & Affordable Care')
 @section('og:description',
 'Laundry wash and fold service is one of our most favored laundry services in Dubai & Abu
-Dhabi, Ajman & Sharjah, now you can get a complete week of dirty laundry cleaned at only 49 <img class="aed">, with no extra charges,
+Dhabi, Ajman & Sharjah, now you can get a complete week of dirty laundry cleaned at only 49 AED, with no extra charges,
 and a next-day free delivery service. Also, available same-day wash & fold service & urgent 2-hour wash fold service at
 additional price.')
 @section('canonical', url()->current())
@@ -92,122 +92,136 @@ additional price.')
 <div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/washnfold.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
-            <h1 class="breadcumb-title">Wash & Fold Service</h1>
-            <h3 class="text-white mt-3" style="font-size: 20px">Dubai & Abu-Dhabi</h3>
+            <h1 class="breadcumb-title">Laundry Wash & Fold Service in Abu Dhabi</h1>
+            <p class="text-white mt-3">Tired of spending weekends doing laundry? SunCity Laundry LLC brings professional wash & fold services in Dubai right to your doorstep. We handle everything from sorting to folding — so you can enjoy more free time while we care for your clothes like our own.</p>
             <ul class="breadcumb-menu">
                 <li><a href="{{ route('index') }}">Home</a></li>
-                <li class="text-white">Wash & Fold</li>
+                <li class="text-white">Laundry Wash & Fold</li>
             </ul>
         </div>
     </div>
 </div>
 <section class="space-top space-extra-bottom">
     <div class="container">
-        <h3 class="sec-title page-title text-center mb-5" style="font-size: 32px">Dubai & Abu-Dhabi</h3>
+        <div class="laundry-wash-n-fold-price text-center">
+            <h2 class="">How much does Laundry Wash & Fold cost in Dubai?</h2>
+            <p>A standard 6kg mixed wash & fold costs AED 65, while 12kg separate wash & fold is AED 130. Add-ons include special detergents (AED 10) and dry on hanger (AED 0.25 per piece). Same-day service available across ME-11 and nearby areas.
+                <a class="text-italic" href="#abu-dhabi-washnfold-price">Prices vary by load and fabrics; confirm before booking.</a>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="space-top space-extra-bottom" style="background-image: url(&quot;http://127.0.0.1:8000/assets/front/img/bg/dubaiLaundryServiceBanner.webp&quot;); opacity: 0.5;z-index: 999">
+    <div class="container">
+        <h3 class="sec-title page-title text-center mb-5" style="font-size: 32px">Wash & Fold Service in Dubai & Abu-Dhabi</h3>
         <div class="row">
-            <div class="col-xxl-8 col-lg-8">
+            <div class="col-xxl-12 col-lg-12">
                 <div class="page-single mb-0">
-                    <div class="page-img"><img loading="lazy"src="{{asset('/assets/front/img/service/wf.png')}}" alt="Service Image" />
-                    </div>
                     <div class="page-content">
-                        <h2 class="sec-title page-title" style="font-size: 26px">Wash & Fold Service</h2>
-                        <p class="">
-                            Wash and fold service is one of our most favored laundry services, now you can get a
+                        <p class="text-center">Wash and fold service is one of our most favored laundry services, now you can get a
                             complete week of dirty laundry cleaned only at 65 <img class="aed">, with no extra charges, and next-day
                             free delivery service.<br>
-                            Free collection & delivery service
-                        </p>
-                        <div class="row mt-1">
+                            Free collection & delivery service</p>
+                        <div class="table-responsive">
+                            <table class="table table-striped text-successtable-border border-light">
+                                <thead class="border-light">
+                                <tr>
+                                    <th scope="col"><strong>Service</strong></th>
+                                    <th scope="col"><strong>Typical Cost</strong></th>
+                                    <th scope="col"><strong>Includes</strong></th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <th scope="row">6kg Mixed Wash & Fold</th>
+                                    <td>AED 65</td>
+                                    <td>Wash, dry, fold, pickup & delivery</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">12kg Separate Wash & Fold</th>
+                                    <td>AED 130</td>
+                                    <td>Wash separately, fold, return same day</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Add-on: Special Detergent</th>
+                                    <td>AED 10</td>
+                                    <td>Fragrance-free or hypoallergenic options</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Add-on: Dry on Hanger</th>
+                                    <td>AED 0.25/piece</td>
+                                    <td>Press-free drying & hanging</td>
+                                </tr>
+                                <tr>
+                                    <th scope="row">Extra Load</th>
+                                    <td>AED 11/kg</td>
+                                    <td>For bulk or heavy items</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
 
-                            <div class="col-lg-6 col-md-6 col-12 ">
-
-                                <h3 style="font-size: 20px">Price</h3>
+                        <div class="row mt-10 gx-40" style="margin-top: 80px">                           
+                            <div class="col-md-6 mb-30"><img loading="lazy"class="w-100"
+                                src="{{asset('/assets/front/img/service/wf2.png')}}" alt="service" />
+                            </div>
+                            <div class="col-md-6">
+                                <h3 style="font-size: 26px;">Featured Services</h3>
+                                
                                 <div class="checklist">
                                     <ul>
-                                        <li style="font-size: 20px">6-Kg (Mixed Wash) | 65 <img class="aed"></li>
-                                        <li style="font-size: 20px">12-Kg (Separate Wash) | 130 <img class="aed"></li>
+                                        <li>Wash, tumble dry & fold/on the hanger</li>
+                                        <li>Free Delivery</li>
+                                        <li>Free fold service, upon request</li>
+                                        <li>Drop-off facility 7 days a week from 8:00 AM to 11:00 PM</li>
+                                        <li>We also offer urgent 2 hours wash n fold service at additional charges</li>
 
                                     </ul>
                                 </div>
-
-                            </div>
-
-                            <div class="col-6">
-                                <h3 style="font-size: 20px ">Add-ons</h3>
-                                <div class="checklist">
-                                    <ul>
-                                        <li style="font-size: 20px">Special detergent | +10 <img class="aed"></li>
-                                        <li style="font-size: 20px">Dry on Hanger | +0.25 <img class="aed">/item</li>
-                                        <li style="font-size: 20px">Additional Load | 11 <img class="aed">/Kg</li>
-
-                                    </ul>
-                                </div>
                             </div>
                         </div>
-                        <div class="row mt-10 gx-40" style="margin-top: 80px">
-                           
-                            <div class="col-md-12 mb-30"><img loading="lazy"class="w-100"
-                                    src="{{asset('/assets/front/img/service/wf2.png')}}" alt="service" /></div>
-                        </div>
-                        <h3 style="font-size: 26px;">Featured Services</h3>
-                        
-                        <div class="checklist">
-                            <ul>
-                                <li>Wash, tumble dry & fold/on the hanger</li>
-                                <li>Free Delivery</li>
-                                <li>Free fold service, upon request</li>
-                                <li>Drop-off facility 7 days a week from 8:00 AM to 11:00 PM</li>
-                                <li>We also offer urgent 2 hours wash n fold service at additional charges</li>
-
-                            </ul>
-                        </div>
-
-                        
                     </div>
-                    
                 </div>
-
             </div>
-            
-            <div class="col-xxl-4 col-lg-4">
-                <aside class="sidebar-area">
-
-                    <div class="widget widget_categories">
-                        <h3 class="widget_title">All Services</h3>
-                        <ul>
-                            <li><a href="{{route('washnFold')}}">Wash & Fold</a> <i class="fa-regular fa-arrow-right"></i></li>
-                            <li><a href="{{route('pressing')}}">Pressing</a> <i class="fa-regular fa-arrow-right"></i></li>
-                            <li><a href="{{route('washNPress')}}">Wash & Press</a> <i class="fa-regular fa-arrow-right"></i></li>
-                            <li><a href="{{route('curtain-cleaning')}}">Curtain Cleaning</a> <i class="fa-regular fa-arrow-right"></i></li>
-                            <li><a href="{{route('carpet')}}">Carpet | Mattress | Sofa</a> <i
-                                    class="fa-regular fa-arrow-right"></i></li>
-                        </ul>
+            <div class="col-md-4">
+                <div class="widget widget_categories">
+                    <h3 class="widget_title">All Services</h3>
+                    <ul>
+                        <li><a href="{{route('washnFold')}}">Wash & Fold</a> <i class="fa-regular fa-arrow-right"></i></li>
+                        <li><a href="{{route('pressing')}}">Pressing</a> <i class="fa-regular fa-arrow-right"></i></li>
+                        <li><a href="{{route('washNPress')}}">Wash & Press</a> <i class="fa-regular fa-arrow-right"></i></li>
+                        <li><a href="{{route('curtain-cleaning')}}">Curtain Cleaning</a> <i class="fa-regular fa-arrow-right"></i></li>
+                        <li><a href="{{route('carpet')}}">Carpet | Mattress | Sofa</a> <i
+                                class="fa-regular fa-arrow-right"></i></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widget widget_download">
+                    <h3 class="widget_title">Download Pricing</h3>
+                    <p>Click to download washing & pressing laundry price list in Abu Dhabi - Dubai - Sharjah -
+                        Ajman</p>
+                    <div class="download-widget-wrap">
+                        <a href="{{ asset('/assets/pdf/PriceListMen.jpg') }}" class="th-btn style4 rounded-10"  target="_blank"><i
+                                class="fa-light fa-file-image me-2"></i>Price List Men</a>
+                        <a href="{{ asset('/assets/pdf/PriceListWomen.jpg') }}" class="th-btn style4 rounded-10"  target="_blank"><i class="fa-light fa-file-image me-2"></i>
+                        Price List Women</a>
+                        <a href="{{ asset('/assets/pdf/PriceListLinen&Bedding.jpg') }}"
+                            class="th-btn rounded-10 mt-3" target="_blank"><i class="fa-light fa-file-image me-2"></i>Price List Linen
+                            & Bedding</a>
                     </div>
-                    <div class="widget widget_download">
-                        <h3 class="widget_title">Download Pricing</h3>
-                        <p>Click to download washing & pressing laundry price list in Abu Dhabi - Dubai - Sharjah -
-                            Ajman</p>
-                        <div class="download-widget-wrap">
-                            <a href="{{ asset('/assets/pdf/PriceListMen.jpg') }}" class="th-btn style4 rounded-10"  target="_blank"><i
-                                    class="fa-light fa-file-image me-2"></i>Price List Men</a>
-                            <a href="{{ asset('/assets/pdf/PriceListWomen.jpg') }}" class="th-btn style4 rounded-10"  target="_blank"><i class="fa-light fa-file-image me-2"></i>
-                            Price List Women</a>
-                            <a href="{{ asset('/assets/pdf/PriceListLinen&Bedding.jpg') }}"
-                                class="th-btn rounded-10 mt-3" target="_blank"><i class="fa-light fa-file-image me-2"></i>Price List Linen
-                                & Bedding</a>
-                        </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="widget widget_call " data-bg-src="{{asset('/assets/front/img/bg/widget_bg_1.jpg')}}">
+                    <div class="widget-call">
+                        <div class="call-btn color-change"><img loading="lazy" class="img-fluid" src="{{asset('/assets/front/img/icon/call.svg')}}"
+                                alt="" /></div>
+                        <h4 class="box-title">Have any Questions? Call us Today!</h4>
+                        <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup" class="call text-white">+971 52 273 2873</a> <a
+                            href="https://mail.google.com/" class="info-box_link">support@laundryservice.ae</a>
                     </div>
-                    <div class="widget widget_call " style="margin-top: 100px"
-                        data-bg-src="{{asset('/assets/front/img/bg/widget_bg_1.jpg')}}">
-                        <div class="widget-call">
-                            <div class="call-btn color-change"><img loading="lazy"style="height: 220px" src="{{asset('/assets/front/img/icon/call.svg')}}"
-                                    alt="" /></div>
-                            <h4 class="box-title">Have any Questions? Call us Today!</h4>
-                            <a href="https://wa.me/971522732873?text=Hi!%20I'm%20looking%20for%20laundry%20pickup" class="call text-white">+971 52 273 2873</a> <a
-                                href="https://mail.google.com/" class="info-box_link">support@laundryservice.ae</a>
-                        </div>
-                    </div>
-                </aside>
+                </div>
             </div>
         </div>
     </div>
@@ -266,7 +280,7 @@ additional price.')
                              <div class="checklist">
                                 <ul>
                                     <li>It's very convenient, just WhatsApp
-                                  your address & pin location at SunCity customer contact number:
+                                  your address & pin location at LaundryService customer contact number:
                                     <a href="+971 52 273 2873">+971 52 273 2873</a></li>
                             <li>You can also book service via <a href="https://www.facebook.com/laundryservice.ae">Facebook messenger</a> or <a
                                     href="https://www.google.com/maps/place//data=!4m2!3m1!1s0x3e5e39950a5a9e43:0x34cf71b6aefd2232?source=g.page.m.we">google map</a> </li>
@@ -283,7 +297,7 @@ additional price.')
     </div>
 
 
-<section class="space pt-0">
+<section class="space pt-0" id="abu-dhabi-washnfold-price">
     <div class="container">
         <div class="title-area text-center">
             <h2 class="sec-title">Cheapest Wash & Fold Service Abu Dhabi</h2>

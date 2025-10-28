@@ -292,7 +292,7 @@
                             <div class="checklist">
                                 <ul>
                                     <li>It's very convenient, just WhatsApp
-                                        your address & pin location at SunCity customer contact number:
+                                        your address & pin location at LaundryService customer contact number:
                                         <a href="+971 52 273 2873">+971 52 273 2873</a>
                                     </li>
                                     <li>You can also book service via <a

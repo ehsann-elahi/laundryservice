@@ -34,7 +34,11 @@
 @endsection
 
 @section('content')
+<<<<<<< HEAD
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/shop.jpg')}}">
+=======
 <div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/product.jpg')}}">
+>>>>>>> d69f2296639697af4285e43f5bd3510f8782f602
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">Take a Final Look at Your Cart</h1>

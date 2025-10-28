@@ -16,8 +16,7 @@
 @endsection
 @section('content')
 
-
-<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/.jpg')}}">
+<div class="breadcumb-wrapper" data-bg-src="{{asset('/assets/front/img/bg/shop.jpg')}}">
     <div class="container">
         <div class="breadcumb-content">
             <h1 class="breadcumb-title">BOOK NOW DRY CLEAN & LAUNDRY SERVICE.</h1>
@@ -31,10 +30,10 @@
 </div>
 
 <div class="container min-vh-80 d-flex align-items-center">
-		<div class="row text-center">
+		<div class="row text-center justify-content-center">
 			<div class="col-12 col-md-12 col-lg-12">
-				<div class="content-wrapper py-5">
-					<h2 class="display-4 fw-bold mb-4" style="line-height: 1.2;">
+				<div class="content-wrapper">
+					<h2 class="display-4 fw-bold mb-4" >
 						Best Dry Clean & Laundry Service <br>{{$cleanName}}
 					</h2>
 					<p class="lead mb-2">

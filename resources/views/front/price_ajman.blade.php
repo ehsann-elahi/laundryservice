@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Laundry Price List Ajman & Sharjah | Cheapest Laundry | Ajman | SunCity Laundry')
-@section('description','Get premium laundry & dry cleaning service in Ajman & Sharjah at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers including wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price. Pay by credit card/debit card')
+@section('title', 'Laundry Price List Ajman & Sharjah | Cheapest Laundry | Ajman | LaundryService Laundry')
+@section('description','Get premium laundry & dry cleaning service in Ajman & Sharjah at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@LaundryService Laundromat offers complete laundry & dry cleaning solutions to our customers including wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price. Pay by credit card/debit card')
 @section('og:title', 'Laundry Price List Dubai | Cheapest Laundry')
-@section('og:description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
+@section('og:description','Get your dirty laundry cleaned at the cheapest price in Dubai premium laundry. Carpet & curtains cleaning service in Dubai at the lowest price. Prices start from 2 <img class="aed"> & free delivery service.@LaundryService Laundromat offers complete laundry & dry cleaning solutions to our customers including carpet cleaning, wash & fold service, Steam pressing, Ironing service, linen & bedding cleaning at the cheapest price in DUBAI. Pay by credit card/debit card')
 @section('canonical', url()->current())
 @section('styles')
 <style>
@@ -234,7 +234,7 @@
             <h2 style="font-size: 36px">AJMAN & SHARJAH</h2>
         </div>
         <div class="row w3-services-grids mt-lg-5 mt-4">
-            <p style="font-size: 18px">Get premium laundry & dry cleaning service in Ajman & Sharjah city at the lowest rates, we @SunCity Laundromat offers complete laundry & dry cleaning solutions to our customers including wash & fold service, Steam pressing, Ironing service, linen, Curtains Cleaning, Carpet Cleaning & bedding cleaning at the cheapest price.</p>
+            <p style="font-size: 18px">Get premium laundry & dry cleaning service in Ajman & Sharjah city at the lowest rates, we @LaundryService Laundromat offers complete laundry & dry cleaning solutions to our customers including wash & fold service, Steam pressing, Ironing service, linen, Curtains Cleaning, Carpet Cleaning & bedding cleaning at the cheapest price.</p>
             <p style="font-size: 18px">Free collection & delivery service.</p>
             <p style="font-size: 18px">Pressing/Washing: The price is only for wash or press service, NOT BOTH. Washing n Pressing: The price is only for wash, tumble dry & press service. Dry Cleaning: The clothes are cleaned in water-free solvents</p>
         </div>
@@ -367,7 +367,7 @@
                         <div class="checklist">
                             <ul>
                                 <li>It's very convenient, just WhatsApp
-                                    your address & pin location at SunCity customer contact number:
+                                    your address & pin location at LaundryService customer contact number:
                                     <a href="+971 52 273 2873">+971 52 273 2873</a>
                                 </li>
                                 <li>You can also book service via <a
@@ -399,15 +399,12 @@
                         <div class="accordion-card">
                             <div class="accordion-header" id="collapse-item-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
-                                    Services Do You Offer?</button>
+                                    data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">Do you provide laundry pick-up and delivery in Sharjah?</button>
                             </div>
                             <div id="collapse-1" class="accordion-collapse collapse show"
                                 aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we provide convenient pick-up and delivery services across most areas of Sharjah. Depending on your location this service </p>
                                 </div>
                             </div>
                         </div>
@@ -415,15 +412,13 @@
                             <div class="accordion-header" id="collapse-item-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                                    Do You Have Certified Technicians?
+                                    Do you offer pay per kg laundry service in Ajman and Sharjah?
                                 </button>
                             </div>
                             <div id="collapse-2" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we provide a convenient pay per kg option so you only pay for the exact weight of your clothes simple and transparent.</p>
                                 </div>
                             </div>
                         </div>
@@ -437,9 +432,7 @@
                             <div id="collapse-3" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes, absolutely! We understand that every customer has unique needs, which is why we offer fully customized service plans</p>
                                 </div>
                             </div>
                         </div>
@@ -447,15 +440,13 @@
                             <div class="accordion-header" id="collapse-item-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                                     data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                                    What is Your Pricing Structure?
+                                    Can you remove tough stains and odors?
                                 </button>
                             </div>
                             <div id="collapse-4" class="accordion-collapse collapse"
                                 aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                                 <div class="accordion-body">
-                                    <p class="faq-text">We value your feedback! Let us know about your experience
-                                        and if there's anything else we can do to make your laundry service even
-                                        better. We're always here to assist you.</p>
+                                    <p class="faq-text">Yes we use special techniques to remove stains smoke smell or pet odors without damaging the fabric</p>
                                 </div>
                             </div>
                         </div>

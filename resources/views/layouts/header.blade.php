@@ -1,34 +1,35 @@
 <style>
     @media (max-width: 1250px) {
-    .header-top .header-links ul {
-        display: flex;
-        flex-wrap: wrap; /* or nowrap if space allows */
-        gap: 20px;
-        align-items: center;
-        justify-content: center;
-    }
+        .header-top .header-links ul {
+            display: flex;
+            flex-wrap: wrap;
+            /* or nowrap if space allows */
+            gap: 20px;
+            align-items: center;
+            justify-content: center;
+        }
 
-    .header-top .header-links ul li {
-        margin: 0;
-        white-space: nowrap;
-        font-size: 14px;
-    }
+        .header-top .header-links ul li {
+            margin: 0;
+            white-space: nowrap;
+            font-size: 14px;
+        }
 
-    .header-top .header-links.style2 {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
+        .header-top .header-links.style2 {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
 
-    .header-top .header-links.style2 p {
-        margin-bottom: 5px;
-    }
+        .header-top .header-links.style2 p {
+            margin-bottom: 5px;
+        }
 
-    .header-top .social-links {
-        text-align: center;
-        margin-top: 10px;
+        .header-top .social-links {
+            text-align: center;
+            margin-top: 10px;
+        }
     }
-}
 
     @media (max-width: 1024px) {
         .main-menu {
@@ -63,80 +64,6 @@
         /* space between book-now-btn and toggle icon */
     }
 </style>
-<!-- <div class="sidemenu-wrapper sidemenu-info">
-    <div class="sidemenu-content">
-        <button class="closeButton sideMenuCls"><i class="far fa-times"></i></button>
-        <div class="widget">
-            <div class="th-widget-about">
-                <div class="about-logo">
-                    <a href="{{route('index')}}"><img loading="lazy" style="height: 70px" src="{{asset('/assets/images/logo.png')}}" alt="Laun" /></a>
-                </div>
-                <p class="about-text">We provide specialized winterization services to safeguard your pool during the
-                    off-season, and when spring arrives, we handle the thorough opening process.</p>
-                <div class="th-social">
-                   <a href="https://www.facebook.com/laundryservice.ae "><i class="fab fa-facebook-f"></i></a> <a
-                            href="https://www.twitter.com/Laundry_uae"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/laundryserviceuae/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCtONe_bE3Sr05_4Wt3EpPpQ" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
-                </div>
-            </div>
-        </div>
-        <div class="widget">
-            <h3 class="widget_title">Recent Posts</h3>
-            <div class="recent-post-wrap">
-                <div class="recent-post">
-                    <div class="media-img">
-                        <a href="blog-details.html"><img loading="lazy"src="{{asset('/assets/front/img/blog/recent-post-1-1.jpg')}}"
-                                alt="Blog Image" /></a>
-                    </div>
-                    <div class="media-body">
-                        <div class="recent-post-meta">
-                            <a href="blog.html"><i class="far fa-calendar"></i>21 October , 2023</a>
-                        </div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">A Fresh Start for Your
-                                Wardrobe</a></h4>
-                    </div>
-                </div>
-                <div class="recent-post">
-                    <div class="media-img">
-                        <a href="blog-details.html"><img loading="lazy"src="{{asset('/assets/front/img/blog/recent-post-1-2.jpg')}}"
-                                alt="Blog Image" /></a>
-                    </div>
-                    <div class="media-body">
-                        <div class="recent-post-meta">
-                            <a href="blog.html"><i class="far fa-calendar"></i>22 October , 2023</a>
-                        </div>
-                        <h4 class="post-title"><a class="text-inherit" href="blog-details.html">Where Clean Meets
-                                Convenience</a></h4>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="widget">
-            <h3 class="widget_title">Contact Us</h3>
-            <div class="th-widget-contact">
-                <div class="info-box">
-                    <div class="info-box_icon"><i class="fas fa-location-dot"></i></div>
-                    <p class="info-box_text">Dubai | Abu Dhabi | Sharjah | Ajman</p>
-                </div>
-                <div class="info-box">
-                    <div class="info-box_icon"><i class="fas fa-phone"></i></div>
-                    <p class="info-box_text"><a href="tel:+16326543564" class="info-box_link">+971 52 273 2873</a>
-                </div>
-                <div class="info-box">
-                    <div class="info-box_icon"><i class="fas fa-envelope"></i></div>
-                    <p class="info-box_text"><a href="mailto:help24/7@Laun.com"
-                            class="info-box_link">support@laundryservice.ae</a></p>
-                </div>
-
-            </div>
-        </div>
-    </div>
-</div> -->
 
 <div class="th-menu-wrapper">
     <div class="th-menu-area text-center">
@@ -207,14 +134,20 @@
 
                 <div class="col-auto">
                     <div class="social-links">
-                        <span class="social-title">Follow Us On:</span> <a href="https://www.facebook.com/laundryservice.ae "><i class="fab fa-facebook-f"></i></a> <a
-                            href="https://www.twitter.com/Laundry_uae"><i class="fab fa-twitter"></i></a>
-                        <a href="https://www.instagram.com/laundryserviceuae/" target="_blank">
-                            <i class="fab fa-instagram"></i>
-                        </a>
-                        <a href="https://www.youtube.com/channel/UCtONe_bE3Sr05_4Wt3EpPpQ" target="_blank">
-                            <i class="fab fa-youtube"></i>
-                        </a>
+                          <a href="https://www.facebook.com/laundryservicesae/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/Laundry_uae"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.instagram.com/laundryserviceuae/" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.youtube.com/@laundryserviceuae" target="_blank">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@laundryservice_uae" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/laundry-service-uae" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
                     </div>
                 </div>
             </div>
@@ -276,6 +209,8 @@
                             </ul>
                         </nav>
                     </div>
+                    <!-- Button Placement -->
+               
 
                     <!-- Book Now Button -->
                     <div class="col-auto d-flex align-items-center gap-2 button-group">
@@ -287,6 +222,8 @@
                             <i class="far fa-bars"></i>
                         </button>
                     </div>
+
+
 
                 </div>
             </div>

@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Partner With SunCity Laundry – B2B Laundry & Dry Cleaning Solutions')
-@section('description', 'Join hands with SunCity Laundry and become our business partner in Dubai & Abu Dhabi. We offer reliable B2B laundry and dry cleaning services with flexible partnerships, dedicated support, and long-term growth opportunities.')
-@section('title', 'Partner With SunCity Laundry – B2B Laundry & Dry Cleaning Solutions')
-@section('description', 'Join hands with SunCity Laundry and become our business partner in Dubai & Abu Dhabi. We offer reliable B2B laundry and dry cleaning services with flexible partnerships, dedicated support, and long-term growth opportunities.')
+@section('title', 'Partner With LaundryServive – B2B Laundry & Dry Cleaning Solutions')
+@section('description', 'Join hands with LaundryServive and become our business partner in Dubai & Abu Dhabi. We offer reliable B2B laundry and dry cleaning services with flexible partnerships, dedicated support, and long-term growth opportunities.')
+@section('title', 'Partner With LaundryServive – B2B Laundry & Dry Cleaning Solutions')
+@section('description', 'Join hands with LaundryServive and become our business partner in Dubai & Abu Dhabi. We offer reliable B2B laundry and dry cleaning services with flexible partnerships, dedicated support, and long-term growth opportunities.')
 @section('canonical', url()->current())
 @section('content')
 <style>
@@ -42,7 +42,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(43, 47, 123, 0.55);
+    background: rgba(80, 134, 154, 0.55);
     /* Dark overlay with brand color */
   }
 
@@ -59,7 +59,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(105, 106, 120, 0.55);
+    background: rgba(210, 211, 219, 0.55);
     /* Dark overlay with brand color */
   }
 
@@ -89,7 +89,7 @@
 
   .features-section {
     padding: 60px 0;
-    background: rgba(122, 126, 190, 0.55);
+    background: #65b5eeff;
   }
 
   .section-title {
@@ -147,7 +147,7 @@
       <!-- Left Side -->
       <div class="col-lg-6 mb-4 mb-lg-0 text-white">
         <h2 class="fw-bold mb-4 text-white">
-          Partner with <span class="text-pri">Suncity Laundry</span>
+          Partner with <span class="text-pri">LaundryServive</span>
         </h2>
         <p class="lead mb-3 text-white">
           Tailored laundry & dry cleaning services for hotels, gyms, spas, restaurants, and corporate clients.
@@ -161,8 +161,10 @@
       <div class="col-lg-6">
         <div class="card card-custom bg-light text-dark">
           <div class="card-body p-4">
+            
             <form class="partnerForm">
               @csrf
+                <div class="formMessage mb-3"></div>
               <div class="mb-3">
                 <label class="form-label"><i class="bi bi-building"></i> Company Name</label>
                 <input type="text" name="company_name" class="form-control" placeholder="Enter company name">
@@ -240,7 +242,6 @@
           </div>
           <h5 class="fw-bold">Residential</h5>
           <p class="text-muted">Join hundreds of property managers and communities offering premium laundry and dry cleaning pickup & delivery as a resident perk.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -252,7 +253,6 @@
           </div>
           <h5 class="fw-bold">Rental Properties</h5>
           <p class="text-muted">Commercial towel & linen laundry service for short-term rentals, Airbnb hosts, VRBOs, and vacation properties.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -264,7 +264,6 @@
           </div>
           <h5 class="fw-bold">Health & Wellness</h5>
           <p class="text-muted">Commercial towel & linen services for gyms, spas, salons, wellness centers, yoga studios, and more.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -276,7 +275,6 @@
           </div>
           <h5 class="fw-bold">Restaurants & Cafes</h5>
           <p class="text-muted">Linen, apron, and uniform cleaning services for restaurants, cafes, bakeries, catering companies & food service businesses.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -288,7 +286,6 @@
           </div>
           <h5 class="fw-bold">Uniforms</h5>
           <p class="text-muted">Workwear and uniform cleaning for your onsite team with professional finishing.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -300,7 +297,6 @@
           </div>
           <h5 class="fw-bold">Events</h5>
           <p class="text-muted">Laundry & dry cleaning services for meetings, conferences, retreats, and corporate programs.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -312,7 +308,6 @@
           </div>
           <h5 class="fw-bold">Employers</h5>
           <p class="text-muted">Offer laundry and dry cleaning services as a premium employee benefit.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -324,7 +319,6 @@
           </div>
           <h5 class="fw-bold">Education</h5>
           <p class="text-muted">Laundry and dry cleaning services for schools, colleges, and universities.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -336,7 +330,6 @@
           </div>
           <h5 class="fw-bold">Cleaning Partners</h5>
           <p class="text-muted">Join our network of trusted laundry and dry cleaning providers to grow your business with reliable, high-quality services.</p>
-          <a href="#" class="fw-bold text-primary text-decoration-none">Learn more →</a>
         </div>
       </div>
 
@@ -378,13 +371,9 @@
 
         <!-- CTAs -->
         <div class="d-flex gap-3">
-          <a href="#register"
+          <a href="{{route('partner')}}"
             class="btn btn-primary btn-lg px-4 rounded-pill shadow">
             Register Now
-          </a>
-          <a href="#learn-more"
-            class="btn btn-outline-dark btn-lg px-4 rounded-pill">
-            Learn More
           </a>
         </div>
       </div>
@@ -410,50 +399,55 @@
 
 </section>
 
-<section class="features-section">
+<section class="features-section py-5">
   <div class="container">
-    <div class="row ">
+    <div class="row align-items-center">
+      
+      <!-- Section Title -->
+      <div class="col-12">
+        <h2 class="section-title text-center mb-5">
+          No sign up fee, no hidden costs and a dedicated <br>
+          Facility support team to assist
+        </h2>
+      </div>
 
-      <h2 class="section-title text-center py-3">
-        No sign up fee, no hidden costs and a dedicated <br>
-        Facility support team to assist
-      </h2>
       <!-- Left Content -->
       <div class="col-md-6">
-
-        <div class="feature-item">
-          <span class="check-icon">✔</span>
+        <div class="feature-item d-flex mb-4">
+          <span class="check-icon me-3 text-success fs-4">✔</span>
           <div>
-            <h3>No hidden costs</h3>
-            <p>There is no sign up fee, no hidden costs. Everything is simple and smooth.</p>
+            <h3 class="h5 fw-bold">No hidden costs</h3>
+            <p class="mb-0">There is no sign up fee, no hidden costs. Everything is simple and smooth.</p>
           </div>
         </div>
 
-        <div class="feature-item">
-          <span class="check-icon">✔</span>
+        <div class="feature-item d-flex mb-4">
+          <span class="check-icon me-3 text-success fs-4">✔</span>
           <div>
-            <h3>Support team</h3>
-            <p>We have a dedicated Facility support team to assist when needed</p>
+            <h3 class="h5 fw-bold">Support team</h3>
+            <p class="mb-0">We have a dedicated Facility support team to assist when needed.</p>
           </div>
         </div>
 
-        <div class="feature-item">
-          <span class="check-icon">✔</span>
+        <div class="feature-item d-flex">
+          <span class="check-icon me-3 text-success fs-4">✔</span>
           <div>
-            <h3>Do what you do best</h3>
-            <p>As our Dry Cleaning Partner, all you need to do is what you do best,
-              provide top quality processing</p>
+            <h3 class="h5 fw-bold">Do what you do best</h3>
+            <p class="mb-0">As our Dry Cleaning Partner, all you need to do is what you do best —
+              provide top quality processing.</p>
           </div>
         </div>
       </div>
 
       <!-- Right Image -->
-      <div class="col-md-6 ">
-        <img src="{{asset('assets/front/img/bg1.png')}}" alt="Dry Cleaning" class="img-fluid rounded shadow">
+      <div class="col-md-6 text-center">
+        <img src="{{asset('assets/front/img/bg1.png')}}" alt="Dry Cleaning"
+             class="img-fluid rounded shadow-lg">
       </div>
     </div>
   </div>
 </section>
+
 
 
 
@@ -526,6 +520,7 @@
             <h3 class="py-2">Get In Touch</h3>
             <form class="partnerForm">
               @csrf
+              <div class="formMessage mb-3"></div>
               <div class="mb-3">
                 <label class="form-label"><i class="bi bi-building"></i> Company Name</label>
                 <input type="text" name="company_name" class="form-control" placeholder="Enter company name">
@@ -598,15 +593,12 @@
             <div class="accordion-card">
               <div class="accordion-header" id="collapse-item-1">
                 <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                  data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What
-                  Services Do You Offer?</button>
+                  data-bs-target="#collapse-1" aria-expanded="true" aria-controls="collapse-1">What are the benefits of partnering with Laundry?</button>
               </div>
               <div id="collapse-1" class="accordion-collapse collapse show"
                 aria-labelledby="collapse-item-1" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  <p class="faq-text">We value your feedback! Let us know about your experience
-                    and if there's anything else we can do to make your laundry service even
-                    better. We're always here to assist you.</p>
+                  <p class="faq-text">You get the opportunity to work with a trusted brand that already serves a wide customer base. This helps you increase both your income and visibility.</p>
                 </div>
               </div>
             </div>
@@ -614,15 +606,13 @@
               <div class="accordion-header" id="collapse-item-2">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapse-2" aria-expanded="false" aria-controls="collapse-2">
-                  Do You Have Certified Technicians?
+                  What are the requirements to start a partnership?
                 </button>
               </div>
               <div id="collapse-2" class="accordion-collapse collapse"
                 aria-labelledby="collapse-item-2" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  <p class="faq-text">We value your feedback! Let us know about your experience
-                    and if there's anything else we can do to make your laundry service even
-                    better. We're always here to assist you.</p>
+                  <p class="faq-text">You will need some basic documents a small service unit or setup space and a commitment to follow quality standards. We guide you through every step.</p>
                 </div>
               </div>
             </div>
@@ -630,15 +620,13 @@
               <div class="accordion-header" id="collapse-item-3">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapse-3" aria-expanded="false" aria-controls="collapse-3">
-                  Can You Provide a Customized Service Plan?
+                  What is the process to apply for a partnership?
                 </button>
               </div>
               <div id="collapse-3" class="accordion-collapse collapse"
                 aria-labelledby="collapse-item-3" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  <p class="faq-text">We value your feedback! Let us know about your experience
-                    and if there's anything else we can do to make your laundry service even
-                    better. We're always here to assist you.</p>
+                  <p class="faq-text">Simply fill out the form on our website or contact our team directly. After verification we will guide you through the onboarding process</p>
                 </div>
               </div>
             </div>
@@ -646,15 +634,13 @@
               <div class="accordion-header" id="collapse-item-4">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
                   data-bs-target="#collapse-4" aria-expanded="false" aria-controls="collapse-4">
-                  What is Your Pricing Structure?
+                  Is there any contract or agreement period?
                 </button>
               </div>
               <div id="collapse-4" class="accordion-collapse collapse"
                 aria-labelledby="collapse-item-4" data-bs-parent="#faqAccordion">
                 <div class="accordion-body">
-                  <p class="faq-text">We value your feedback! Let us know about your experience
-                    and if there's anything else we can do to make your laundry service even
-                    better. We're always here to assist you.</p>
+                  <p class="faq-text">Yes all partnerships are secured through a legal agreement to ensure clarity and long term trust. The duration is discussed before signing.</p>
                 </div>
               </div>
             </div>
@@ -687,15 +673,15 @@
       url: "{{ route('partners.ajaxStore') }}",
       type: "POST",
       data: form.serialize(),
-      success: function(response) {
-
-        if (response.status) {
-          form.find('.formMessage').html(
-            `<div class="alert alert-success">${response.message}</div>`
-          );
-          form[0].reset();
-        }
-      },
+     success: function(response) {
+  console.log(response); // Debug
+  if (response.status) {
+    form.find('.formMessage').html(
+      `<div class="alert alert-success">${response.message}</div>`
+    );
+    form[0].reset();
+  }
+},
       error: function(xhr) {
         let errors = xhr.responseJSON.errors;
         let errorList = "";

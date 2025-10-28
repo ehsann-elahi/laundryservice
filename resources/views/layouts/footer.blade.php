@@ -1,4 +1,3 @@
-
 <style>
     .popover-box {
         position: relative;
@@ -67,10 +66,9 @@
         color: #FFD06D !important;
     }
 
-    .okay{
+    .okay {
         margin-bottom: -10px !important;
     }
-    
 </style>
 
 
@@ -78,7 +76,7 @@
     <div class="widget-area">
         <div class="container">
             <div class="row justify-content-between">
-                <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
+                <div class="col-lg-4 col-xl-4 col-12 col-sm-12">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Our Services</h3>
                         <div class="menu-all-pages-container">
@@ -123,7 +121,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
+                <div class="col-lg-4 col-xl-4 col-12 col-sm-12">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">About</h3>
                         <div class="menu-all-pages-container">
@@ -166,7 +164,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-12 col-sm-6">
+                <div class="col-lg-4 col-xl-4 col-12 col-sm-12">
                     <div class="widget widget_nav_menu footer-widget">
                         <h3 class="widget_title">Laundry Near Me</h3>
                         <div class="menu-all-pages-container">
@@ -199,43 +197,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-xl-3 col-12 col-sm-6">
-                    <div class="widget widget_nav_menu footer-widget okay">
 
-                        <h3 class="widget_title">Our Laundry Partner</h3>
-
-
-                        <div class=" mt-2">
-                            <a href="https://curtaincleaning.ae" target="_blank" class="partner-logo">
-                                <img loading="lazy" src="https://curtaincleaning.ae/assets/front/img/logo.gif" alt="curtaincleaning">
-                            </a>
-                            <a href="https://carpetwashing.ae" target="_blank" class="partner-logo">
-                                <img src="https://carpetwashing.ae/assets/frontened/images/lgo_white.png" alt="Partner 2">
-                            </a>
-                            <a href="https://alkhyalcurtain.ae/" target="_blank" class="partner-logo">
-                                <img src="{{asset('/assets/front/img/alkhyal.png')}}" alt="Partner 3">
-                            </a>
-                            <a href="https://metadigitalmarketing.ae/" target="_blank" class="partner-logo1">
-                                <img src="{{asset('/assets/front/img/metadigital.png')}}" alt="Partner 3">
-                            </a>
-                            <a href="https://curtainlaundry.com" target="_blank" class="partner-logo custom-logo">
-                                <div class="logo-text">
-                                    <div class="logo-icon">
-                                    <i class="fas fa-hands-wash green-icon"></i>
-                                </div>
-                                    <div><span class="green">C</span><span class="black">urtain</span>
-                                    <span class="green1">L</span><span class="black">aundry</span></div>
-                                </div>
-                            </a>
-                             <a href="https://washnfold.ae/" target="_blank" class="partner-logo1">
-                                <img src="{{asset('/assets/front/img/washnfold.png')}}" alt="Partner 3">
-                            </a>
-                             <a href="#" target="_blank" class="partner-logo1">
-                                <img src="{{asset('/assets/images/logo2.jpg')}}" alt="Partner 3">
-                            </a>
-                        </div>
-                    </div>
-                </div>
                 <div class="row justify-content-between">
                     <div class="mx-auto mb-3">
                         <img loading="lazy" src="{{ asset('/assets/images/master-card.png') }}" id="masterCard" width="145"
@@ -256,425 +218,7 @@
                     </div>
                 </div>
 
-                <div class="row justify-content-between">
-                    <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Laundry in Abu Dhabi</h3>
-                            <div class="menu-all-pages-container">
-                                <ul>
-                                    <li>
-                                        <a href="http://google.com/maps/place/Musaffah+-+Abu+Dhabi/data=!4m2!3m1!1s0x3e5e40e7483d11d5:0x7672bbc1a32c03c2?sa=X&amp;ved=2ahUKEwiEoNvx2LvtAhVUuXEKHdXlCcEQ8gEwGHoECBkQAQ"
-                                            target="_blank" rel="noreferrer noopener">Mussafah</a>
-                                    </li>
-                                    <li>
-                                        <a>Mohamed Bin Zayed City</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.laundryservice.ae/laundry-abu-dhabi" target="_blank"><span
-                                                style="letter-spacing:normal;">Khalifa City</span></a>
-                                    </li>
-                                    <li>
-                                        <a>Al Mafraq</a>
-                                    </li>
-                                    <li>
-                                        <a>Shbiya</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Shawamekh</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Shamkha</a>
-                                    </li>
-                                    <li>
-                                        <a>Shakhboot City</a>
-                                    </li>
-                                    <li>
-                                        <a>Baniyas</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Reef Village</a>
-                                    </li>
-                                    <li>
-                                        <a>Yas Island</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Jubail Island</a>
-                                    </li>
-                                    <li>
-                                        <a>Saadiyat Island</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Reem Island</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Raha Beach</a>
-                                    </li>
-                                    <li>
-                                        <a>Masdar City</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Maqta</a>
-                                    </li>
-                                    <li>
-                                        <a>Sas Al Nakhl</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Rawdah</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Mushrif</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Manhal</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Bateen</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Nahyan</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Khalidiyah</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Marina</a>
-                                    </li>
-                                    <li>
-                                        <a>Al Danah</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Laundry in Dubai</h3>
-                            <div class="menu-all-pages-container">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Palm Jebel Ali</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">The Palm Jumeirah</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Mina Jebel Ali</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Dubai Marina</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Jumeirah</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Mirdif</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Al Warqa</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Dubai Silicon Oasis</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Academic City</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Liwan</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">The Villa</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Wadi Al Safa</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Falcon City of Wonders</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Al Barari</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Majan</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">City of Arabia</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Al Reem</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Arabian Ranches</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Arjan Dubai Land</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Jumeirah Village Circle</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Jumeirah Village Triangle</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Motor City</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Dubai Studio City</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Green Community Village</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">Al Furjan</a>
-                                    </li>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Khalifa+City+-+Abu+Dhabi/@24.4201924,54.5030489,12z/data=!3m1!4b1!4m5!3m4!1s0x3e5e4665e784b025:0x18856a84d3a5d8bf!8m2!3d24.4140115!4d54.5686489"
-                                            target="_blank" rel="noreferrer noopener">All Islands</a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Laundry in Sharjah</h3>
-                            <div class="menu-all-pages-container">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/MusaffahME-11+-+Abu+Dhabi/@24.3268906,54.5299852,16z/data=!3m1!4b1!4m5!3m4!1s0x3e5e38bac13896ff:0x7cc13b756fc9a080!8m2!3d24.3265291!4d54.5341328"
-                                            target="_blank">Al Nekhailat</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Ghafia</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Sabkha
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Azra
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Muntazah</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Fisht
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Sharqan
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Qadisiya</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Hazzanah</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Falaj
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Qasimia
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Jubail
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Gharb
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Abu Shagara</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Majaz
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Khan
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Nahda
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Muwailih
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Zahia
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">University City</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Gharayen</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Khaledia</a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Layyeh
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Falaj
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Jazzat
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#">Al Ramtha
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
-                        <div class="widget widget_nav_menu footer-widget">
-                            <h3 class="widget_title">Laundry in Ajman</h3>
-                            <div class="menu-all-pages-container">
-                                <ul>
-                                    <li>
-                                        <a href="https://www.google.com/maps/place/Al+Shawamekh+-+Abu+Dhabi/@24.3487687,54.6296903,13z/data=!3m1!4b1!4m5!3m4!1s0x3e5e3634d27dfb15:0x8e48f190306d2abc!8m2!3d24.364675!4d54.6603887"
-                                            target="_blank">Al Rumailah</a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Rashidiya</a>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Rashdiya 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Rashdiya 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Rashdiya 3
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Nakhil
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Nuaimia
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Nuaimia 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Nuaimia 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Bustan
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Liwara
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Liwara 1
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Liwara 2
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Mushairef
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Jerf
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Hamidiya
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Industrial Area
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Hamriya
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Ajman Uptown
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Heliow
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Raqaib
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Emirates City
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Amerah
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Al Zahya
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#"> Free Zone
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                </div>
                 <div class="row justify-content-between">
                     <div class="col-lg-3 col-xl-3 col-12 col-sm-12">
                         <div class="widget footer-widget">
@@ -683,7 +227,7 @@
                                     <a href="{{route('index')}}"><img loading="lazy" src="{{asset('/assets/images/logo1.png')}}"
                                             style="height: 100px" alt="Laun" /></a>
                                 </div>
-                                <h3 class="widget_title"><a href="https://www.google.com/maps/place/SunCity+Laundry/@24.326122,54.5318142,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e39950a5a9e43:0x34cf71b6aefd2232!8m2!3d24.3261172!4d54.5366851!16s%2Fg%2F11lgkxn3f4?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">SunCity Laundry</h3></a>
+                                <h3 class="widget_title"><a href="https://www.google.com/maps/place/SunCity+Laundry/@24.326122,54.5318142,17z/data=!3m1!4b1!4m6!3m5!1s0x3e5e39950a5a9e43:0x34cf71b6aefd2232!8m2!3d24.3261172!4d54.5366851!16s%2Fg%2F11lgkxn3f4?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">LaundryService</h3></a>
                                 <div class="footer-info-wrapper">
                                     <div class="footer-info">
                                         <div class="footer-info_icon"><i class="fa-sharp fa-solid fa-phone"></i></div>
@@ -706,7 +250,7 @@
                             <div class="th-widget-about">
 
                                 <h3 style="font-size: 26px" class="text-white mt-5">Visit Us Abu Dhabi</h3>
-                                <h3 class="widget_title mt-5"> <a href="https://www.google.com/maps/search/+Shop+No:02,+Building+157+-+Mohamed+Bin+Zayed+City+-+ME-11+-+Abu+Dhabi+-+United+Arab+Emirates/@24.3294094,54.5251991,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">SunCity Laundry</a></h3>
+                                <h3 class="widget_title mt-5"> <a href="https://www.google.com/maps/search/+Shop+No:02,+Building+157+-+Mohamed+Bin+Zayed+City+-+ME-11+-+Abu+Dhabi+-+United+Arab+Emirates/@24.3294094,54.5251991,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">LaundryService</a></h3>
 
                                 <div class="footer-info-wrapper">
                                     <div class="footer-info">
@@ -732,7 +276,7 @@
                             <div class="th-widget-about">
 
                                 <h3 style="font-size: 26px" class="text-white mt-5">Visit Us Dubai</h3>
-                                <h3 class="widget_title mt-5"><a href="https://www.google.com/maps/search/48a+27+street+-+Al+Muwaihat+3+-+Ajman/@25.3777877,55.4699838,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">SunCity Laundry</a></h3>
+                                <h3 class="widget_title mt-5"><a href="https://www.google.com/maps/search/48a+27+street+-+Al+Muwaihat+3+-+Ajman/@25.3777877,55.4699838,13z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">LaundryService</a></h3>
 
                                 <div class="footer-info-wrapper">
                                     <div class="footer-info">
@@ -757,7 +301,7 @@
                             <div class="th-widget-about">
 
                                 <h3 style="font-size: 26px" class="text-white mt-5">Visit Us Dubai</h3>
-                                <h3 class="widget_title mt-5"><a href="https://www.google.com/maps/search/Ware+House+No+-+36,+Near+Al+Qusais+-+Dubai/@25.2885431,55.3851494,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">SunCity Laundry</h3></a>
+                                <h3 class="widget_title mt-5"><a href="https://www.google.com/maps/search/Ware+House+No+-+36,+Near+Al+Qusais+-+Dubai/@25.2885431,55.3851494,15z/data=!3m1!4b1?entry=ttu&g_ep=EgoyMDI1MDcyMS4wIKXMDSoASAFQAw%3D%3D">LaundryService</h3></a>
 
                                 <div class="footer-info-wrapper">
                                     <div class="footer-info">
@@ -777,16 +321,10 @@
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>
         </div>
-
-
-
         <div class="copyright-wrap">
             <div class="container">
                 <div class="row gy-2 align-items-center">
@@ -796,13 +334,19 @@
                     </div>
                     <div class="col-md-6 text-center text-md-end">
                         <div class="th-social">
-                            <a href="https://www.facebook.com/laundryservice.ae "><i class="fab fa-facebook-f"></i></a> <a
-                                href="https://www.twitter.com/Laundry_uae"><i class="fab fa-twitter"></i></a>
+                            <a href="https://www.facebook.com/laundryservicesae/"><i class="fab fa-facebook-f"></i></a>
+                            <a href="https://www.twitter.com/Laundry_uae"><i class="fab fa-twitter"></i></a>
                             <a href="https://www.instagram.com/laundryserviceuae/" target="_blank">
                                 <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="https://www.youtube.com/channel/UCtONe_bE3Sr05_4Wt3EpPpQ" target="_blank">
+                            <a href="https://www.youtube.com/@laundryserviceuae" target="_blank">
                                 <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@laundryservice_uae" target="_blank">
+                                <i class="fab fa-tiktok"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/company/laundry-service-uae" target="_blank">
+                                <i class="fab fa-linkedin"></i>
                             </a>
 
                         </div>
@@ -823,267 +367,431 @@
             <div class="bubble-9"></div>
             <div class="bubble-10"></div>
         </div>
-        <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-left="0%"><img
-                src="{{asset('/assets/front/img/shape/footer_shape_1.png')}}" alt="shape" /></div>
-        <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-right="0%"><img
-                src="{{asset('/assets/front/img/shape/footer_shape_2.png')}}" alt="shape" /></div>
+        <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-left="0%">
+            <img src="{{asset('/assets/front/img/shape/footer_shape_1.png')}}" alt="shape" />
+        </div>
+        <div class="shape-mockup jump d-none d-xl-block" data-bottom="0%" data-right="0%">
+            <img src="{{asset('/assets/front/img/shape/footer_shape_2.png')}}" alt="shape" />
+        </div>
 
+    </div>
 </footer>
 
 <!-- Chatbox Button -->
-<div id="chatButton" onclick="toggleChatbox()" style="position: fixed; bottom: 20px; right: 20px; background-color: #0890F1; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); cursor: pointer; z-index: 1000;">
+<div id="chatButton" onclick="toggleChatbox()" style="position: fixed; bottom: 20px; right: 20px; background-color: #0890F1; border-radius: 50%; width: 60px; height: 60px; display: flex; align-items: center; justify-content: center; box-shadow: 0px 6px 18px rgba(0,0,0,0.18); cursor: pointer; z-index: 1000;">
     <img loading="lazy" src="{{ asset('/assets/images/bubble-chat.png') }}" alt="Chat" style="width: 28px; height: 28px;">
 </div>
+
 <!-- CHATBOX HTML -->
-<div id="chatboxModal" style="position: fixed; bottom: 90px; right: 20px; width: 350px; height: 450px; background-color: white; border-radius: 15px; box-shadow: 0px 4px 20px rgba(0,0,0,0.3); display: none; flex-direction: column; z-index: 1001;">
-    <div style="background: #0890F1; color: white; padding: 15px; border-top-left-radius: 15px; border-top-right-radius: 15px; display: flex; justify-content: space-between; align-items: center;">
-        <strong>Laundry Support</strong>
-        <button onclick="toggleChatbox()" style="background: none; border: none; color: white; font-size: 20px;">&times;</button>
+<div id="chatboxModal" style="position: fixed; bottom: 90px; right: 20px; width: 360px; height: 520px; background-color: white; border-radius: 15px; box-shadow: 0px 8px 30px rgba(0,0,0,0.25); display: none; flex-direction: column; z-index: 1001; overflow: hidden;">
+    <div style="background: #0890F1; color: white; padding: 14px 16px; border-top-left-radius: 15px; border-top-right-radius: 15px; display:flex; justify-content:space-between; align-items:center;">
+        <div style="display:flex;align-items:center;gap:10px">
+            <img src="{{ asset('/assets/images/bubble-chat.png') }}" alt="bot" style="width:28px;height:28px">
+            <strong>Laundry Support</strong>
+        </div>
+        <button onclick="toggleChatbox()" style="background:none;border:none;color:white;font-size:20px;line-height:1;">&times;</button>
     </div>
+
     <!-- CUSTOMER INFO -->
-    <div id="customerInfoSection" style="flex: 1; padding: 15px;">
-        <div id="chatErrorMsg" style="color: red; margin-bottom: 10px; display: none;"></div>
-        <input type="text" id="customerName" placeholder="Your Name" style="width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-        <input type="text" id="customerPhone" placeholder="Phone Number" style="width: 100%; margin-bottom: 10px; padding: 8px; border-radius: 5px; border: 1px solid #ccc;">
-        <button onclick="startChat()" style="width: 100%; background-color: #0890F1; color: white; padding: 10px; border: none; border-radius: 5px;">Start Chat</button>
+    <div id="customerInfoSection" style="flex: 1; padding: 14px;">
+        <div id="chatErrorMsg" style="color: red; margin-bottom: 10px; display:none;"></div>
+        <input type="text" id="customerName" placeholder="Your Name" style="width:100%;margin-bottom:10px;padding:10px;border-radius:6px;border:1px solid #ddd">
+        <input type="text" id="customerPhone" placeholder="Phone Number" style="width:100%;margin-bottom:10px;padding:10px;border-radius:6px;border:1px solid #ddd">
+        <button id="startChatBtn" onclick="startChat()" style="width:100%;background-color:#0890F1;color:white;padding:10px;border:none;border-radius:8px;font-weight:600;cursor:pointer">Start Chat</button>
+        <div style="margin-top:12px;color:#666;font-size:13px">By continuing you agree to receive messages regarding your service.</div>
     </div>
+
     <!-- CHAT MESSAGES -->
-    <div id="chatSection" style="flex: 1; padding: 15px; overflow-y: auto; display: none; display: flex; flex-direction: column; gap: 10px;"></div>
+    <div id="chatSection" style="flex: 1; padding: 12px; overflow-y: auto; display: none; flex-direction: column; gap:8px; background: #f7f9fb;">
+        <!-- messages will be appended here -->
+    </div>
+
     <!-- CHAT INPUT -->
-    <div id="chatInputSection" style="padding: 10px; border-top: 1px solid #eee; display: none; flex-direction: column;">
-        <button id="endChatButton" onclick="endChat()" style="background-color: #F44336; border: none; padding: 8px 12px; border-radius: 20px; color: white; font-weight: bold; margin-bottom: 8px; display: none;">End Chat</button>
-        <div style="display: flex; align-items: center; gap: 10px;">
-            <input type="text" id="chatInput" placeholder="Ask us anything..." style="flex: 1; padding: 8px; border-radius: 20px; border: 1px solid #ccc;">
-            <button onclick="sendMessage()" style="background-color: #0890F1; border: none; padding: 8px 12px; border-radius: 20px; color: white; font-weight: bold;">→</button>
-            <button onclick="sendLocation()" title="Send Location" style="background-color: #0890F1; border: none; padding: 8px 12px; border-radius: 20px; color: white; font-weight: bold;">📍</button>
+    <div id="chatInputSection" style="padding: 12px; border-top: 1px solid #eee; display: none; flex-direction: column; gap:8px;">
+        <div id="typingIndicator" style="display:none;color:#666;font-size:13px;">Typing…</div>
+        <div style="display:flex;gap:8px;align-items:center">
+            <input type="text" id="chatInput" placeholder="Ask us anything..." style="flex:1;padding:10px;border-radius:22px;border:1px solid #ddd;" />
+            <button id="sendBtn" onclick="sendMessage()" style="background:#0890F1;border:none;color:white;padding:9px 12px;border-radius:22px;font-weight:700;cursor:pointer;">→</button>
+            <button id="locBtn" onclick="sendLocation()" title="Send Location" style="background:#0890F1;border:none;color:white;padding:8px 10px;border-radius:22px;cursor:pointer;">📍</button>
         </div>
     </div>
 </div>
 
-
 <script>
-    let chatId = null;
-    let inactivityTimer = null;
-    let messagePollingInterval = null;
-    document.getElementById("chatInput").addEventListener("keypress", function(e) {
-        if (e.key === "Enter") {
-            e.preventDefault();
-            sendMessage();
-        }
-    });
+    /*
+  Smart chatbox client:
+  - Uses your Laravel routes to start/send chat (which forward to FastAPI)
+  - Displays AI reply + dynamic suggestions (buttons)
+  - Accepts typed messages or suggestion button clicks
+  - Shows typing indicator, disables input while waiting
+  - Sends location messages when requested
+  - Expects response JSON: { reply: "...", suggestions: ["...","..."] }
+*/
 
+    let chatId = null;
+    let pollingInterval = null;
+    let waitingForBot = false;
+
+    // Helpers
+    const csrfToken = document.querySelector('meta[name="csrf-token"]')?.getAttribute('content') || '';
+
+    function appendBubble(text, opts = {}) {
+        // opts: { from: "bot" | "user" | "system", asHtml: bool }
+        const chat = document.getElementById('chatSection');
+        const bubble = document.createElement('div');
+        bubble.style.maxWidth = '82%';
+        bubble.style.padding = '10px 12px';
+        bubble.style.borderRadius = '12px';
+        bubble.style.marginBottom = '6px';
+        bubble.style.wordBreak = 'break-word';
+        bubble.style.fontSize = '14px';
+        bubble.style.lineHeight = '1.4';
+
+        if (opts.from === 'user') {
+            bubble.style.background = '#E1F5FE';
+            bubble.style.alignSelf = 'flex-end';
+            bubble.style.textAlign = 'right';
+        } else if (opts.from === 'system') {
+            bubble.style.background = '#fff3cd';
+            bubble.style.color = '#856404';
+            bubble.style.alignSelf = 'center';
+        } else {
+            // bot or default
+            bubble.style.background = '#fff';
+            bubble.style.alignSelf = 'flex-start';
+            bubble.style.boxShadow = '0 1px 0 rgba(0,0,0,0.04)';
+        }
+
+        if (opts.asHtml) bubble.innerHTML = text;
+        else bubble.textContent = text;
+
+        chat.appendChild(bubble);
+        chat.scrollTop = chat.scrollHeight;
+        return bubble;
+    }
+
+    function clearSuggestionsContainer() {
+        const existing = document.getElementById('suggestionContainer');
+        if (existing) existing.remove();
+    }
+
+    function showSuggestions(suggestions = []) {
+        clearSuggestionsContainer();
+        if (!suggestions || !suggestions.length) return;
+        const chat = document.getElementById('chatSection');
+        const container = document.createElement('div');
+        container.id = 'suggestionContainer';
+        container.style.display = 'flex';
+        container.style.flexWrap = 'wrap';
+        container.style.gap = '8px';
+        container.style.margin = '6px 0 14px';
+        container.style.alignSelf = 'flex-start';
+
+        suggestions.forEach(s => {
+            const btn = document.createElement('button');
+            btn.textContent = s;
+            btn.style.background = '#0890F1';
+            btn.style.color = '#fff';
+            btn.style.border = 'none';
+            btn.style.padding = '7px 12px';
+            btn.style.borderRadius = '20px';
+            btn.style.cursor = 'pointer';
+            btn.style.fontSize = '13px';
+            btn.onclick = () => {
+                // when suggestion clicked — send it as a message
+                clearSuggestionsContainer();
+                sendMessage(s);
+            };
+            container.appendChild(btn);
+        });
+
+        chat.appendChild(container);
+        chat.scrollTop = chat.scrollHeight;
+    }
+
+    // UI toggles
     function toggleChatbox() {
-        const chatbox = document.getElementById("chatboxModal");
-        const isHidden = chatbox.style.display === "none";
-        chatbox.style.display = isHidden ? "flex" : "none";
+        const modal = document.getElementById('chatboxModal');
+        const isHidden = window.getComputedStyle(modal).display === 'none';
+        modal.style.display = isHidden ? 'flex' : 'none';
+
         if (isHidden) {
+            // show proper section depending on chatId
             if (!chatId) {
-                document.getElementById("customerInfoSection").style.display = "block";
-                document.getElementById("chatSection").style.display = "none";
-                document.getElementById("chatInputSection").style.display = "none";
+                document.getElementById('customerInfoSection').style.display = 'block';
+                document.getElementById('chatSection').style.display = 'none';
+                document.getElementById('chatInputSection').style.display = 'none';
             } else {
-                document.getElementById("customerInfoSection").style.display = "none";
-                document.getElementById("chatSection").style.display = "block";
-                document.getElementById("chatInputSection").style.display = "flex";
-                loadMessages();
-                startPollingMessages();
+                document.getElementById('customerInfoSection').style.display = 'none';
+                document.getElementById('chatSection').style.display = 'flex';
+                document.getElementById('chatInputSection').style.display = 'flex';
+                loadMessages(); // initial load
+                startPolling();
             }
+        } else {
+            stopPolling();
         }
     }
 
-    function startChat() {
-        const name = document.getElementById("customerName").value.trim();
-        const phone = document.getElementById("customerPhone").value.trim();
-        const errorDiv = document.getElementById('chatErrorMsg');
-        errorDiv.style.display = 'none';
-        errorDiv.textContent = '';
+    // Start chat (create chat in Laravel)
+    async function startChat() {
+        const name = document.getElementById('customerName').value.trim();
+        const phone = document.getElementById('customerPhone').value.trim();
+        const errDiv = document.getElementById('chatErrorMsg');
+        errDiv.style.display = 'none';
+        errDiv.textContent = '';
+
         if (!name || !phone) {
-            errorDiv.textContent = 'Please enter your name and phone number.';
-            errorDiv.style.display = 'block';
+            errDiv.textContent = 'Please enter your name and phone number.';
+            errDiv.style.display = 'block';
             return;
         }
-        fetch("{{ route('chat.start') }}", {
-                method: "POST",
+
+        document.getElementById('startChatBtn').disabled = true;
+        document.getElementById('startChatBtn').textContent = 'Starting…';
+
+        try {
+            const res = await fetch("{{ route('chat.start') }}", {
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
-                    "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
                 },
                 body: JSON.stringify({
                     name,
                     phone
                 })
-            })
-            .then(async res => {
-                const data = await res.json();
-                if (!res.ok) {
-                    throw data; // this triggers the catch block
-                }
-                return data;
-            })
-            .then(data => {
-                chatId = data.chat_id;
-                document.getElementById("customerInfoSection").style.display = "none";
-                document.getElementById("chatSection").style.display = "block";
-                document.getElementById("chatInputSection").style.display = "flex";
-                loadMessages();
-                startPollingMessages();
-                resetInactivityTimer();
-            })
-            .catch(error => {
-                errorDiv.textContent = error.message || error.error || 'Something went wrong.';
-                errorDiv.style.display = 'block';
             });
-    }
-
-    function sendMessage() {
-        const input = document.getElementById("chatInput");
-        const msg = input.value.trim();
-        if (!msg || !chatId) return;
-        const chat = document.getElementById("chatSection");
-        const userMsg = document.createElement("div");
-        userMsg.style.background = "#E1F5FE";
-        userMsg.style.padding = "10px 15px";
-        userMsg.style.borderRadius = "10px";
-        userMsg.style.marginBottom = "10px";
-        userMsg.style.alignSelf = "flex-end";
-        userMsg.textContent = msg;
-        chat.appendChild(userMsg);
-        input.value = "";
-        chat.scrollTop = chat.scrollHeight;
-        resetInactivityTimer();
-        document.getElementById("endChatButton").style.display = "none";
-        fetch("{{ route('chat.send') }}", {
-            method: "POST",
-            headers: {
-                "Content-Type": "application/json",
-                "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute('content')
-            },
-            body: JSON.stringify({
-                message: msg,
-                chat_id: chatId
-            })
-        });
-    }
-
-    function resetInactivityTimer() {
-        clearTimeout(inactivityTimer);
-        inactivityTimer = setTimeout(() => {
-            document.getElementById("endChatButton").style.display = "inline-block";
-        }, 120000);
-    }
-
-    function endChat() {
-        clearTimeout(inactivityTimer);
-        stopPollingMessages();
-        clearChat();
-        chatId = null;
-        document.getElementById("chatboxModal").style.display = "none";
-    }
-
-    function clearChat() {
-        document.getElementById("chatSection").innerHTML = "";
-        document.getElementById("chatInput").value = "";
-        document.getElementById("customerName").value = "";
-        document.getElementById("customerPhone").value = "";
-        document.getElementById("endChatButton").style.display = "none";
-    }
-
-    function loadMessages() {
-        if (!chatId) return;
-        fetch(`/chat/${chatId}/messages`)
-            .then(res => res.json())
-            .then(messages => {
-                const chat = document.getElementById("chatSection");
-                chat.innerHTML = "";
-                chat.style.display = "flex";
-                chat.style.flexDirection = "column";
-                chat.style.alignItems = "flex-start";
-                if (messages.length === 0) {
-                    const welcome = document.createElement("div");
-                    welcome.style.background = "#F1F1F1";
-                    welcome.style.padding = "8px 12px";
-                    welcome.style.borderRadius = "10px";
-                    welcome.style.marginBottom = "5px";
-                    welcome.style.alignSelf = "flex-start";
-                    welcome.style.display = "inline-block";
-                    welcome.textContent = ":wave: Hello, how can we help you?";
-                    chat.appendChild(welcome);
-                } else {
-                    messages.forEach(msg => {
-                        const bubble = document.createElement("div");
-                        bubble.textContent = msg.message;
-                        bubble.style.padding = "8px 12px";
-                        bubble.style.borderRadius = "10px";
-                        bubble.style.marginBottom = "5px";
-                        bubble.style.display = "inline-block"
-                        if (msg.sender === 'admin') {
-                            bubble.style.background = "#DCF8C6"; // Light green
-                            bubble.style.alignSelf = "flex-end";
-                            bubble.style.textAlign = "right";
-                        } else {
-                            bubble.style.background = "#E1F5FE"; // Light blue
-                            bubble.style.alignSelf = "flex-start";
-                            bubble.style.textAlign = "left";
-                        }
-                        chat.appendChild(bubble);
-                    });
-                }
-                // Auto scroll to bottom
-                // Before loading new messages
-                const isAtBottom = chat.scrollHeight - chat.scrollTop <= chat.clientHeight + 50;
-                // Load and append messages...
-                if (isAtBottom) {
-                    chat.scrollTop = chat.scrollHeight;
-                }
+            const data = await res.json();
+            if (!res.ok) throw data;
+            chatId = data.chat_id;
+            // switch UI
+            document.getElementById('customerInfoSection').style.display = 'none';
+            document.getElementById('chatSection').style.display = 'flex';
+            document.getElementById('chatInputSection').style.display = 'flex';
+            document.getElementById('chatSection').innerHTML = '';
+            appendBubble('👋 Hello! How can we assist you today?', {
+                from: 'bot'
             });
-    }
-
-    function startPollingMessages() {
-        if (messagePollingInterval) clearInterval(messagePollingInterval);
-        messagePollingInterval = setInterval(loadMessages, 5000);
-    }
-
-    function stopPollingMessages() {
-        clearInterval(messagePollingInterval);
-        messagePollingInterval = null;
-    }
-
-    function sendLocation() {
-        if (!navigator.geolocation) {
-            alert("Geolocation is not supported by your browser.");
-            return;
+            // show initial suggestions (local quick ones while backend reply is fetched)
+            showSuggestions(["🧺 Book Laundry", "🚚 Track Order", "💬 Contact Support"]);
+            startPolling();
+            // also trigger a "hello" message to initiate backend flow
+            await sendMessage('hello');
+        } catch (err) {
+            errDiv.textContent = (err && err.error) ? err.error : 'Unable to start chat.';
+            errDiv.style.display = 'block';
+        } finally {
+            document.getElementById('startChatBtn').disabled = false;
+            document.getElementById('startChatBtn').textContent = 'Start Chat';
         }
-        navigator.geolocation.getCurrentPosition(function(position) {
-            const latitude = position.coords.latitude;
-            const longitude = position.coords.longitude;
-            const locationLink = `https://www.google.com/maps?q=${latitude},${longitude}`;
-            const locationMessage = `:round_pushpin: My location: ${locationLink}`;
-            // Show clickable link in chat
-            const chat = document.getElementById("chatSection");
-            const userMsg = document.createElement("div");
-            userMsg.style.background = "#E1F5FE";
-            userMsg.style.padding = "10px 15px";
-            userMsg.style.borderRadius = "10px";
-            userMsg.style.marginBottom = "10px";
-            userMsg.style.alignSelf = "flex-end";
-            userMsg.innerHTML = `<a href="${locationLink}" target="_blank" style="color: #007BFF; text-decoration: underline;">:round_pushpin: My Location</a>`;
-            chat.appendChild(userMsg);
-            chat.scrollTop = chat.scrollHeight;
-            resetInactivityTimer();
-            // Send message to backend
-            fetch("{{ route('chat.send') }}", {
-                method: "POST",
+    }
+
+    // Load messages from Laravel DB (optional)
+    async function loadMessages() {
+        if (!chatId) return;
+        try {
+            const res = await fetch(`/chat/${chatId}/messages`);
+            const messages = await res.json();
+            const chat = document.getElementById('chatSection');
+            chat.innerHTML = '';
+            if (!messages || messages.length === 0) {
+                appendBubble('👋 Hello! How can we assist you today?', {
+                    from: 'bot'
+                });
+                showSuggestions(["🧺 Book Laundry", "🚚 Track Order", "💬 Contact Support"]);
+                return;
+            }
+            messages.forEach(m => {
+                appendBubble(m.message, {
+                    from: m.sender === 'admin' ? 'bot' : 'user',
+                    asHtml: false
+                });
+            });
+            // after loading, ask backend for suggestions for last message to ensure UI synced
+            const last = messages[messages.length - 1];
+            if (last && last.sender === 'admin') {
+                // try fetch suggestions for last admin message by re-calling send with a special route? skip for now
+            }
+        } catch (e) {
+            console.warn('Could not load messages', e);
+        }
+    }
+
+    // Polling
+    function startPolling() {
+        stopPolling();
+        pollingInterval = setInterval(loadMessages, 4000);
+    }
+
+    function stopPolling() {
+        if (pollingInterval) clearInterval(pollingInterval);
+        pollingInterval = null;
+    }
+
+    // Typing indicator
+    function setTyping(on) {
+        document.getElementById('typingIndicator').style.display = on ? 'block' : 'none';
+        document.getElementById('sendBtn').disabled = on;
+        document.getElementById('chatInput').disabled = on;
+        document.getElementById('locBtn').disabled = on;
+    }
+
+    // Send message to Laravel (which forwards to FastAPI)
+    async function sendMessage(optionalMessage = null) {
+        if (!chatId) return;
+
+        const input = document.getElementById('chatInput');
+        const raw = optionalMessage || input.value.trim();
+        if (!raw) return;
+
+        // append user bubble
+        appendBubble(raw, {
+            from: 'user'
+        });
+        input.value = '';
+        clearSuggestionsContainer();
+
+        // show typing
+        setTyping(true);
+        setTyping(true); // twice to be safe
+        appendTemporaryTyping();
+
+        try {
+            const res = await fetch("{{ route('chat.send') }}", {
+                method: 'POST',
                 headers: {
-                    "Content-Type": "application/json",
-                    "X-CSRF-TOKEN": document.querySelector('meta[name="csrf-token"]').getAttribute('content')
+                    'Content-Type': 'application/json',
+                    'X-CSRF-TOKEN': csrfToken
                 },
                 body: JSON.stringify({
-                    message: locationMessage,
+                    message: raw,
                     chat_id: chatId
                 })
             });
-        }, function(error) {
-            alert("Unable to retrieve your location.");
+            const data = await res.json();
+
+            // remove temporary typing bubble if present
+            removeTemporaryTyping();
+            setTyping(false);
+
+            if (data.error) {
+                appendBubble('⚠️ ' + (data.error || 'Bot error'), {
+                    from: 'system'
+                });
+                return;
+            }
+
+            // Bot reply
+            if (data.reply) {
+                // allow HTML (bot might return HTML link). We sanitize minimally by allowing only <a> and line breaks.
+                // NOTE: if you want stricter sanitization, use a proper sanitizer.
+                const sanitized = sanitizeBotHtml(data.reply);
+                appendBubble(sanitized, {
+                    from: 'bot',
+                    asHtml: true
+                });
+            }
+
+            // Suggestions
+            if (data.suggestions && Array.isArray(data.suggestions) && data.suggestions.length) {
+                showSuggestions(data.suggestions);
+            } else {
+                // If no suggestions, show fallback quick options so user can continue flow
+                showSuggestions(["🧺 Book Laundry", "🚚 Track Order", "💬 Contact Support"]);
+            }
+
+            // If the bot reply indicates booking done and returns special token (e.g., contains Order ID),
+            // Laravel saved that chat message so it's visible in DB; additional logic not required here.
+
+        } catch (err) {
+            removeTemporaryTyping();
+            setTyping(false);
+            appendBubble('⚠️ Something went wrong. Please try again.', {
+                from: 'system'
+            });
+            console.error('sendMessage error', err);
+        }
+    }
+
+    // small temporary typing bubble to improve UX
+    function appendTemporaryTyping() {
+        const chat = document.getElementById('chatSection');
+        if (document.getElementById('__tmp_typing')) return;
+        const tmp = document.createElement('div');
+        tmp.id = '__tmp_typing';
+        tmp.style.background = '#fff';
+        tmp.style.padding = '8px 12px';
+        tmp.style.borderRadius = '12px';
+        tmp.style.alignSelf = 'flex-start';
+        tmp.style.marginBottom = '6px';
+        tmp.style.opacity = '0.85';
+        tmp.innerHTML = '<em>Typing…</em>';
+        chat.appendChild(tmp);
+        chat.scrollTop = chat.scrollHeight;
+    }
+
+    function removeTemporaryTyping() {
+        const tmp = document.getElementById('__tmp_typing');
+        if (tmp) tmp.remove();
+    }
+
+    // basic sanitizer for bot HTML (allows <a href> and <br>)
+    function sanitizeBotHtml(html) {
+        // escape then reintroduce anchors and <br>
+        const div = document.createElement('div');
+        div.textContent = html;
+        let escaped = div.innerHTML;
+        // allow simple <a href="...">text</a> patterns in bot reply (very small heuristic)
+        escaped = escaped.replace(/&lt;a href=&quot;(https?:\/\/[^&]+)&quot;&gt;([^&]+)&lt;\/a&gt;/g, '<a href="$1" target="_blank" rel="noopener">$2</a>');
+        // allow line breaks encoded as \n
+        escaped = escaped.replace(/\\n/g, '<br>');
+        // also allow real newlines to <br>
+        escaped = escaped.replace(/\n/g, '<br>');
+        return escaped;
+    }
+
+    // Send location
+    function sendLocation() {
+        if (!navigator.geolocation) {
+            alert("Geolocation not supported in your browser.");
+            return;
+        }
+        navigator.geolocation.getCurrentPosition(async pos => {
+            const lat = pos.coords.latitude;
+            const lng = pos.coords.longitude;
+            const link = `https://www.google.com/maps?q=${lat},${lng}`;
+            appendBubble('📍 My Location: ' + link, {
+                from: 'user',
+                asHtml: false
+            });
+
+            // send to backend as plain message (bot will parse location)
+            await sendMessage(`📍 My location: ${link}`);
+        }, () => {
+            alert("Unable to get your location. Please allow location access.");
         });
     }
+
+    /* Utilities for end session / cleanup */
+    function endChat() {
+        stopPolling();
+        chatId = null;
+        document.getElementById('chatboxModal').style.display = 'none';
+        document.getElementById('chatSection').innerHTML = '';
+        document.getElementById('chatInput').value = '';
+        document.getElementById('customerName').value = '';
+        document.getElementById('customerPhone').value = '';
+        document.getElementById('customerInfoSection').style.display = 'block';
+        document.getElementById('chatSection').style.display = 'none';
+        document.getElementById('chatInputSection').style.display = 'none';
+    }
+
+    /* Keyboard Enter to send */
+    document.getElementById('chatInput').addEventListener('keypress', function(e) {
+        if (e.key === 'Enter') {
+            e.preventDefault();
+            sendMessage();
+        }
+    });
 </script>

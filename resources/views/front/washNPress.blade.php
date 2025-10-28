@@ -12,12 +12,12 @@
 @section('title', 'Wash & Press Service in Dubai & Abu Dhabi')
 @section('description',
     'Are you running short on time? A nursing mom? A student running a hospitality company gets
-    benefited from SunCity laundry washing & pressing service. Washing & pressing service starts from only 3 <img class="aed">. Also,
+    benefited from LaundryService washing & pressing service. Washing & pressing service starts from only 3 <img class="aed">. Also,
     available same-day wash & ironing service & urgent 2-hour wash, dry & press service additional price.')
 @section('og:title', 'Wash & Press Service in Dubai & Abu Dhabi')
 @section('og:description',
     'Are you running short on time? A nursing mom? A student running a hospitality company gets
-    benefited from SunCity laundry washing & pressing service. Washing & pressing service starts from only 3 <img class="aed">. Also,
+    benefited from LaundryService washing & pressing service. Washing & pressing service starts from only 3 <img class="aed">. Also,
     available same-day wash & ironing service & urgent 2-hour wash, dry & press service additional price.')
 @section('canonical', url()->current())
 @section('styles')
@@ -68,7 +68,7 @@
                         <div class="page-content">
                             <h2 class="sec-title page-title" style="font-size: 26px">Wash, Dry & Press Service</h2>
                             <p>Are you running short on time? A nursing mom? A student or running a hospitality company gets
-                                benefited from SunCity laundry wash & pressing service. The washing & pressing service
+                                benefited from LaundryService wash & pressing service. The washing & pressing service
                                 starts
                                 from only 3 <img class="aed">. Also, available same-day wash & ironing service and urgent 2-hour wash, dry
                                 &
@@ -223,7 +223,7 @@
                             <div class="checklist">
                                 <ul>
                                     <li>It's very convenient, just WhatsApp
-                                        your address & pin location at SunCity customer contact number:
+                                        your address & pin location at LaundryService customer contact number:
                                         <a href="+971 52 273 2873">+971 52 273 2873</a>
                                     </li>
                                     <li>You can also book service via <a

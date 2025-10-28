@@ -1,8 +1,8 @@
 @extends('layouts.app')
-@section('title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
-@section('og:description', "SUNCITY LAUNDRY")
-@section('og:title', 'Laundromat in Abu Dhabi | SunCity Laundry | Abu Dhabi | SunCity Laundry')
-@section('og:description', "SUNCITY LAUNDRY")
+@section('title', 'Laundromat in Abu Dhabi | LaundryService | Abu Dhabi | LaundryService')
+@section('og:description', "LaundryService")
+@section('og:title', 'Laundromat in Abu Dhabi | LaundryService | Abu Dhabi | LaundryService')
+@section('og:description', "LaundryService")
 @section('canonical', url()->current())
 @section('styles')
 <style>
@@ -144,12 +144,12 @@
 <div class="w3-services1 py-5">
     <div class="container py-lg-3">
         <div class="header-section mb-3">
-            <h3 style="font-size: 32px">How SunCity laundry is providing quality services at these lowest prices?</h3>
+            <h3 style="font-size: 32px">How LaundryService is providing quality services at these lowest prices?</h3>
             <p>It's pleasure to assist you! We are offering high-quality services at the lowest prices in an Abu Dhabi market because we are collecting orders directly online from customers and handle all laundry service processes from the collection, laundry/dry cleaning, packing & delivery by our own fleets that support us to give the best laundry services at cheaper prices.:-) There is no third party involved.</p>
             <h3 style="font-size: 32px">How much does it cost to get the wash & fold clothes in Abu Dhabi?</h3>
             <p>Wash & fold service in Abu Dhabi varies from 2 AED to 5 AED per item, it depends upon the customer what other services he/she expects from the laundry service provider.</p>
             <h3 style="font-size: 32px">How to save on the laundry ironing services when visiting or living in Abu Dhabi?</h3>
-            <p>If you want to save more visit <a href="https://laundryservice.ae/"> SunCity laundry</a> in Mohamed Bin Zayed City & drop off your laundry for pressing, it will save you a lot. In another case, if it is difficult to commute or you are a busy person, you can avail of pickup & drop service that costs you an extra 10 AED, however, pickup & delivery service is free if you order 49AED or more.</p>
+            <p>If you want to save more visit <a href="https://laundryservice.ae/"> LaundryService</a> in Mohamed Bin Zayed City & drop off your laundry for pressing, it will save you a lot. In another case, if it is difficult to commute or you are a busy person, you can avail of pickup & drop service that costs you an extra 10 AED, however, pickup & delivery service is free if you order 49AED or more.</p>
             <h3 style="font-size: 32px">How can I come to know that what laundry offer is going on currently?</h3>
             <p>It's very simple, we are almost on all your favourite social platforms, you can follow us there or you can also visit our website regularly to check for the latest offers & packages.</p>
             <h3 style="font-size: 32px">How much does it cost to clean carpet in Abu Dhabi & Dubai?</h3>
